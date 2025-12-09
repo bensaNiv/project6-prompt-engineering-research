@@ -1,0 +1,83 @@
+{
+  "overall": {
+    "accuracy": 0.0,
+    "mean": 0.0,
+    "variance": 0.0,
+    "std_dev": 0.0,
+    "count": 300
+  },
+  "by_category": {
+    "sentiment": {
+      "accuracy": 0.0,
+      "mean": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "count": 45
+    },
+    "math": {
+      "accuracy": 0.0,
+      "mean": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "count": 60
+    },
+    "logic": {
+      "accuracy": 0.0,
+      "mean": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "count": 45
+    },
+    "classification": {
+      "accuracy": 0.0,
+      "mean": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "count": 45
+    },
+    "reading": {
+      "accuracy": 0.0,
+      "mean": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "count": 45
+    },
+    "commonsense": {
+      "accuracy": 0.0,
+      "mean": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "count": 30
+    },
+    "code": {
+      "accuracy": 0.0,
+      "mean": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "count": 30
+    }
+  },
+  "by_difficulty": {
+    "1": {
+      "accuracy": 0.0,
+      "mean": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "count": 96
+    },
+    "2": {
+      "accuracy": 0.0,
+      "mean": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "count": 105
+    },
+    "3": {
+      "accuracy": 0.0,
+      "mean": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "count": 99
+    }
+  }
+}
