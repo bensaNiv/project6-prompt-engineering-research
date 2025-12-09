@@ -34,7 +34,7 @@ class Config:
     model_name: str = "gemini-2.5-flash-lite"
     max_retries: int = 5
     retry_delay: float = 2.0
-    runs_per_case: int = 3
+    runs_per_case: int = 2
     request_delay: float = 1.5
     rate_limit_backoff: float = 15.0
     max_backoff: float = 120.0
@@ -70,7 +70,7 @@ class Config:
             model_name=os.getenv("MODEL_NAME", "gemini-2.5-flash-lite"),
             max_retries=int(os.getenv("MAX_RETRIES", "5")),
             retry_delay=float(os.getenv("RETRY_DELAY", "2.0")),
-            runs_per_case=int(os.getenv("RUNS_PER_CASE", "3")),
+            runs_per_case=int(os.getenv("RUNS_PER_CASE", "2")),
             request_delay=float(os.getenv("REQUEST_DELAY", "1.5")),
             rate_limit_backoff=float(os.getenv("RATE_LIMIT_BACKOFF", "15.0")),
             max_backoff=float(os.getenv("MAX_BACKOFF", "120.0")),

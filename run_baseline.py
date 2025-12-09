@@ -3,12 +3,13 @@
 Run the baseline prompt engineering experiment.
 
 This script executes the baseline (minimal) prompt across all 100 test cases,
-running each case 3 times to measure consistency. Results are saved to:
+running each case 2 times to measure consistency. Results are saved to:
 - results/raw/baseline_results.csv (raw data)
 - results/baseline_stats.json (aggregated statistics)
 """
 
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -20,29 +21,48 @@ sys.path.insert(0, str(Path(__file__).parent))
 from src.config import Config
 from src.experiment_runner import ExperimentRunner
 from src.metrics import MetricsCalculator
+from src.ollama_client import OllamaClient
 from src.prompts.base import BaselinePromptGenerator
 
 
 def main() -> None:
     """Run the baseline experiment and generate statistics."""
     print("=" * 60)
-    print("Stage 2: Baseline Experiment")
+    print("Stage 2: Baseline Experiment (Ollama)")
     print("=" * 60)
 
-    # Load configuration
-    print("\n[1/5] Loading configuration...")
-    try:
-        config = Config.from_env()
-        print(f"  Model: {config.model_name}")
-        print(f"  Runs per case: {config.runs_per_case}")
-    except ValueError as e:
-        print(f"ERROR: {e}")
-        print("Please ensure .env file exists with GEMINI_API_KEY")
-        sys.exit(1)
+    # Configuration for Ollama
+    # Default to localhost (run script on same machine as Ollama)
+    OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
+    MODEL_NAME = os.getenv("MODEL_NAME", "llama3.2:3b")
 
-    # Initialize components
-    print("\n[2/5] Initializing experiment runner...")
-    runner = ExperimentRunner(config)
+    print("\n[1/5] Loading configuration...")
+    config = Config(
+        api_key="not-needed-for-ollama",
+        model_name=MODEL_NAME,
+        runs_per_case=2,
+        max_retries=3,
+        retry_delay=2.0,
+    )
+    print(f"  Model: {config.model_name}")
+    print(f"  Runs per case: {config.runs_per_case}")
+    print(f"  Ollama host: {OLLAMA_HOST}")
+
+    # Initialize Ollama client
+    print("\n[2/5] Initializing Ollama client...")
+    client = OllamaClient(config, host=OLLAMA_HOST)
+
+    # Check connection and list models
+    models = client.list_models()
+    if models:
+        print(f"  Connected! Available models: {', '.join(models[:5])}")
+        if MODEL_NAME not in models and not any(MODEL_NAME in m for m in models):
+            print(f"  WARNING: {MODEL_NAME} not found. Available: {models}")
+    else:
+        print(f"  WARNING: Could not list models. Ensure Ollama is running at {OLLAMA_HOST}")
+
+    # Initialize runner with Ollama client
+    runner = ExperimentRunner(config, client=client)
     prompt_generator = BaselinePromptGenerator()
     metrics_calc = MetricsCalculator()
 
@@ -53,16 +73,20 @@ def main() -> None:
     print(f"  Test cases: {total_cases}")
     print(f"  Total API calls: {total_calls}")
 
+    # Estimate time for Ollama (roughly 3-10 seconds per call depending on model)
+    est_minutes = (total_calls * 5) / 60
+    print(f"  Estimated time: ~{est_minutes:.0f}-{est_minutes*2:.0f} minutes")
+
     # Run baseline experiment
     print(f"\n[3/5] Running baseline experiment ({total_calls} API calls)...")
-    print("  This may take several minutes...")
+    print("  Progress will be shown below...")
 
     results_df = runner.run_technique(
         technique_name="baseline",
         prompt_generator=prompt_generator.generate,
     )
 
-    print(f"  Completed: {len(results_df)} responses collected")
+    print(f"\n  Completed: {len(results_df)} responses collected")
 
     # Check for API errors
     api_errors = results_df[~results_df["success"]]

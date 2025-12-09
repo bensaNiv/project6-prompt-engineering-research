@@ -2,14 +2,21 @@
 
 import json
 from pathlib import Path
-from typing import Callable
+from typing import Callable, Protocol
 
 import pandas as pd
 
 from .answer_evaluator import AnswerEvaluator
 from .config import Config
-from .gemini_client import GeminiClient
 from .metrics import MetricsCalculator
+
+
+class LLMClient(Protocol):
+    """Protocol for LLM clients (Gemini, Ollama, etc.)."""
+
+    def query(self, prompt: str) -> "APIResponse":
+        """Send prompt and get response."""
+        ...
 
 
 class ExperimentRunner:
@@ -18,6 +25,7 @@ class ExperimentRunner:
     def __init__(
         self,
         config: Config,
+        client: LLMClient | None = None,
         data_path: str = "data/test_cases.csv",
         results_dir: str = "results",
     ) -> None:
@@ -25,7 +33,14 @@ class ExperimentRunner:
         self.config = config
         self.data_path = Path(data_path)
         self.results_dir = Path(results_dir)
-        self.client = GeminiClient(config)
+
+        # Use provided client or default to GeminiClient
+        if client is not None:
+            self.client = client
+        else:
+            from .gemini_client import GeminiClient
+            self.client = GeminiClient(config)
+
         self.evaluator = AnswerEvaluator()
         self.metrics_calc = MetricsCalculator()
         self._setup_directories()
@@ -78,14 +93,26 @@ class ExperimentRunner:
         if test_cases is None:
             test_cases = self.load_test_cases()
 
+        total_cases = len(test_cases)
+        total_calls = total_cases * self.config.runs_per_case
+        call_count = 0
+
         results = []
-        for _, case in test_cases.iterrows():
+        for idx, (_, case) in enumerate(test_cases.iterrows()):
             case_dict = case.to_dict()
             prompt = prompt_generator(case_dict)
 
             for run in range(1, self.config.runs_per_case + 1):
+                call_count += 1
                 result = self._run_single_case(case_dict, prompt, run)
                 results.append(result)
+
+                # Progress update every 10 calls
+                if call_count % 10 == 0 or call_count == total_calls:
+                    correct_count = sum(1 for r in results if r["correct"])
+                    accuracy = correct_count / len(results) * 100
+                    print(f"  [{call_count}/{total_calls}] Case {idx+1}/{total_cases}, "
+                          f"Running accuracy: {accuracy:.1f}%")
 
         results_df = pd.DataFrame(results)
         output_path = self.results_dir / "raw" / f"{technique_name}_results.csv"

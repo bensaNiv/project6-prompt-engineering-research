@@ -1,32 +1,32 @@
 id,category,difficulty,question,expected_answer,answer_type
-1,sentiment,1,"The concert was amazing and I had the best time of my life!",positive,exact
-2,sentiment,1,"I absolutely hate waiting in long lines at the store.",negative,exact
-3,sentiment,1,"The weather today is sunny and warm.",neutral,exact
-4,sentiment,1,"This is the most delicious pizza I have ever tasted!",positive,exact
-5,sentiment,1,"The service was terrible and the food was cold.",negative,exact
-6,sentiment,2,"The movie wasn't bad, but I've seen better.",neutral,exact
-7,sentiment,2,"I guess the product works fine, nothing special though.",neutral,exact
-8,sentiment,2,"Well, that's one way to handle the situation...",negative,exact
-9,sentiment,2,"The hotel was decent for the price we paid.",neutral,exact
-10,sentiment,2,"Not my favorite, but my kids seemed to enjoy it.",neutral,exact
-11,sentiment,3,"Oh great, another meeting that could have been an email.",negative,exact
-12,sentiment,3,"The restaurant was empty for a reason, as we soon discovered.",negative,exact
-13,sentiment,3,"I'm sure the designer tried their best with what they had.",negative,exact
-14,sentiment,3,"What a surprise to find such quality at this establishment.",positive,exact
-15,sentiment,3,"The presentation was certainly... memorable.",negative,exact
-16,math,1,"If you have 5 apples and buy 3 more, how many apples do you have?",8,numeric
-17,math,1,"What is 12 minus 7?",5,numeric
-18,math,1,"If a toy costs $4 and you have $10, how much change will you get?",6,numeric
-19,math,1,"What is 6 times 3?",18,numeric
-20,math,1,"You have 15 candies and eat 6. How many are left?",9,numeric
-21,math,1,"What is 8 plus 9?",17,numeric
-22,math,2,"A store sells notebooks for $3 each. If you buy 4 notebooks and pay with a $20 bill, how much change do you get?",8,numeric
-23,math,2,"If a train travels 60 miles per hour for 2.5 hours, how many miles does it travel?",150,numeric
-24,math,2,"John has 24 cookies. He gives 1/3 to his sister and eats 4 himself. How many cookies are left?",12,numeric
-25,math,2,"A shirt originally costs $40. It's on sale for 25% off. What is the sale price?",30,numeric
-26,math,2,"If 5 workers can build a wall in 8 days, how many days would it take 10 workers?",4,numeric
-27,math,2,"A rectangle has a length of 12 cm and width of 8 cm. What is its perimeter?",40,numeric
-28,math,2,"You score 85, 92, and 78 on three tests. What is your average score?",85,numeric
+1,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I suppose the service was adequate, if you don't mind waiting an eternity for lukewarm food.""",negative,exact
+2,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Well, that's certainly one way to run a business into the ground.""",negative,exact
+3,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The renovation exceeded our expectations, though the contractor's timeline estimates were... optimistic.""",positive,exact
+4,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""My mother-in-law's cooking is exactly as good as you'd expect.""",negative,exact
+5,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The app works perfectly, assuming you enjoy watching loading screens.""",negative,exact
+6,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The movie wasn't bad, but I've seen better.""",neutral,exact
+7,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I guess the product works fine, nothing special though.""",neutral,exact
+8,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Well, that's one way to handle the situation...""",negative,exact
+9,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The hotel was decent for the price we paid.""",neutral,exact
+10,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Not my favorite, but my kids seemed to enjoy it.""",neutral,exact
+11,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Oh great, another meeting that could have been an email.""",negative,exact
+12,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The restaurant was empty for a reason, as we soon discovered.""",negative,exact
+13,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I'm sure the designer tried their best with what they had.""",negative,exact
+14,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""What a surprise to find such quality at this establishment.""",positive,exact
+15,sentiment,3,"What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The presentation was certainly... memorable.""",negative,exact
+16,math,3,"A store offers 30% off, then an additional 20% off the sale price. What is the total percentage discount from the original price?",44,numeric
+17,math,3,"If a clock loses 15 minutes every hour, what time will it show after 4 real hours if it started at 12:00?",1:00,contains
+18,math,3,"A boat travels upstream at 8 km/h and downstream at 12 km/h. What is the speed of the current?",2,numeric
+19,math,3,"Two candles of equal length burn at different rates. One burns in 4 hours, the other in 6 hours. After how many hours will one be twice the length of the other?",3,numeric
+20,math,3,"A ladder leans against a wall. The foot is 6 meters from the wall and reaches 8 meters up. How long is the ladder?",10,numeric
+21,math,3,"If you write all integers from 1 to 100, how many times do you write the digit 9?",20,numeric
+22,math,3,"A store sells notebooks for $3 each. If you buy 4 notebooks and pay with a $20 bill, how much change do you get?",8,numeric
+23,math,3,"If a train travels 60 miles per hour for 2.5 hours, how many miles does it travel?",150,numeric
+24,math,3,"John has 24 cookies. He gives 1/3 to his sister and eats 4 himself. How many cookies are left?",12,numeric
+25,math,3,"A shirt originally costs $40. It's on sale for 25% off. What is the sale price?",30,numeric
+26,math,3,"If 5 workers can build a wall in 8 days, how many days would it take 10 workers?",4,numeric
+27,math,3,"A rectangle has a length of 12 cm and width of 8 cm. What is its perimeter?",40,numeric
+28,math,3,"You score 85, 92, and 78 on three tests. What is your average score?",85,numeric
 29,math,3,"A tank is 1/3 full. After adding 40 liters, it becomes 2/3 full. What is the tank's total capacity?",120,numeric
 30,math,3,"If the price of an item increases by 20% and then decreases by 20%, what is the net percentage change?",-4,numeric
 31,math,3,"A car travels the first half of a journey at 40 mph and the second half at 60 mph. What is the average speed for the entire journey?",48,numeric
@@ -34,68 +34,68 @@ id,category,difficulty,question,expected_answer,answer_type
 33,math,3,"A sum of money doubles in 5 years at simple interest. What is the rate of interest per annum?",20,numeric
 34,math,3,"If 8 men can complete a work in 12 days, how many men are needed to complete the same work in 6 days?",16,numeric
 35,math,3,"A merchant marks his goods 40% above cost price and gives a 20% discount. What is his profit percentage?",12,numeric
-36,logic,1,"All dogs are mammals. Buddy is a dog. Is Buddy a mammal?",yes,exact
-37,logic,1,"If it is raining, the ground is wet. It is raining. Is the ground wet?",yes,exact
-38,logic,1,"All cats have tails. Whiskers is a cat. Does Whiskers have a tail?",yes,exact
-39,logic,1,"If you study hard, you will pass. You studied hard. Will you pass?",yes,exact
-40,logic,1,"All birds have feathers. A penguin is a bird. Does a penguin have feathers?",yes,exact
-41,logic,2,"All A are B. All B are C. Is it true that all A are C?",yes,exact
-42,logic,2,"No fish are mammals. All dolphins are mammals. Are any dolphins fish?",no,exact
-43,logic,2,"If it rains, the picnic is cancelled. The picnic was not cancelled. Did it rain?",no,exact
-44,logic,2,"Some doctors are musicians. All musicians are artists. Are some doctors artists?",yes,exact
-45,logic,2,"All squares are rectangles. Not all rectangles are squares. Can a shape be a rectangle but not a square?",yes,exact
+36,logic,3,"All roses are flowers. Some flowers fade quickly. Can we conclude that some roses fade quickly?",no,exact
+37,logic,3,"If no heroes are cowards, and some soldiers are heroes, can we conclude that some soldiers are not cowards?",yes,exact
+38,logic,3,"All managers are employees. No employees are shareholders. Tom is a shareholder. Can Tom be a manager?",no,exact
+39,logic,3,"Some cats are black. All black things absorb heat. Can we conclude all cats absorb heat?",no,exact
+40,logic,3,"If P implies Q, and R implies not-Q, and we know R is true, what can we say about P?",P is false,contains
+41,logic,3,"All A are B. All B are C. Is it true that all A are C?",yes,exact
+42,logic,3,"No fish are mammals. All dolphins are mammals. Are any dolphins fish?",no,exact
+43,logic,3,"If it rains, the picnic is cancelled. The picnic was not cancelled. Did it rain?",no,exact
+44,logic,3,"Some doctors are musicians. All musicians are artists. Are some doctors artists?",yes,exact
+45,logic,3,"All squares are rectangles. Not all rectangles are squares. Can a shape be a rectangle but not a square?",yes,exact
 46,logic,3,"If A implies B, and B implies C, and we know C is false, what can we conclude about A?",A is false,contains
 47,logic,3,"All politicians are liars. No liars are trustworthy. Some trustworthy people are teachers. Can any politicians be teachers?",yes,exact
 48,logic,3,"If not A then B. If B then C. If not C then D. We know D is false. What is A?",true,contains
 49,logic,3,"Some X are Y. All Y are Z. No Z are W. Can any X be W?",some cannot,contains
 50,logic,3,"If either A or B is true (but not both), and if A is true then C is true, and C is false, what is B?",true,contains
-51,classification,1,"Classify: 'The new iPhone 15 features an improved camera system and faster processor.'",technology,exact
-52,classification,1,"Classify: 'The Lakers defeated the Celtics 112-108 in last night's game.'",sports,exact
-53,classification,1,"Classify: 'Preheat oven to 350°F and mix flour with sugar.'",food,contains
-54,classification,1,"Classify: 'The Federal Reserve announced a 0.25% interest rate hike.'",finance,contains
-55,classification,1,"Classify: 'The patient presented with fever and persistent cough.'",health,contains
-56,classification,2,"Classify: 'Tesla's stock rose 5% following the announcement of their new battery technology.'",finance,contains
-57,classification,2,"Classify: 'The Olympic athlete credits her strict diet for her gold medal performance.'",sports,contains
-58,classification,2,"Classify: 'The AI-powered fitness app helps users track calories and workout routines.'",technology,contains
-59,classification,2,"Classify: 'Climate scientists warn that rising sea levels threaten coastal economies.'",science,contains
-60,classification,2,"Classify: 'The celebrity chef opened a new restaurant featuring fusion cuisine and live music.'",food,contains
-61,classification,3,"Classify: 'The biotech startup's IPO exceeded expectations as investors bet on their cancer treatment research.'",finance,contains
-62,classification,3,"Classify: 'The e-sports tournament attracted millions of viewers and offered prize money rivaling traditional sports.'",sports,contains
-63,classification,3,"Classify: 'Smart home devices are revolutionizing how we manage our health and daily routines.'",technology,contains
-64,classification,3,"Classify: 'The documentary explores how social media algorithms influence political opinions and mental health.'",technology,contains
-65,classification,3,"Classify: 'Urban farms are addressing food security while providing job training for at-risk youth.'",social,contains
-66,reading,1,"Text: 'John is 25 years old. He works as a software engineer in Seattle.' Question: What is John's profession?",software engineer,contains
-67,reading,1,"Text: 'The Eiffel Tower is located in Paris, France. It was completed in 1889.' Question: When was the Eiffel Tower completed?",1889,contains
-68,reading,1,"Text: 'Sarah has two pets: a golden retriever named Max and a tabby cat named Whiskers.' Question: What type of dog does Sarah have?",golden retriever,contains
-69,reading,1,"Text: 'The Amazon rainforest produces about 20% of the world's oxygen.' Question: What percentage of the world's oxygen comes from the Amazon?",20%,contains
-70,reading,1,"Text: 'The meeting is scheduled for 3 PM on Tuesday in Conference Room B.' Question: Where is the meeting?",Conference Room B,contains
-71,reading,2,"Text: 'Although Tom arrived early, he couldn't find parking and ended up being late to the interview.' Question: Why was Tom late?",couldn't find parking,contains
-72,reading,2,"Text: 'The company reported losses for three consecutive quarters before the new CEO implemented cost-cutting measures.' Question: How long did the company experience losses?",three quarters,contains
-73,reading,2,"Text: 'Maria speaks Spanish at home, English at work, and is currently learning Mandarin.' Question: How many languages is Maria involved with?",3,contains
-74,reading,2,"Text: 'The experiment failed not because of the hypothesis, but due to contaminated samples.' Question: What caused the experiment to fail?",contaminated samples,contains
-75,reading,2,"Text: 'Despite the rain, the marathon continued, though with a delayed start time.' Question: Was the marathon cancelled?",no,exact
+51,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The neural implant shows promise for treating depression, but FDA approval and insurance coverage remain uncertain.""",health,exact
+52,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The athlete's NFT collection sold out in minutes, raising questions about sports memorabilia in the digital age.""",sports,exact
+53,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The fermentation process yields both artisanal flavors and potentially profitable probiotic strains.""",food,exact
+54,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Quantum computing threatens current encryption standards, sending cybersecurity stocks into turmoil.""",finance,exact
+55,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The community garden initiative tackles food deserts while building neighborhood connections.""",social,exact
+56,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Tesla's stock rose 5% following the announcement of their new battery technology.""",finance,exact
+57,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The Olympic athlete credits her strict diet for her gold medal performance.""",sports,exact
+58,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The AI-powered fitness app helps users track calories and workout routines.""",technology,exact
+59,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Climate scientists warn that rising sea levels threaten coastal economies.""",science,exact
+60,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The celebrity chef opened a new restaurant featuring fusion cuisine and live music.""",food,exact
+61,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The biotech startup's IPO exceeded expectations as investors bet on their cancer treatment research.""",finance,exact
+62,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The e-sports tournament attracted millions of viewers and offered prize money rivaling traditional sports.""",sports,exact
+63,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Smart home devices are revolutionizing how we manage our health and daily routines.""",technology,exact
+64,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The documentary explores how social media algorithms influence political opinions and mental health.""",technology,exact
+65,classification,3,"What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Urban farms are addressing food security while providing job training for at-risk youth.""",social,exact
+66,reading,3,"Text: 'The committee voted 5-4 to approve the measure, with the chairman abstaining. Had he voted against, the motion would have failed.' Question: How many committee members are there?",10,numeric
+67,reading,3,"Text: 'Unlike her predecessor who favored austerity, the new director immediately increased the department's outreach budget.' Question: What was the previous director's approach to spending?",austerity,contains
+68,reading,3,"Text: 'The study was retracted not for fraudulent data, but because the control group had inadvertently been exposed to the treatment.' Question: Was the data fraudulent?",no,exact
+69,reading,3,"Text: 'Though Thompson finished third, his time would have won gold in any previous Olympic final.' Question: Did Thompson win a medal?",yes,exact
+70,reading,3,"Text: 'The merger fell through after the smaller company's shareholders rejected the offer, despite board approval.' Question: Who blocked the merger?",shareholders,contains
+71,reading,3,"Text: 'Although Tom arrived early, he couldn't find parking and ended up being late to the interview.' Question: Why was Tom late?",couldn't find parking,contains
+72,reading,3,"Text: 'The company reported losses for three consecutive quarters before the new CEO implemented cost-cutting measures.' Question: How long did the company experience losses?",three quarters,contains
+73,reading,3,"Text: 'Maria speaks Spanish at home, English at work, and is currently learning Mandarin.' Question: How many languages is Maria involved with?",3,numeric
+74,reading,3,"Text: 'The experiment failed not because of the hypothesis, but due to contaminated samples.' Question: What caused the experiment to fail?",contaminated samples,contains
+75,reading,3,"Text: 'Despite the rain, the marathon continued, though with a delayed start time.' Question: Was the marathon cancelled?",no,exact
 76,reading,3,"Text: 'The author's debut novel received mixed reviews, but her sophomore effort was praised universally. Critics noted her growth in character development.' Question: Which book was better received?",second,contains
 77,reading,3,"Text: 'While solar energy is renewable, its intermittent nature requires battery storage solutions, which currently remain expensive.' Question: What is the main challenge with solar energy mentioned?",intermittent,contains
 78,reading,3,"Text: 'The policy reduced unemployment but increased inflation, leading economists to debate whether the tradeoff was worthwhile.' Question: What were the two effects of the policy?",reduced unemployment and increased inflation,contains
 79,reading,3,"Text: 'After years of decline, the species showed signs of recovery once hunting was banned and habitats were restored.' Question: What two factors contributed to the species' recovery?",hunting ban and habitat restoration,contains
 80,reading,3,"Text: 'The study found correlation but not causation between screen time and anxiety, noting that anxious individuals may simply use screens more.' Question: Did the study prove screens cause anxiety?",no,exact
-81,commonsense,1,"What do you use to unlock a door?",key,contains
-82,commonsense,1,"What season comes after summer?",fall,contains
-83,commonsense,1,"Where would you go to borrow a book?",library,contains
-84,commonsense,2,"If you put ice cream in the sun, what happens?",melts,contains
-85,commonsense,2,"Why do people wear sunglasses on bright days?",protect eyes,contains
-86,commonsense,2,"What should you do if a smoke alarm goes off in your house?",leave,contains
-87,commonsense,2,"Why do we put food in the refrigerator?",keep fresh,contains
+81,commonsense,3,"A man walks into a bar and asks for a glass of water. The bartender pulls out a gun and points it at him. The man says 'thank you' and leaves. Why?",hiccups,contains
+82,commonsense,3,"What can travel around the world while staying in a corner?",stamp,contains
+83,commonsense,3,"A cowboy rides into town on Friday, stays three days, and leaves on Friday. How is this possible?",horse named Friday,contains
+84,commonsense,3,"If you put ice cream in the sun, what happens?",melts,contains
+85,commonsense,3,"Why do people wear sunglasses on bright days?",protect eyes,contains
+86,commonsense,3,"What should you do if a smoke alarm goes off in your house?",leave,contains
+87,commonsense,3,"Why do we put food in the refrigerator?",keep fresh,contains
 88,commonsense,3,"A man pushes his car to a hotel and loses all his money. What's happening?",monopoly,contains
 89,commonsense,3,"Why might a doctor refuse to operate on their own child?",conflict of interest,contains
 90,commonsense,3,"If a plane crashes exactly on the US-Canada border, where do you bury the survivors?",don't bury survivors,contains
-91,code,1,"What is the output? print(2 + 3)",5,exact
-92,code,1,"What is the output? print('Hello' + ' World')",Hello World,exact
-93,code,1,"What is the output? x = 10; print(x * 2)",20,exact
-94,code,2,"What is the output? for i in range(3): print(i)",0 1 2,contains
-95,code,2,"What is the output? x = [1,2,3]; print(len(x))",3,exact
-96,code,2,"What is the output? x = 5; y = 3; print(x > y)",True,exact
-97,code,2,"What is the output? s = 'hello'; print(s.upper())",HELLO,exact
+91,code,3,"What is the output? x = [1,2,3]; x.insert(1, 'a'); print(x[2])",2,exact
+92,code,3,"What is the output? print(bool('False'))",True,exact
+93,code,3,"What is the output? x = '12345'; print(x[1::2])",24,exact
+94,code,3,"What is the output? for i in range(3): print(i, end=' ')",0 1 2,contains
+95,code,3,"What is the output? x = [1,2,3]; print(len(x))",3,exact
+96,code,3,"What is the output? x = 5; y = 3; print(x > y)",True,exact
+97,code,3,"What is the output? s = 'hello'; print(s.upper())",HELLO,exact
 98,code,3,"What is the output? print([x**2 for x in range(4)])","[0, 1, 4, 9]",contains
 99,code,3,"What is the output? def f(n): return 1 if n<=1 else n*f(n-1); print(f(5))",120,exact
 100,code,3,"What is the output? x = [1,2,3]; y = x; y.append(4); print(x)","[1, 2, 3, 4]",contains
