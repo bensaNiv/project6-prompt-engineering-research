@@ -1,805 +1,801 @@
 id,category,difficulty,run,prompt,response,expected,correct,confidence,latency_ms,success
-1,sentiment,1,1,"Answer the following question:
-The concert was amazing and I had the best time of my life!
+1,sentiment,3,1,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I suppose the service was adequate, if you don't mind waiting an eternity for lukewarm food.""
 
-Answer concisely with just the answer, no explanation.",That sounds like an incredible experience!,positive,0,0.0,3940.256899979431,True
-1,sentiment,1,2,"Answer the following question:
-The concert was amazing and I had the best time of my life!
+Answer concisely with just the answer, no explanation.",Negative,negative,1,1,5853.956000006292,TRUE
+1,sentiment,3,2,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I suppose the service was adequate, if you don't mind waiting an eternity for lukewarm food.""
 
-Answer concisely with just the answer, no explanation.",That sounds like an incredible experience!,positive,0,0.0,2273.627499991562,True
-2,sentiment,1,1,"Answer the following question:
-I absolutely hate waiting in long lines at the store.
+Answer concisely with just the answer, no explanation.",Negative,negative,1,1,2151.362800039351,TRUE
+2,sentiment,3,1,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Well, that's certainly one way to run a business into the ground.""
 
-Answer concisely with just the answer, no explanation.",Consider using online shopping or curbside pickup options if possible.,negative,0,0.0,2405.945500009693,True
-2,sentiment,1,2,"Answer the following question:
-I absolutely hate waiting in long lines at the store.
+Answer concisely with just the answer, no explanation.",Negative,negative,1,1,2192.2070999862626,TRUE
+2,sentiment,3,2,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Well, that's certainly one way to run a business into the ground.""
 
-Answer concisely with just the answer, no explanation.",Use curbside pickup or online shopping to avoid lines.,negative,0,0.0,2530.858399986755,True
-3,sentiment,1,1,"Answer the following question:
-The weather today is sunny and warm.
+Answer concisely with just the answer, no explanation.",Negative.,negative,1,1,2334.6458000014536,TRUE
+3,sentiment,3,1,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The renovation exceeded our expectations, though the contractor's timeline estimates were... optimistic.""
 
-Answer concisely with just the answer, no explanation.",It's a great day outside.,neutral,0,0.0,2436.6762000136077,True
-3,sentiment,1,2,"Answer the following question:
-The weather today is sunny and warm.
+Answer concisely with just the answer, no explanation.",Neutral.,positive,0,0,2383.6397000122815,TRUE
+3,sentiment,3,2,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The renovation exceeded our expectations, though the contractor's timeline estimates were... optimistic.""
 
-Answer concisely with just the answer, no explanation.",It's a good day to be outside.,neutral,0,0.0,2451.164600031916,True
-4,sentiment,1,1,"Answer the following question:
-This is the most delicious pizza I have ever tasted!
+Answer concisely with just the answer, no explanation.",Negative,positive,0,0,2363.967400044203,TRUE
+4,sentiment,3,1,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""My mother-in-law's cooking is exactly as good as you'd expect.""
 
-Answer concisely with just the answer, no explanation.",That's great to hear!,positive,0,0.0,2456.3113000476733,True
-4,sentiment,1,2,"Answer the following question:
-This is the most delicious pizza I have ever tasted!
+Answer concisely with just the answer, no explanation.",Neutral,negative,0,0,2448.359400033951,TRUE
+4,sentiment,3,2,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""My mother-in-law's cooking is exactly as good as you'd expect.""
 
-Answer concisely with just the answer, no explanation.",That's great to hear!,positive,0,0.0,2462.6932000392117,True
-5,sentiment,1,1,"Answer the following question:
-The service was terrible and the food was cold.
+Answer concisely with just the answer, no explanation.",Neutral.,negative,0,0,2395.1310999691486,TRUE
+5,sentiment,3,1,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The app works perfectly, assuming you enjoy watching loading screens.""
 
-Answer concisely with just the answer, no explanation.",Bad experience.,negative,0,0.0,2385.75449999189,True
-5,sentiment,1,2,"Answer the following question:
-The service was terrible and the food was cold.
+Answer concisely with just the answer, no explanation.",Negative,negative,1,1,2375.1825999934226,TRUE
+5,sentiment,3,2,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The app works perfectly, assuming you enjoy watching loading screens.""
 
-Answer concisely with just the answer, no explanation.",The experience was disappointing.,negative,0,0.0,2430.6926999706775,True
-6,sentiment,2,1,"Answer the following question:
-The movie wasn't bad, but I've seen better.
+Answer concisely with just the answer, no explanation.",Negative,negative,1,1,2391.5597000159323,TRUE
+6,sentiment,3,1,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The movie wasn't bad, but I've seen better.""
 
-Answer concisely with just the answer, no explanation.",It was mediocre at best.,neutral,0,0.0,2410.12050001882,True
-6,sentiment,2,2,"Answer the following question:
-The movie wasn't bad, but I've seen better.
+Answer concisely with just the answer, no explanation.",Neutral.,neutral,1,1,2439.0206999960355,TRUE
+6,sentiment,3,2,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The movie wasn't bad, but I've seen better.""
 
-Answer concisely with just the answer, no explanation.",It was average at best.,neutral,0,0.0,2393.014100030996,True
-7,sentiment,2,1,"Answer the following question:
-I guess the product works fine, nothing special though.
+Answer concisely with just the answer, no explanation.",Negative.,neutral,0,0,2374.5251999935135,TRUE
+7,sentiment,3,1,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I guess the product works fine, nothing special though.""
 
-Answer concisely with just the answer, no explanation.",It's average.,neutral,0,0.0,2377.3639000137337,True
-7,sentiment,2,2,"Answer the following question:
-I guess the product works fine, nothing special though.
+Answer concisely with just the answer, no explanation.",Neutral.,neutral,1,1,2406.8870000191964,TRUE
+7,sentiment,3,2,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I guess the product works fine, nothing special though.""
 
-Answer concisely with just the answer, no explanation.",It's average.,neutral,0,0.0,2386.906799976714,True
-8,sentiment,2,1,"Answer the following question:
-Well, that's one way to handle the situation...
+Answer concisely with just the answer, no explanation.",Negative,neutral,0,0,2366.3013000041246,TRUE
+8,sentiment,3,1,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Well, that's one way to handle the situation...""
 
-Answer concisely with just the answer, no explanation.",I'll take responsibility for it.,negative,0,0.0,2472.8132000309415,True
-8,sentiment,2,2,"Answer the following question:
-Well, that's one way to handle the situation...
+Answer concisely with just the answer, no explanation.",Neutral,negative,0,0,2433.058299997356,TRUE
+8,sentiment,3,2,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Well, that's one way to handle the situation...""
 
-Answer concisely with just the answer, no explanation.",I concur.,negative,0,0.0,2372.702900029253,True
-9,sentiment,2,1,"Answer the following question:
-The hotel was decent for the price we paid.
+Answer concisely with just the answer, no explanation.",Negative,negative,1,1,2328.8388999644667,TRUE
+9,sentiment,3,1,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The hotel was decent for the price we paid.""
 
-Answer concisely with just the answer, no explanation.",It met our expectations.,neutral,0,0.0,2396.806100034155,True
-9,sentiment,2,2,"Answer the following question:
-The hotel was decent for the price we paid.
+Answer concisely with just the answer, no explanation.",Neutral.,neutral,1,1,2480.449599970598,TRUE
+9,sentiment,3,2,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The hotel was decent for the price we paid.""
 
-Answer concisely with just the answer, no explanation.",It met our expectations.,neutral,0,0.0,2371.779399982188,True
-10,sentiment,2,1,"Answer the following question:
-Not my favorite, but my kids seemed to enjoy it.
+Answer concisely with just the answer, no explanation.",Neutral.,neutral,1,1,2372.661200002767,TRUE
+10,sentiment,3,1,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Not my favorite, but my kids seemed to enjoy it.""
 
-Answer concisely with just the answer, no explanation.",It was a mediocre experience for me.,neutral,0,0.0,2475.3872000146657,True
-10,sentiment,2,2,"Answer the following question:
-Not my favorite, but my kids seemed to enjoy it.
+Answer concisely with just the answer, no explanation.",Neutral,neutral,1,1,2387.2284999815747,TRUE
+10,sentiment,3,2,"Answer the following question:
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Not my favorite, but my kids seemed to enjoy it.""
 
-Answer concisely with just the answer, no explanation.","It was probably a movie or TV show that you didn't particularly care for, but your children enjoyed watching it.",neutral,0,0.0,2713.6396000278182,True
+Answer concisely with just the answer, no explanation.",Neutral,neutral,1,1,2414.7690000245348,TRUE
 11,sentiment,3,1,"Answer the following question:
-Oh great, another meeting that could have been an email.
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Oh great, another meeting that could have been an email.""
 
-Answer concisely with just the answer, no explanation.",Preventing unnecessary meetings can save a lot of time and increase productivity.,negative,0,0.0,2531.0334999812767,True
+Answer concisely with just the answer, no explanation.",Negative,negative,1,1,2397.9767000419088,TRUE
 11,sentiment,3,2,"Answer the following question:
-Oh great, another meeting that could have been an email.
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Oh great, another meeting that could have been an email.""
 
-Answer concisely with just the answer, no explanation.",Agreed.,negative,0,0.0,2326.6185999964364,True
+Answer concisely with just the answer, no explanation.",Negative,negative,1,1,2332.2230000048876,TRUE
 12,sentiment,3,1,"Answer the following question:
-The restaurant was empty for a reason, as we soon discovered.
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The restaurant was empty for a reason, as we soon discovered.""
 
-Answer concisely with just the answer, no explanation.",It had been closed down due to food poisoning from a rogue employee.,negative,0,0.0,2534.9551000399515,True
+Answer concisely with just the answer, no explanation.",Negative,negative,1,1,2474.3694000062533,TRUE
 12,sentiment,3,2,"Answer the following question:
-The restaurant was empty for a reason, as we soon discovered.
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The restaurant was empty for a reason, as we soon discovered.""
 
-Answer concisely with just the answer, no explanation.",It had been closed down due to food poisoning issues.,negative,0,0.0,2472.2380000166595,True
+Answer concisely with just the answer, no explanation.",Negative,negative,1,1,2363.222499960102,TRUE
 13,sentiment,3,1,"Answer the following question:
-I'm sure the designer tried their best with what they had.
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I'm sure the designer tried their best with what they had.""
 
-Answer concisely with just the answer, no explanation.",That's a good attitude to have.,negative,0,0.0,2507.768799958285,True
+Answer concisely with just the answer, no explanation.",Neutral.,negative,0,0,2457.8041000058874,TRUE
 13,sentiment,3,2,"Answer the following question:
-I'm sure the designer tried their best with what they had.
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I'm sure the designer tried their best with what they had.""
 
-Answer concisely with just the answer, no explanation.",It's possible that it was good enough for its intended purpose.,negative,0,0.0,2545.305800042115,True
+Answer concisely with just the answer, no explanation.",Neutral.,negative,0,0,2371.7284000013024,TRUE
 14,sentiment,3,1,"Answer the following question:
-What a surprise to find such quality at this establishment.
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""What a surprise to find such quality at this establishment.""
 
-Answer concisely with just the answer, no explanation.",You're not expecting that at all.,positive,0,0.0,2493.7479000072926,True
+Answer concisely with just the answer, no explanation.",positive,positive,1,1,2380.031799955759,TRUE
 14,sentiment,3,2,"Answer the following question:
-What a surprise to find such quality at this establishment.
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""What a surprise to find such quality at this establishment.""
 
-Answer concisely with just the answer, no explanation.",That's not surprising.,positive,0,0.0,2383.032899990212,True
+Answer concisely with just the answer, no explanation.",positive,positive,1,1,2414.0912999864668,TRUE
 15,sentiment,3,1,"Answer the following question:
-The presentation was certainly... memorable.
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The presentation was certainly... memorable.""
 
-Answer concisely with just the answer, no explanation.",Incredible.,negative,0,0.0,2382.7572999871336,True
+Answer concisely with just the answer, no explanation.",Neutral.,negative,0,0,2400.8543000090867,TRUE
 15,sentiment,3,2,"Answer the following question:
-The presentation was certainly... memorable.
+What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The presentation was certainly... memorable.""
 
-Answer concisely with just the answer, no explanation.",Interesting.,negative,0,0.0,2372.608500008937,True
-16,math,1,1,"Answer the following question:
-If you have 5 apples and buy 3 more, how many apples do you have?
+Answer concisely with just the answer, no explanation.",Positive,negative,0,0,2348.2478999649175,TRUE
+16,math,3,1,"Answer the following question:
+A store offers 30% off, then an additional 20% off the sale price. What is the total percentage discount from the original price?
 
-Answer concisely with just the answer, no explanation.",8,8,1,1.0,2396.1422000429593,True
-16,math,1,2,"Answer the following question:
-If you have 5 apples and buy 3 more, how many apples do you have?
+Answer concisely with just the answer, no explanation.",51.80%,44,0,0,2520.1176999835297,TRUE
+16,math,3,2,"Answer the following question:
+A store offers 30% off, then an additional 20% off the sale price. What is the total percentage discount from the original price?
 
-Answer concisely with just the answer, no explanation.",8,8,1,1.0,2320.5575000029057,True
-17,math,1,1,"Answer the following question:
-What is 12 minus 7?
+Answer concisely with just the answer, no explanation.",52%,44,0,0,2413.414200011175,TRUE
+17,math,3,1,"Answer the following question:
+If a clock loses 15 minutes every hour, what time will it show after 4 real hours if it started at 12:00?
 
-Answer concisely with just the answer, no explanation.",5,5,1,1.0,2483.524000039324,True
-17,math,1,2,"Answer the following question:
-What is 12 minus 7?
+Answer concisely with just the answer, no explanation.",5:45,1:00,0,0,2390.9478000132367,TRUE
+17,math,3,2,"Answer the following question:
+If a clock loses 15 minutes every hour, what time will it show after 4 real hours if it started at 12:00?
 
-Answer concisely with just the answer, no explanation.",5,5,1,1.0,2360.061199986376,True
-18,math,1,1,"Answer the following question:
-If a toy costs $4 and you have $10, how much change will you get?
+Answer concisely with just the answer, no explanation.",8:45,1:00,0,0,2304.2369000031613,TRUE
+18,math,3,1,"Answer the following question:
+A boat travels upstream at 8 km/h and downstream at 12 km/h. What is the speed of the current?
 
-Answer concisely with just the answer, no explanation.",$6,6,1,1.0,2437.8035999834538,True
-18,math,1,2,"Answer the following question:
-If a toy costs $4 and you have $10, how much change will you get?
+Answer concisely with just the answer, no explanation.",5 km/h,2,0,0,2435.875099967234,TRUE
+18,math,3,2,"Answer the following question:
+A boat travels upstream at 8 km/h and downstream at 12 km/h. What is the speed of the current?
 
-Answer concisely with just the answer, no explanation.",$6,6,1,1.0,2389.2659000121057,True
-19,math,1,1,"Answer the following question:
-What is 6 times 3?
+Answer concisely with just the answer, no explanation.",4 km/h.,2,0,0,2408.8382000336424,TRUE
+19,math,3,1,"Answer the following question:
+Two candles of equal length burn at different rates. One burns in 4 hours, the other in 6 hours. After how many hours will one be twice the length of the other?
 
-Answer concisely with just the answer, no explanation.",18,18,1,1.0,2348.0197999742813,True
-19,math,1,2,"Answer the following question:
-What is 6 times 3?
+Answer concisely with just the answer, no explanation.",8,3,0,0,2370.1107999659143,TRUE
+19,math,3,2,"Answer the following question:
+Two candles of equal length burn at different rates. One burns in 4 hours, the other in 6 hours. After how many hours will one be twice the length of the other?
 
-Answer concisely with just the answer, no explanation.",18,18,1,1.0,2319.6626999997534,True
-20,math,1,1,"Answer the following question:
-You have 15 candies and eat 6. How many are left?
+Answer concisely with just the answer, no explanation.",8,3,0,0,2338.205599982757,TRUE
+20,math,3,1,"Answer the following question:
+A ladder leans against a wall. The foot is 6 meters from the wall and reaches 8 meters up. How long is the ladder?
 
-Answer concisely with just the answer, no explanation.",9,9,1,1.0,2358.081799990032,True
-20,math,1,2,"Answer the following question:
-You have 15 candies and eat 6. How many are left?
+Answer concisely with just the answer, no explanation.",The length of the ladder can be calculated using the Pythagorean theorem: √(6² + 8²) = √(36 + 64) = √100 = 10 meters.,10,1,1,3135.753599985037,TRUE
+20,math,3,2,"Answer the following question:
+A ladder leans against a wall. The foot is 6 meters from the wall and reaches 8 meters up. How long is the ladder?
 
-Answer concisely with just the answer, no explanation.",9,9,1,1.0,2249.1396000259556,True
-21,math,1,1,"Answer the following question:
-What is 8 plus 9?
+Answer concisely with just the answer, no explanation.",9.24 meters (using Pythagorean theorem: √(6² + 8²) = √(36 + 64)),10,0,0,2746.614200004842,TRUE
+21,math,3,1,"Answer the following question:
+If you write all integers from 1 to 100, how many times do you write the digit 9?
 
-Answer concisely with just the answer, no explanation.",17,17,1,1.0,2330.9057999867946,True
-21,math,1,2,"Answer the following question:
-What is 8 plus 9?
+Answer concisely with just the answer, no explanation.",19,20,0,0,2298.8451999844983,TRUE
+21,math,3,2,"Answer the following question:
+If you write all integers from 1 to 100, how many times do you write the digit 9?
 
-Answer concisely with just the answer, no explanation.",17,17,1,1.0,2338.671700039413,True
-22,math,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",19,20,0,0,2264.579499955289,TRUE
+22,math,3,1,"Answer the following question:
 A store sells notebooks for $3 each. If you buy 4 notebooks and pay with a $20 bill, how much change do you get?
 
-Answer concisely with just the answer, no explanation.",$12,8,0,0.0,2485.785999975633,True
-22,math,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",$6.,8,0,0,2434.2895000008866,TRUE
+22,math,3,2,"Answer the following question:
 A store sells notebooks for $3 each. If you buy 4 notebooks and pay with a $20 bill, how much change do you get?
 
-Answer concisely with just the answer, no explanation.",$12,8,0,0.0,2365.626999991946,True
-23,math,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",$6,8,0,0,2337.5405000406317,TRUE
+23,math,3,1,"Answer the following question:
 If a train travels 60 miles per hour for 2.5 hours, how many miles does it travel?
 
-Answer concisely with just the answer, no explanation.",150 miles.,150,1,1.0,2425.8203000063077,True
-23,math,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",150,150,1,1,2419.2052999860607,TRUE
+23,math,3,2,"Answer the following question:
 If a train travels 60 miles per hour for 2.5 hours, how many miles does it travel?
 
-Answer concisely with just the answer, no explanation.",150 miles,150,1,1.0,2372.0652000047266,True
-24,math,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",150 miles.,150,1,1,2403.9554999908432,TRUE
+24,math,3,1,"Answer the following question:
 John has 24 cookies. He gives 1/3 to his sister and eats 4 himself. How many cookies are left?
 
-Answer concisely with just the answer, no explanation.",19,12,0,0.0,2400.450200017076,True
-24,math,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",18,12,0,0,2399.143999966327,TRUE
+24,math,3,2,"Answer the following question:
 John has 24 cookies. He gives 1/3 to his sister and eats 4 himself. How many cookies are left?
 
-Answer concisely with just the answer, no explanation.",18,12,0,0.0,2347.8908999823034,True
-25,math,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",19,12,0,0,2244.4557000417262,TRUE
+25,math,3,1,"Answer the following question:
 A shirt originally costs $40. It's on sale for 25% off. What is the sale price?
 
-Answer concisely with just the answer, no explanation.",$30.,30,1,1.0,2503.686799958814,True
-25,math,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",$30,30,1,1,2379.8713000142016,TRUE
+25,math,3,2,"Answer the following question:
 A shirt originally costs $40. It's on sale for 25% off. What is the sale price?
 
-Answer concisely with just the answer, no explanation.",$30,30,1,1.0,2351.879700028803,True
-26,math,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",$30,30,1,1,2375.2024000277743,TRUE
+26,math,3,1,"Answer the following question:
 If 5 workers can build a wall in 8 days, how many days would it take 10 workers?
 
-Answer concisely with just the answer, no explanation.",4,4,1,1.0,2381.729800021276,True
-26,math,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",4 days.,4,1,1,2441.4740999927744,TRUE
+26,math,3,2,"Answer the following question:
 If 5 workers can build a wall in 8 days, how many days would it take 10 workers?
 
-Answer concisely with just the answer, no explanation.",4,4,1,1.0,2413.683700026013,True
-27,math,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",4,4,1,1,2328.1695999903604,TRUE
+27,math,3,1,"Answer the following question:
 A rectangle has a length of 12 cm and width of 8 cm. What is its perimeter?
 
-Answer concisely with just the answer, no explanation.",24 cm,40,0,0.0,2404.6474000206217,True
-27,math,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",24 cm,40,0,0,2440.5909000197425,TRUE
+27,math,3,2,"Answer the following question:
 A rectangle has a length of 12 cm and width of 8 cm. What is its perimeter?
 
-Answer concisely with just the answer, no explanation.",Perimeter = 2*(length + width) = 2*(12+8) = 40 cm,40,1,1.0,2728.273299988359,True
-28,math,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",24 cm,40,0,0,2391.8958000140265,TRUE
+28,math,3,1,"Answer the following question:
 You score 85, 92, and 78 on three tests. What is your average score?
 
-Answer concisely with just the answer, no explanation.",86.67,85,0,0.0,2367.7281999844126,True
-28,math,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",83.67,85,0,0,2430.1282999804243,TRUE
+28,math,3,2,"Answer the following question:
 You score 85, 92, and 78 on three tests. What is your average score?
 
-Answer concisely with just the answer, no explanation.",83.67,85,0,0.0,2441.171700018458,True
+Answer concisely with just the answer, no explanation.",83.33,85,0,0,2398.8993000239134,TRUE
 29,math,3,1,"Answer the following question:
 A tank is 1/3 full. After adding 40 liters, it becomes 2/3 full. What is the tank's total capacity?
 
-Answer concisely with just the answer, no explanation.",240 liters.,120,0,0.0,2476.521699980367,True
+Answer concisely with just the answer, no explanation.",240 liters.,120,0,0,2403.6446000100113,TRUE
 29,math,3,2,"Answer the following question:
 A tank is 1/3 full. After adding 40 liters, it becomes 2/3 full. What is the tank's total capacity?
 
-Answer concisely with just the answer, no explanation.",240 liters,120,0,0.0,2371.7202999978326,True
+Answer concisely with just the answer, no explanation.",240,120,0,0,2336.5790999960154,TRUE
 30,math,3,1,"Answer the following question:
 If the price of an item increases by 20% and then decreases by 20%, what is the net percentage change?
 
-Answer concisely with just the answer, no explanation.",0%,-4,0,0.0,2415.376599994488,True
+Answer concisely with just the answer, no explanation.",0%,-4,0,0,2434.3056000070646,TRUE
 30,math,3,2,"Answer the following question:
 If the price of an item increases by 20% and then decreases by 20%, what is the net percentage change?
 
-Answer concisely with just the answer, no explanation.",0%,-4,0,0.0,2383.437899989076,True
+Answer concisely with just the answer, no explanation.",0%,-4,0,0,2397.4440000019968,TRUE
 31,math,3,1,"Answer the following question:
 A car travels the first half of a journey at 40 mph and the second half at 60 mph. What is the average speed for the entire journey?
 
-Answer concisely with just the answer, no explanation.",50 mph,48,0,0.0,2409.843000001274,True
+Answer concisely with just the answer, no explanation.",52.5 mph.,48,0,0,2463.0507999681868,TRUE
 31,math,3,2,"Answer the following question:
 A car travels the first half of a journey at 40 mph and the second half at 60 mph. What is the average speed for the entire journey?
 
-Answer concisely with just the answer, no explanation.",48 mph,48,1,1.0,2382.3691999423318,True
+Answer concisely with just the answer, no explanation.",80 mph,48,0,0,2307.8194000408985,TRUE
 32,math,3,1,"Answer the following question:
 Three pipes can fill a tank in 6, 8, and 12 hours respectively. How long to fill the tank if all three pipes are open?
 
-Answer concisely with just the answer, no explanation.",16 hours.,2.67,0,0.0,2429.5154999708757,True
+Answer concisely with just the answer, no explanation.",2 hours.,2.67,0,0,2455.323100031819,TRUE
 32,math,3,2,"Answer the following question:
 Three pipes can fill a tank in 6, 8, and 12 hours respectively. How long to fill the tank if all three pipes are open?
 
-Answer concisely with just the answer, no explanation.",2 hours.,2.67,0,0.0,2397.8235000395216,True
+Answer concisely with just the answer, no explanation.",4 hours.,2.67,0,0,2392.101300007198,TRUE
 33,math,3,1,"Answer the following question:
 A sum of money doubles in 5 years at simple interest. What is the rate of interest per annum?
 
-Answer concisely with just the answer, no explanation.",10%,20,0,0.0,2386.6036999970675,True
+Answer concisely with just the answer, no explanation.",10%,20,0,0,2388.6724000331014,TRUE
 33,math,3,2,"Answer the following question:
 A sum of money doubles in 5 years at simple interest. What is the rate of interest per annum?
 
-Answer concisely with just the answer, no explanation.",20%,20,1,1.0,2393.6197999864817,True
+Answer concisely with just the answer, no explanation.",2%,20,0,0,2375.9000999853015,TRUE
 34,math,3,1,"Answer the following question:
 If 8 men can complete a work in 12 days, how many men are needed to complete the same work in 6 days?
 
-Answer concisely with just the answer, no explanation.",24,16,0,0.0,2384.39429999562,True
+Answer concisely with just the answer, no explanation.",24 men.,16,0,0,2436.866700008977,TRUE
 34,math,3,2,"Answer the following question:
 If 8 men can complete a work in 12 days, how many men are needed to complete the same work in 6 days?
 
-Answer concisely with just the answer, no explanation.",24,16,0,0.0,2347.3568999907,True
+Answer concisely with just the answer, no explanation.",24,16,0,0,2322.9173,TRUE
 35,math,3,1,"Answer the following question:
 A merchant marks his goods 40% above cost price and gives a 20% discount. What is his profit percentage?
 
-Answer concisely with just the answer, no explanation.",56%,12,0,0.0,2459.3283000285737,True
+Answer concisely with just the answer, no explanation.",24%,12,0,0,2443.9790999749675,TRUE
 35,math,3,2,"Answer the following question:
 A merchant marks his goods 40% above cost price and gives a 20% discount. What is his profit percentage?
 
-Answer concisely with just the answer, no explanation.",60%,12,0,0.0,2320.661000034306,True
-36,logic,1,1,"Answer the following question:
-All dogs are mammals. Buddy is a dog. Is Buddy a mammal?
+Answer concisely with just the answer, no explanation.",56%,12,0,0,2390.3437000117265,TRUE
+36,logic,3,1,"Answer the following question:
+All roses are flowers. Some flowers fade quickly. Can we conclude that some roses fade quickly?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2477.0748000009917,True
-36,logic,1,2,"Answer the following question:
-All dogs are mammals. Buddy is a dog. Is Buddy a mammal?
+Answer concisely with just the answer, no explanation.","No, we cannot conclude that some roses fade quickly.",no,1,0.95,2585.7504999730736,TRUE
+36,logic,3,2,"Answer the following question:
+All roses are flowers. Some flowers fade quickly. Can we conclude that some roses fade quickly?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2306.3885000301525,True
-37,logic,1,1,"Answer the following question:
-If it is raining, the ground is wet. It is raining. Is the ground wet?
+Answer concisely with just the answer, no explanation.",No.,no,1,1,2257.045,TRUE
+37,logic,3,1,"Answer the following question:
+If no heroes are cowards, and some soldiers are heroes, can we conclude that some soldiers are not cowards?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2490.1980999857187,True
-37,logic,1,2,"Answer the following question:
-If it is raining, the ground is wet. It is raining. Is the ground wet?
+Answer concisely with just the answer, no explanation.",Yes,yes,1,1,2364.0884999767877,TRUE
+37,logic,3,2,"Answer the following question:
+If no heroes are cowards, and some soldiers are heroes, can we conclude that some soldiers are not cowards?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2321.1232000030577,True
-38,logic,1,1,"Answer the following question:
-All cats have tails. Whiskers is a cat. Does Whiskers have a tail?
+Answer concisely with just the answer, no explanation.",Yes.,yes,1,1,2389.0750000136904,TRUE
+38,logic,3,1,"Answer the following question:
+All managers are employees. No employees are shareholders. Tom is a shareholder. Can Tom be a manager?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2496.2657999712974,True
-38,logic,1,2,"Answer the following question:
-All cats have tails. Whiskers is a cat. Does Whiskers have a tail?
+Answer concisely with just the answer, no explanation.",Yes.,no,0,0,2415.9839999629185,TRUE
+38,logic,3,2,"Answer the following question:
+All managers are employees. No employees are shareholders. Tom is a shareholder. Can Tom be a manager?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2286.076799966395,True
-39,logic,1,1,"Answer the following question:
-If you study hard, you will pass. You studied hard. Will you pass?
+Answer concisely with just the answer, no explanation.","Yes, Tom can be a manager.",no,0,0,2516.0741000436246,TRUE
+39,logic,3,1,"Answer the following question:
+Some cats are black. All black things absorb heat. Can we conclude all cats absorb heat?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2502.606599999126,True
-39,logic,1,2,"Answer the following question:
-If you study hard, you will pass. You studied hard. Will you pass?
+Answer concisely with just the answer, no explanation.",No,no,1,1,2266.6376000270247,TRUE
+39,logic,3,2,"Answer the following question:
+Some cats are black. All black things absorb heat. Can we conclude all cats absorb heat?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2286.4285000250675,True
-40,logic,1,1,"Answer the following question:
-All birds have feathers. A penguin is a bird. Does a penguin have feathers?
+Answer concisely with just the answer, no explanation.",No.,no,1,1,2399.0919000352733,TRUE
+40,logic,3,1,"Answer the following question:
+If P implies Q, and R implies not-Q, and we know R is true, what can we say about P?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2339.6174000226893,True
-40,logic,1,2,"Answer the following question:
-All birds have feathers. A penguin is a bird. Does a penguin have feathers?
+Answer concisely with just the answer, no explanation.",Not-P.,P is false,0,0,2447.2119999700226,TRUE
+40,logic,3,2,"Answer the following question:
+If P implies Q, and R implies not-Q, and we know R is true, what can we say about P?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2318.659800046589,True
-41,logic,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",P is false.,P is false,1,1,2405.237000028137,TRUE
+41,logic,3,1,"Answer the following question:
 All A are B. All B are C. Is it true that all A are C?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2453.356000012718,True
-41,logic,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",Yes,yes,1,1,2354.462999966927,TRUE
+41,logic,3,2,"Answer the following question:
 All A are B. All B are C. Is it true that all A are C?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2298.9129000343382,True
-42,logic,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",Yes,yes,1,1,2392.1588000375777,TRUE
+42,logic,3,1,"Answer the following question:
 No fish are mammals. All dolphins are mammals. Are any dolphins fish?
 
-Answer concisely with just the answer, no explanation.",No,no,1,1.0,2449.565100017935,True
-42,logic,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",No.,no,1,1,2418.3996000210755,TRUE
+42,logic,3,2,"Answer the following question:
 No fish are mammals. All dolphins are mammals. Are any dolphins fish?
 
-Answer concisely with just the answer, no explanation.",No,no,1,1.0,2247.9313999647275,True
-43,logic,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",Yes.,no,0,0,2391.0004000063054,TRUE
+43,logic,3,1,"Answer the following question:
 If it rains, the picnic is cancelled. The picnic was not cancelled. Did it rain?
 
-Answer concisely with just the answer, no explanation.",No,no,1,1.0,2389.185299980454,True
-43,logic,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",No.,no,1,1,2408.750400005374,TRUE
+43,logic,3,2,"Answer the following question:
 If it rains, the picnic is cancelled. The picnic was not cancelled. Did it rain?
 
-Answer concisely with just the answer, no explanation.",No.,no,1,1.0,2402.3603000096045,True
-44,logic,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",No.,no,1,1,2390.0937999715097,TRUE
+44,logic,3,1,"Answer the following question:
 Some doctors are musicians. All musicians are artists. Are some doctors artists?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2432.875900005456,True
-44,logic,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.","No, there is not enough information to conclude that all doctors are artists.",yes,0,0,2640.744899981655,TRUE
+44,logic,3,2,"Answer the following question:
 Some doctors are musicians. All musicians are artists. Are some doctors artists?
 
-Answer concisely with just the answer, no explanation.",No.,yes,0,0.0,2362.352300027851,True
-45,logic,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",Yes,yes,1,1,2204.1286999592558,TRUE
+45,logic,3,1,"Answer the following question:
 All squares are rectangles. Not all rectangles are squares. Can a shape be a rectangle but not a square?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2408.846399979666,True
-45,logic,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",Yes.,yes,1,1,2367.272899951786,TRUE
+45,logic,3,2,"Answer the following question:
 All squares are rectangles. Not all rectangles are squares. Can a shape be a rectangle but not a square?
 
-Answer concisely with just the answer, no explanation.",Yes.,yes,1,1.0,2390.715900051873,True
+Answer concisely with just the answer, no explanation.",Yes.,yes,1,1,2390.966299979482,TRUE
 46,logic,3,1,"Answer the following question:
 If A implies B, and B implies C, and we know C is false, what can we conclude about A?
 
-Answer concisely with just the answer, no explanation.",A is also false.,A is false,0,0.0,2460.7674999861047,True
+Answer concisely with just the answer, no explanation.",A.,A is false,0,0,2398.1010999996215,TRUE
 46,logic,3,2,"Answer the following question:
 If A implies B, and B implies C, and we know C is false, what can we conclude about A?
 
-Answer concisely with just the answer, no explanation.",A is also false.,A is false,0,0.0,2384.8827000474557,True
+Answer concisely with just the answer, no explanation.",A is also false.,A is false,1,0.9,2446.778899990022,TRUE
 47,logic,3,1,"Answer the following question:
 All politicians are liars. No liars are trustworthy. Some trustworthy people are teachers. Can any politicians be teachers?
 
-Answer concisely with just the answer, no explanation.","No, some trustworthy people being teachers is not relevant to whether or not politicians can be teachers.",yes,0,0.0,2662.227900000289,True
+Answer concisely with just the answer, no explanation.",No,yes,0,0,2325.711700017564,TRUE
 47,logic,3,2,"Answer the following question:
 All politicians are liars. No liars are trustworthy. Some trustworthy people are teachers. Can any politicians be teachers?
 
-Answer concisely with just the answer, no explanation.",No.,yes,0,0.0,2251.1946000158787,True
+Answer concisely with just the answer, no explanation.",No.,yes,0,0,2412.7810999634676,TRUE
 48,logic,3,1,"Answer the following question:
 If not A then B. If B then C. If not C then D. We know D is false. What is A?
 
-Answer concisely with just the answer, no explanation.",False,true,0,0.0,2388.3877999614924,True
+Answer concisely with just the answer, no explanation.",False.,TRUE,0,0,2400.3893000190146,TRUE
 48,logic,3,2,"Answer the following question:
 If not A then B. If B then C. If not C then D. We know D is false. What is A?
 
-Answer concisely with just the answer, no explanation.",False.,true,0,0.0,2434.0939999674447,True
+Answer concisely with just the answer, no explanation.",FALSE,TRUE,0,0,2367.8543000132777,TRUE
 49,logic,3,1,"Answer the following question:
 Some X are Y. All Y are Z. No Z are W. Can any X be W?
 
-Answer concisely with just the answer, no explanation.",No.,some cannot,0,0.0,2412.6835000352003,True
+Answer concisely with just the answer, no explanation.",No.,some cannot,0,0,2458.3950999658555,TRUE
 49,logic,3,2,"Answer the following question:
 Some X are Y. All Y are Z. No Z are W. Can any X be W?
 
-Answer concisely with just the answer, no explanation.",Yes.,some cannot,0,0.0,2394.7931000147946,True
+Answer concisely with just the answer, no explanation.",No.,some cannot,0,0,2363.575699971989,TRUE
 50,logic,3,1,"Answer the following question:
 If either A or B is true (but not both), and if A is true then C is true, and C is false, what is B?
 
-Answer concisely with just the answer, no explanation.",False,true,0,0.0,2349.1720999591053,True
+Answer concisely with just the answer, no explanation.",False.,TRUE,0,0,2411.023300024681,TRUE
 50,logic,3,2,"Answer the following question:
 If either A or B is true (but not both), and if A is true then C is true, and C is false, what is B?
 
-Answer concisely with just the answer, no explanation.",B,true,0,0.0,2414.18220003834,True
-51,classification,1,1,"Answer the following question:
-Classify: 'The new iPhone 15 features an improved camera system and faster processor.'
+Answer concisely with just the answer, no explanation.",B,TRUE,0,0,2375.628199952189,TRUE
+51,classification,3,1,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The neural implant shows promise for treating depression, but FDA approval and insurance coverage remain uncertain.""
 
-Answer concisely with just the answer, no explanation.",Technical News/Announcement,technology,0,0.0,2475.789199990686,True
-51,classification,1,2,"Answer the following question:
-Classify: 'The new iPhone 15 features an improved camera system and faster processor.'
+Answer concisely with just the answer, no explanation.",Science,health,0,0,2410.103500005789,TRUE
+51,classification,3,2,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The neural implant shows promise for treating depression, but FDA approval and insurance coverage remain uncertain.""
 
-Answer concisely with just the answer, no explanation.",Neutral/Informational review.,technology,0,0.0,2454.5909999869764,True
-52,classification,1,1,"Answer the following question:
-Classify: 'The Lakers defeated the Celtics 112-108 in last night's game.'
+Answer concisely with just the answer, no explanation.",Science,health,0,0,2339.223699993454,TRUE
+52,classification,3,1,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The athlete's NFT collection sold out in minutes, raising questions about sports memorabilia in the digital age.""
 
-Answer concisely with just the answer, no explanation.",Sports news article.,sports,1,0.9,2381.8296000245027,True
-52,classification,1,2,"Answer the following question:
-Classify: 'The Lakers defeated the Celtics 112-108 in last night's game.'
+Answer concisely with just the answer, no explanation.",sports,sports,1,1,2471.0284000029787,TRUE
+52,classification,3,2,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The athlete's NFT collection sold out in minutes, raising questions about sports memorabilia in the digital age.""
 
-Answer concisely with just the answer, no explanation.",Sports article/News.,sports,1,0.9,2228.2211999990977,True
-53,classification,1,1,"Answer the following question:
-Classify: 'Preheat oven to 350°F and mix flour with sugar.'
+Answer concisely with just the answer, no explanation.",sports,sports,1,1,2350.111600011587,TRUE
+53,classification,3,1,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The fermentation process yields both artisanal flavors and potentially profitable probiotic strains.""
 
-Answer concisely with just the answer, no explanation.",Recipe,food,0,0.0,2286.3124999566935,True
-53,classification,1,2,"Answer the following question:
-Classify: 'Preheat oven to 350°F and mix flour with sugar.'
+Answer concisely with just the answer, no explanation.",science,food,0,0,2446.247100015171,TRUE
+53,classification,3,2,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The fermentation process yields both artisanal flavors and potentially profitable probiotic strains.""
 
-Answer concisely with just the answer, no explanation.",Recipe,food,0,0.0,2397.167899995111,True
-54,classification,1,1,"Answer the following question:
-Classify: 'The Federal Reserve announced a 0.25% interest rate hike.'
+Answer concisely with just the answer, no explanation.",science,food,0,0,2350.922899961006,TRUE
+54,classification,3,1,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Quantum computing threatens current encryption standards, sending cybersecurity stocks into turmoil.""
 
-Answer concisely with just the answer, no explanation.",Negative news,finance,0,0.0,2424.342699989211,True
-54,classification,1,2,"Answer the following question:
-Classify: 'The Federal Reserve announced a 0.25% interest rate hike.'
+Answer concisely with just the answer, no explanation.",finance,finance,1,1,2452.272999973502,TRUE
+54,classification,3,2,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Quantum computing threatens current encryption standards, sending cybersecurity stocks into turmoil.""
 
-Answer concisely with just the answer, no explanation.",Financial news,finance,0,0.0,2393.325000011828,True
-55,classification,1,1,"Answer the following question:
-Classify: 'The patient presented with fever and persistent cough.'
+Answer concisely with just the answer, no explanation.",finance,finance,1,1,2373.0067999567837,TRUE
+55,classification,3,1,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The community garden initiative tackles food deserts while building neighborhood connections.""
 
-Answer concisely with just the answer, no explanation.",Medical report description.,health,0,0.0,2442.8537000203505,True
-55,classification,1,2,"Answer the following question:
-Classify: 'The patient presented with fever and persistent cough.'
+Answer concisely with just the answer, no explanation.",Social,social,1,1,2422.415999986697,TRUE
+55,classification,3,2,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The community garden initiative tackles food deserts while building neighborhood connections.""
 
-Answer concisely with just the answer, no explanation.",Symptomatology description.,health,0,0.0,2387.281199975405,True
-56,classification,2,1,"Answer the following question:
-Classify: 'Tesla's stock rose 5% following the announcement of their new battery technology.'
+Answer concisely with just the answer, no explanation.",Social.,social,1,1,2388.313499977812,TRUE
+56,classification,3,1,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Tesla's stock rose 5% following the announcement of their new battery technology.""
 
-Answer concisely with just the answer, no explanation.",Positive sentiment.,finance,0,0.0,2402.1384000079706,True
-56,classification,2,2,"Answer the following question:
-Classify: 'Tesla's stock rose 5% following the announcement of their new battery technology.'
+Answer concisely with just the answer, no explanation.",finance,finance,1,1,2396.637100027874,TRUE
+56,classification,3,2,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Tesla's stock rose 5% following the announcement of their new battery technology.""
 
-Answer concisely with just the answer, no explanation.",Positive news article.,finance,0,0.0,2406.8187999655493,True
-57,classification,2,1,"Answer the following question:
-Classify: 'The Olympic athlete credits her strict diet for her gold medal performance.'
+Answer concisely with just the answer, no explanation.",Technology,finance,0,0,2346.8259000219405,TRUE
+57,classification,3,1,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The Olympic athlete credits her strict diet for her gold medal performance.""
 
-Answer concisely with just the answer, no explanation.",Informational/Descriptive article.,sports,0,0.0,2450.7409000070766,True
-57,classification,2,2,"Answer the following question:
-Classify: 'The Olympic athlete credits her strict diet for her gold medal performance.'
+Answer concisely with just the answer, no explanation.",Sports.,sports,1,1,2479.7600000165403,TRUE
+57,classification,3,2,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The Olympic athlete credits her strict diet for her gold medal performance.""
 
-Answer concisely with just the answer, no explanation.",Positive/negative commentary on someone's athletic achievement.,sports,0,0.0,2478.884600044694,True
-58,classification,2,1,"Answer the following question:
-Classify: 'The AI-powered fitness app helps users track calories and workout routines.'
+Answer concisely with just the answer, no explanation.",Sports.,sports,1,1,2368.419000005815,TRUE
+58,classification,3,1,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The AI-powered fitness app helps users track calories and workout routines.""
 
-Answer concisely with just the answer, no explanation.",Informational/ Descriptive text,technology,0,0.0,2427.6505000307225,True
-58,classification,2,2,"Answer the following question:
-Classify: 'The AI-powered fitness app helps users track calories and workout routines.'
+Answer concisely with just the answer, no explanation.",technology,technology,1,1,2389.215199975297,TRUE
+58,classification,3,2,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The AI-powered fitness app helps users track calories and workout routines.""
 
-Answer concisely with just the answer, no explanation.",Informational article.,technology,0,0.0,2400.8147999993525,True
-59,classification,2,1,"Answer the following question:
-Classify: 'Climate scientists warn that rising sea levels threaten coastal economies.'
+Answer concisely with just the answer, no explanation.",Technology.,technology,1,1,2430.276300001424,TRUE
+59,classification,3,1,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Climate scientists warn that rising sea levels threaten coastal economies.""
 
-Answer concisely with just the answer, no explanation.",News Article,science,0,0.0,2400.5656999652274,True
-59,classification,2,2,"Answer the following question:
-Classify: 'Climate scientists warn that rising sea levels threaten coastal economies.'
+Answer concisely with just the answer, no explanation.",science,science,1,1,2367.098300019279,TRUE
+59,classification,3,2,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Climate scientists warn that rising sea levels threaten coastal economies.""
 
-Answer concisely with just the answer, no explanation.",True statement (factual),science,0,0.0,2437.3317999998108,True
-60,classification,2,1,"Answer the following question:
-Classify: 'The celebrity chef opened a new restaurant featuring fusion cuisine and live music.'
+Answer concisely with just the answer, no explanation.",Science,science,1,1,2329.4809000217356,TRUE
+60,classification,3,1,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The celebrity chef opened a new restaurant featuring fusion cuisine and live music.""
 
-Answer concisely with just the answer, no explanation.",Informational/Descriptive article.,food,0,0.0,2447.1863000071608,True
-60,classification,2,2,"Answer the following question:
-Classify: 'The celebrity chef opened a new restaurant featuring fusion cuisine and live music.'
+Answer concisely with just the answer, no explanation.",food,food,1,1,2492.867399996612,TRUE
+60,classification,3,2,"Answer the following question:
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The celebrity chef opened a new restaurant featuring fusion cuisine and live music.""
 
-Answer concisely with just the answer, no explanation.",News article.,food,0,0.0,2313.9446999994107,True
+Answer concisely with just the answer, no explanation.",Social,food,0,0,2326.1412,TRUE
 61,classification,3,1,"Answer the following question:
-Classify: 'The biotech startup's IPO exceeded expectations as investors bet on their cancer treatment research.'
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The biotech startup's IPO exceeded expectations as investors bet on their cancer treatment research.""
 
-Answer concisely with just the answer, no explanation.",Positive article classification.,finance,0,0.0,2446.9613000401296,True
+Answer concisely with just the answer, no explanation.",finance,finance,1,1,2465.8387000090443,TRUE
 61,classification,3,2,"Answer the following question:
-Classify: 'The biotech startup's IPO exceeded expectations as investors bet on their cancer treatment research.'
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The biotech startup's IPO exceeded expectations as investors bet on their cancer treatment research.""
 
-Answer concisely with just the answer, no explanation.",Positive business news article.,finance,0,0.0,2377.644299995154,True
+Answer concisely with just the answer, no explanation.",finance,finance,1,1,2336.4357000100426,TRUE
 62,classification,3,1,"Answer the following question:
-Classify: 'The e-sports tournament attracted millions of viewers and offered prize money rivaling traditional sports.'
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The e-sports tournament attracted millions of viewers and offered prize money rivaling traditional sports.""
 
-Answer concisely with just the answer, no explanation.",Informational/Descriptive article or report.,sports,0,0.0,2474.7840999625623,True
+Answer concisely with just the answer, no explanation.",sports,sports,1,1,2466.1835999577306,TRUE
 62,classification,3,2,"Answer the following question:
-Classify: 'The e-sports tournament attracted millions of viewers and offered prize money rivaling traditional sports.'
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The e-sports tournament attracted millions of viewers and offered prize money rivaling traditional sports.""
 
-Answer concisely with just the answer, no explanation.",Information/Event Classification,sports,0,0.0,2283.2458000048064,True
+Answer concisely with just the answer, no explanation.",sports.,sports,1,1,2382.1938000037335,TRUE
 63,classification,3,1,"Answer the following question:
-Classify: 'Smart home devices are revolutionizing how we manage our health and daily routines.'
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Smart home devices are revolutionizing how we manage our health and daily routines.""
 
-Answer concisely with just the answer, no explanation.",Positive statement about technology.,technology,1,1.0,2473.040399956517,True
+Answer concisely with just the answer, no explanation.",Science,technology,0,0,2373.542799963616,TRUE
 63,classification,3,2,"Answer the following question:
-Classify: 'Smart home devices are revolutionizing how we manage our health and daily routines.'
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Smart home devices are revolutionizing how we manage our health and daily routines.""
 
-Answer concisely with just the answer, no explanation.",Positive review,technology,0,0.0,2229.0743000339717,True
+Answer concisely with just the answer, no explanation.",Science.,technology,0,0,2447.871699987445,TRUE
 64,classification,3,1,"Answer the following question:
-Classify: 'The documentary explores how social media algorithms influence political opinions and mental health.'
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The documentary explores how social media algorithms influence political opinions and mental health.""
 
-Answer concisely with just the answer, no explanation.",Informational/Documentary Film,technology,0,0.0,2406.906499993056,True
+Answer concisely with just the answer, no explanation.",Social.,technology,0,0,2393.432100012433,TRUE
 64,classification,3,2,"Answer the following question:
-Classify: 'The documentary explores how social media algorithms influence political opinions and mental health.'
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The documentary explores how social media algorithms influence political opinions and mental health.""
 
-Answer concisely with just the answer, no explanation.",Informational/Documentary film review.,technology,0,0.0,2418.9390999963507,True
+Answer concisely with just the answer, no explanation.",social.,technology,0,0,2384.9552999599837,TRUE
 65,classification,3,1,"Answer the following question:
-Classify: 'Urban farms are addressing food security while providing job training for at-risk youth.'
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Urban farms are addressing food security while providing job training for at-risk youth.""
 
-Answer concisely with just the answer, no explanation.",Nonprofit/Community Development Organization.,social,0,0.0,2504.780800023582,True
+Answer concisely with just the answer, no explanation.",Social.,social,1,1,2409.0286000282504,TRUE
 65,classification,3,2,"Answer the following question:
-Classify: 'Urban farms are addressing food security while providing job training for at-risk youth.'
+What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Urban farms are addressing food security while providing job training for at-risk youth.""
 
-Answer concisely with just the answer, no explanation.",Prosocial initiative.,social,1,1.0,2363.89690003125,True
-66,reading,1,1,"Answer the following question:
-Text: 'John is 25 years old. He works as a software engineer in Seattle.' Question: What is John's profession?
+Answer concisely with just the answer, no explanation.",Social,social,1,1,2343.3893999899738,TRUE
+66,reading,3,1,"Answer the following question:
+Text: 'The committee voted 5-4 to approve the measure, with the chairman abstaining. Had he voted against, the motion would have failed.' Question: How many committee members are there?
 
-Answer concisely with just the answer, no explanation.",Software engineer.,software engineer,1,1.0,2438.439699995797,True
-66,reading,1,2,"Answer the following question:
-Text: 'John is 25 years old. He works as a software engineer in Seattle.' Question: What is John's profession?
+Answer concisely with just the answer, no explanation.",9,10,0,0,2466.8199999723583,TRUE
+66,reading,3,2,"Answer the following question:
+Text: 'The committee voted 5-4 to approve the measure, with the chairman abstaining. Had he voted against, the motion would have failed.' Question: How many committee members are there?
 
-Answer concisely with just the answer, no explanation.",Software engineer.,software engineer,1,1.0,2384.3890999560244,True
-67,reading,1,1,"Answer the following question:
-Text: 'The Eiffel Tower is located in Paris, France. It was completed in 1889.' Question: When was the Eiffel Tower completed?
+Answer concisely with just the answer, no explanation.",9,10,0,0,2330.1342999911867,TRUE
+67,reading,3,1,"Answer the following question:
+Text: 'Unlike her predecessor who favored austerity, the new director immediately increased the department's outreach budget.' Question: What was the previous director's approach to spending?
 
-Answer concisely with just the answer, no explanation.",1889.,1889,1,1.0,2427.9685000074096,True
-67,reading,1,2,"Answer the following question:
-Text: 'The Eiffel Tower is located in Paris, France. It was completed in 1889.' Question: When was the Eiffel Tower completed?
+Answer concisely with just the answer, no explanation.",The previous director favored austerity.,austerity,1,1,2554.1033999761567,TRUE
+67,reading,3,2,"Answer the following question:
+Text: 'Unlike her predecessor who favored austerity, the new director immediately increased the department's outreach budget.' Question: What was the previous director's approach to spending?
 
-Answer concisely with just the answer, no explanation.",1889.,1889,1,1.0,2323.9374000113457,True
-68,reading,1,1,"Answer the following question:
-Text: 'Sarah has two pets: a golden retriever named Max and a tabby cat named Whiskers.' Question: What type of dog does Sarah have?
+Answer concisely with just the answer, no explanation.",The previous director favored austerity.,austerity,1,1,2349.4745999923907,TRUE
+68,reading,3,1,"Answer the following question:
+Text: 'The study was retracted not for fraudulent data, but because the control group had inadvertently been exposed to the treatment.' Question: Was the data fraudulent?
 
-Answer concisely with just the answer, no explanation.",A golden retriever.,golden retriever,1,1.0,2474.995900003705,True
-68,reading,1,2,"Answer the following question:
-Text: 'Sarah has two pets: a golden retriever named Max and a tabby cat named Whiskers.' Question: What type of dog does Sarah have?
+Answer concisely with just the answer, no explanation.",No.,no,1,1,2362.3837000341155,TRUE
+68,reading,3,2,"Answer the following question:
+Text: 'The study was retracted not for fraudulent data, but because the control group had inadvertently been exposed to the treatment.' Question: Was the data fraudulent?
 
-Answer concisely with just the answer, no explanation.",Golden retriever.,golden retriever,1,1.0,2350.0601000268944,True
-69,reading,1,1,"Answer the following question:
-Text: 'The Amazon rainforest produces about 20% of the world's oxygen.' Question: What percentage of the world's oxygen comes from the Amazon?
+Answer concisely with just the answer, no explanation.",No,no,1,1,2368.4795000008307,TRUE
+69,reading,3,1,"Answer the following question:
+Text: 'Though Thompson finished third, his time would have won gold in any previous Olympic final.' Question: Did Thompson win a medal?
 
-Answer concisely with just the answer, no explanation.",20%,20%,1,1.0,2399.5191999711096,True
-69,reading,1,2,"Answer the following question:
-Text: 'The Amazon rainforest produces about 20% of the world's oxygen.' Question: What percentage of the world's oxygen comes from the Amazon?
+Answer concisely with just the answer, no explanation.",Yes,yes,1,1,2427.1450999658555,TRUE
+69,reading,3,2,"Answer the following question:
+Text: 'Though Thompson finished third, his time would have won gold in any previous Olympic final.' Question: Did Thompson win a medal?
 
-Answer concisely with just the answer, no explanation.",20%,20%,1,1.0,2368.1902999524027,True
-70,reading,1,1,"Answer the following question:
-Text: 'The meeting is scheduled for 3 PM on Tuesday in Conference Room B.' Question: Where is the meeting?
+Answer concisely with just the answer, no explanation.",Yes.,yes,1,1,2382.1600999799557,TRUE
+70,reading,3,1,"Answer the following question:
+Text: 'The merger fell through after the smaller company's shareholders rejected the offer, despite board approval.' Question: Who blocked the merger?
 
-Answer concisely with just the answer, no explanation.",Conference Room B.,Conference Room B,1,1.0,2458.7787999771535,True
-70,reading,1,2,"Answer the following question:
-Text: 'The meeting is scheduled for 3 PM on Tuesday in Conference Room B.' Question: Where is the meeting?
+Answer concisely with just the answer, no explanation.",Smaller company's shareholders.,shareholders,1,1,2487.066700006835,TRUE
+70,reading,3,2,"Answer the following question:
+Text: 'The merger fell through after the smaller company's shareholders rejected the offer, despite board approval.' Question: Who blocked the merger?
 
-Answer concisely with just the answer, no explanation.",Conference Room B.,Conference Room B,1,1.0,2373.718899965752,True
-71,reading,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",The shareholders of the smaller company blocked the merger.,shareholders,1,1,2440.3589,TRUE
+71,reading,3,1,"Answer the following question:
 Text: 'Although Tom arrived early, he couldn't find parking and ended up being late to the interview.' Question: Why was Tom late?
 
-Answer concisely with just the answer, no explanation.",He couldn't find parking due to arriving too early.,couldn't find parking,1,1.0,2565.6011999817565,True
-71,reading,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",He couldn't find parking.,couldn't find parking,1,1,2460.319600009825,TRUE
+71,reading,3,2,"Answer the following question:
 Text: 'Although Tom arrived early, he couldn't find parking and ended up being late to the interview.' Question: Why was Tom late?
 
-Answer concisely with just the answer, no explanation.",He couldn't find parking.,couldn't find parking,1,1.0,2432.5914999935776,True
-72,reading,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",He couldn't find parking.,couldn't find parking,1,1,2440.6312000355683,TRUE
+72,reading,3,1,"Answer the following question:
 Text: 'The company reported losses for three consecutive quarters before the new CEO implemented cost-cutting measures.' Question: How long did the company experience losses?
 
-Answer concisely with just the answer, no explanation.",Three consecutive quarters.,three quarters,0,0.0,2422.3977000219747,True
-72,reading,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",Three consecutive quarters.,three quarters,1,0.9,2414.1233,TRUE
+72,reading,3,2,"Answer the following question:
 Text: 'The company reported losses for three consecutive quarters before the new CEO implemented cost-cutting measures.' Question: How long did the company experience losses?
 
-Answer concisely with just the answer, no explanation.",Three consecutive quarters.,three quarters,0,0.0,2394.702499965206,True
-73,reading,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",Three consecutive quarters.,three quarters,1,0.9,2371.2807000265457,TRUE
+73,reading,3,1,"Answer the following question:
 Text: 'Maria speaks Spanish at home, English at work, and is currently learning Mandarin.' Question: How many languages is Maria involved with?
 
-Answer concisely with just the answer, no explanation.",3,3,1,1.0,2346.1424999986775,True
-73,reading,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",3,3,1,1,2374.5176999946125,TRUE
+73,reading,3,2,"Answer the following question:
 Text: 'Maria speaks Spanish at home, English at work, and is currently learning Mandarin.' Question: How many languages is Maria involved with?
 
-Answer concisely with just the answer, no explanation.",Three.,3,0,0.0,2405.1965000107884,True
-74,reading,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",Three.,3,1,1,2378.4462999901734,TRUE
+74,reading,3,1,"Answer the following question:
 Text: 'The experiment failed not because of the hypothesis, but due to contaminated samples.' Question: What caused the experiment to fail?
 
-Answer concisely with just the answer, no explanation.",Contaminated samples.,contaminated samples,1,1.0,2451.016200007871,True
-74,reading,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",Contaminated samples.,contaminated samples,1,1,2482.643300027121,TRUE
+74,reading,3,2,"Answer the following question:
 Text: 'The experiment failed not because of the hypothesis, but due to contaminated samples.' Question: What caused the experiment to fail?
 
-Answer concisely with just the answer, no explanation.",Contaminated samples.,contaminated samples,1,1.0,2389.2516000196338,True
-75,reading,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",Contaminated samples.,contaminated samples,1,1,2373.4718000050634,TRUE
+75,reading,3,1,"Answer the following question:
 Text: 'Despite the rain, the marathon continued, though with a delayed start time.' Question: Was the marathon cancelled?
 
-Answer concisely with just the answer, no explanation.",No.,no,1,1.0,2386.1090999562293,True
-75,reading,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",No.,no,1,1,2383.779100026004,TRUE
+75,reading,3,2,"Answer the following question:
 Text: 'Despite the rain, the marathon continued, though with a delayed start time.' Question: Was the marathon cancelled?
 
-Answer concisely with just the answer, no explanation.",No.,no,1,1.0,2378.4249999444,True
+Answer concisely with just the answer, no explanation.",No,no,1,1,2239.4172,TRUE
 76,reading,3,1,"Answer the following question:
 Text: 'The author's debut novel received mixed reviews, but her sophomore effort was praised universally. Critics noted her growth in character development.' Question: Which book was better received?
 
-Answer concisely with just the answer, no explanation.",Her sophomore effort.,second,0,0.0,2451.8021999974735,True
+Answer concisely with just the answer, no explanation.",Her sophomore effort.,second,0,0,2410.450600029435,TRUE
 76,reading,3,2,"Answer the following question:
 Text: 'The author's debut novel received mixed reviews, but her sophomore effort was praised universally. Critics noted her growth in character development.' Question: Which book was better received?
 
-Answer concisely with just the answer, no explanation.",Her sophomore effort.,second,0,0.0,2391.75820001401,True
+Answer concisely with just the answer, no explanation.",Her sophomore effort.,second,0,0,2371.4470000122674,TRUE
 77,reading,3,1,"Answer the following question:
 Text: 'While solar energy is renewable, its intermittent nature requires battery storage solutions, which currently remain expensive.' Question: What is the main challenge with solar energy mentioned?
 
-Answer concisely with just the answer, no explanation.",Its intermittent nature.,intermittent,1,1.0,2403.8682999671437,True
+Answer concisely with just the answer, no explanation.",Its intermittent nature.,intermittent,1,1,2417.8949000197463,TRUE
 77,reading,3,2,"Answer the following question:
 Text: 'While solar energy is renewable, its intermittent nature requires battery storage solutions, which currently remain expensive.' Question: What is the main challenge with solar energy mentioned?
 
-Answer concisely with just the answer, no explanation.",Its intermittent nature.,intermittent,1,1.0,2390.523799986113,True
+Answer concisely with just the answer, no explanation.",Intermittent nature of solar energy.,intermittent,1,1,2452.4817999918014,TRUE
 78,reading,3,1,"Answer the following question:
 Text: 'The policy reduced unemployment but increased inflation, leading economists to debate whether the tradeoff was worthwhile.' Question: What were the two effects of the policy?
 
-Answer concisely with just the answer, no explanation.",Reduced unemployment and increased inflation.,reduced unemployment and increased inflation,1,1.0,2464.058500016108,True
+Answer concisely with just the answer, no explanation.",Reduced unemployment and increased inflation.,reduced unemployment and increased inflation,1,1,2373.4391,TRUE
 78,reading,3,2,"Answer the following question:
 Text: 'The policy reduced unemployment but increased inflation, leading economists to debate whether the tradeoff was worthwhile.' Question: What were the two effects of the policy?
 
-Answer concisely with just the answer, no explanation.",Reduced unemployment and increased inflation.,reduced unemployment and increased inflation,1,1.0,2440.6228000298142,True
+Answer concisely with just the answer, no explanation.",Reduced unemployment and increased inflation.,reduced unemployment and increased inflation,1,1,2388.1202,TRUE
 79,reading,3,1,"Answer the following question:
 Text: 'After years of decline, the species showed signs of recovery once hunting was banned and habitats were restored.' Question: What two factors contributed to the species' recovery?
 
-Answer concisely with just the answer, no explanation.",Hunting ban and habitat restoration.,hunting ban and habitat restoration,1,1.0,2487.3894000193104,True
+Answer concisely with just the answer, no explanation.",Hunting ban and habitat restoration.,hunting ban and habitat restoration,1,1,2426.591900002677,TRUE
 79,reading,3,2,"Answer the following question:
 Text: 'After years of decline, the species showed signs of recovery once hunting was banned and habitats were restored.' Question: What two factors contributed to the species' recovery?
 
-Answer concisely with just the answer, no explanation.",Hunting ban and habitat restoration.,hunting ban and habitat restoration,1,1.0,2433.81140002748,True
+Answer concisely with just the answer, no explanation.",Hunting ban and habitat restoration.,hunting ban and habitat restoration,1,1,2368.886400014162,TRUE
 80,reading,3,1,"Answer the following question:
 Text: 'The study found correlation but not causation between screen time and anxiety, noting that anxious individuals may simply use screens more.' Question: Did the study prove screens cause anxiety?
 
-Answer concisely with just the answer, no explanation.",No.,no,1,1.0,2344.941299990751,True
+Answer concisely with just the answer, no explanation.",No.,no,1,1,2348.5622000298463,TRUE
 80,reading,3,2,"Answer the following question:
 Text: 'The study found correlation but not causation between screen time and anxiety, noting that anxious individuals may simply use screens more.' Question: Did the study prove screens cause anxiety?
 
-Answer concisely with just the answer, no explanation.",No.,no,1,1.0,2382.841799990274,True
-81,commonsense,1,1,"Answer the following question:
-What do you use to unlock a door?
+Answer concisely with just the answer, no explanation.",No.,no,1,1,2372.563499957323,TRUE
+81,commonsense,3,1,"Answer the following question:
+A man walks into a bar and asks for a glass of water. The bartender pulls out a gun and points it at him. The man says 'thank you' and leaves. Why?
 
-Answer concisely with just the answer, no explanation.",A key.,key,1,1.0,2425.726299989037,True
-81,commonsense,1,2,"Answer the following question:
-What do you use to unlock a door?
+Answer concisely with just the answer, no explanation.",The man is an actor in a film or TV show.,hiccups,0,0,2599.6365000028163,TRUE
+81,commonsense,3,2,"Answer the following question:
+A man walks into a bar and asks for a glass of water. The bartender pulls out a gun and points it at him. The man says 'thank you' and leaves. Why?
 
-Answer concisely with just the answer, no explanation.",A key.,key,1,1.0,2393.650999991223,True
-82,commonsense,1,1,"Answer the following question:
-What season comes after summer?
+Answer concisely with just the answer, no explanation.",The man was a cop.,hiccups,0,0,2405.5426999693736,TRUE
+82,commonsense,3,1,"Answer the following question:
+What can travel around the world while staying in a corner?
 
-Answer concisely with just the answer, no explanation.",Autumn (or Fall).,fall,1,1.0,2459.3700999976136,True
-82,commonsense,1,2,"Answer the following question:
-What season comes after summer?
+Answer concisely with just the answer, no explanation.",A stamp.,stamp,1,1,2418.0566999712028,TRUE
+82,commonsense,3,2,"Answer the following question:
+What can travel around the world while staying in a corner?
 
-Answer concisely with just the answer, no explanation.",Autumn.,fall,0,0.0,2360.525299969595,True
-83,commonsense,1,1,"Answer the following question:
-Where would you go to borrow a book?
+Answer concisely with just the answer, no explanation.",A stamp.,stamp,1,1,2374.0196999860927,TRUE
+83,commonsense,3,1,"Answer the following question:
+A cowboy rides into town on Friday, stays three days, and leaves on Friday. How is this possible?
 
-Answer concisely with just the answer, no explanation.",Your local library.,library,1,1.0,2404.967400012538,True
-83,commonsense,1,2,"Answer the following question:
-Where would you go to borrow a book?
+Answer concisely with just the answer, no explanation.","The cowboy rode into town on a horse called ""Friday"".",horse named Friday,0,0,2588.382299989462,TRUE
+83,commonsense,3,2,"Answer the following question:
+A cowboy rides into town on Friday, stays three days, and leaves on Friday. How is this possible?
 
-Answer concisely with just the answer, no explanation.",Local library or bookstore.,library,1,1.0,2410.8760000090115,True
-84,commonsense,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.","He rode into town on a horse called ""Friday"".",horse named Friday,0,0,2514.578400005121,TRUE
+84,commonsense,3,1,"Answer the following question:
 If you put ice cream in the sun, what happens?
 
-Answer concisely with just the answer, no explanation.",It melts and turns into a puddle of liquid.,melts,1,1.0,2686.6153999581,True
-84,commonsense,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",The ice cream will melt and become a puddle.,melts,0,0,2462.4589000013657,TRUE
+84,commonsense,3,2,"Answer the following question:
 If you put ice cream in the sun, what happens?
 
-Answer concisely with just the answer, no explanation.",It will melt and turn into a puddle.,melts,0,0.0,2539.4699000171386,True
-85,commonsense,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.","It will melt and become a puddle of warm, sweet liquid.",melts,0,0,2564.6920000435784,TRUE
+85,commonsense,3,1,"Answer the following question:
 Why do people wear sunglasses on bright days?
 
-Answer concisely with just the answer, no explanation.",To protect their eyes from intense sunlight and reduce glare.,protect eyes,0,0.0,2635.1017000270076,True
-85,commonsense,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",To protect their eyes from excessive glare and UV radiation caused by bright sunlight.,protect eyes,1,0.9,2577.4311,TRUE
+85,commonsense,3,2,"Answer the following question:
 Why do people wear sunglasses on bright days?
 
-Answer concisely with just the answer, no explanation.",To reduce glare and protect their eyes from harsh light.,protect eyes,0,0.0,2579.858699988108,True
-86,commonsense,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",To reduce glare and protect their eyes from the intense light caused by sunlight reflection off surfaces.,protect eyes,1,0.9,2607.781700033229,TRUE
+86,commonsense,3,1,"Answer the following question:
 What should you do if a smoke alarm goes off in your house?
 
-Answer concisely with just the answer, no explanation.",Evacuate and call 911 immediately.,leave,0,0.0,2521.7956000124104,True
-86,commonsense,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.","Turn it off and find the source of the smoke, then call 911 or your local emergency number.",leave,0,0,2669.753399968613,TRUE
+86,commonsense,3,2,"Answer the following question:
 What should you do if a smoke alarm goes off in your house?
 
-Answer concisely with just the answer, no explanation.","Check the smoke alarm to ensure it's functioning correctly and investigate the source of the alarm, then call 911 or your local emergency number immediately.",leave,0,0.0,2817.9494999931194,True
-87,commonsense,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",Evacuate the building immediately and call the fire department or local emergency number while waiting outside.,leave,0,0,2644.584699999541,TRUE
+87,commonsense,3,1,"Answer the following question:
 Why do we put food in the refrigerator?
 
-Answer concisely with just the answer, no explanation.",To keep it cool and prevent spoilage.,keep fresh,0,0.0,2452.78849999886,True
-87,commonsense,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",To keep food fresh and prevent spoilage by controlling temperature and humidity.,keep fresh,1,0.9,2520.9666000446305,TRUE
+87,commonsense,3,2,"Answer the following question:
 Why do we put food in the refrigerator?
 
-Answer concisely with just the answer, no explanation.",To keep it cool and prevent spoilage.,keep fresh,0,0.0,2558.571600005962,True
+Answer concisely with just the answer, no explanation.",To slow down bacterial growth and preserve freshness.,keep fresh,0,0,2481.3625999959186,TRUE
 88,commonsense,3,1,"Answer the following question:
 A man pushes his car to a hotel and loses all his money. What's happening?
 
-Answer concisely with just the answer, no explanation.",He's checking out of the hotel.,monopoly,0,0.0,2462.3839000123553,True
+Answer concisely with just the answer, no explanation.","He is losing it, as in ""he lost control of the car"", but also ""losing"" as in he has no money left.",monopoly,0,0,2796.058700012509,TRUE
 88,commonsense,3,2,"Answer the following question:
 A man pushes his car to a hotel and loses all his money. What's happening?
 
-Answer concisely with just the answer, no explanation.",He is being robbed while parking in the hotel parking lot.,monopoly,0,0.0,2559.19369996991,True
+Answer concisely with just the answer, no explanation.",He is donating to charity.,monopoly,0,0,2365.462799964007,TRUE
 89,commonsense,3,1,"Answer the following question:
 Why might a doctor refuse to operate on their own child?
 
-Answer concisely with just the answer, no explanation.","Conflicting personal and professional interests, potential bias, and the need for objective decision-making may lead a doctor to refuse operating on their own child.",conflict of interest,0,0.0,2788.271799974609,True
+Answer concisely with just the answer, no explanation.","To avoid potential conflicts of interest and maintain objectivity in making medical decisions for their child, as well as to protect the patient's autonomy.",conflict of interest,0,0,2827.0502000232227,TRUE
 89,commonsense,3,2,"Answer the following question:
 Why might a doctor refuse to operate on their own child?
 
-Answer concisely with just the answer, no explanation.",Conflict of interest and emotional bias may lead doctors to refrain from performing operations on their children due to potential loss of objectivity and compromised judgment.,conflict of interest,1,1.0,2751.4475000207312,True
+Answer concisely with just the answer, no explanation.","To avoid a conflict of interest and potential bias in making medical decisions for their own child, or to maintain professional objectivity in decision-making processes that could affect their personal life.",conflict of interest,1,1,2874.5247999904677,TRUE
 90,commonsense,3,1,"Answer the following question:
 If a plane crashes exactly on the US-Canada border, where do you bury the survivors?
 
-Answer concisely with just the answer, no explanation.",The plane doesn't have any survivors.,don't bury survivors,0,0.0,2442.007699981332,True
+Answer concisely with just the answer, no explanation.",Neither in the United States nor in Canada.,don't bury survivors,0,0,2450.3096000407822,TRUE
 90,commonsense,3,2,"Answer the following question:
 If a plane crashes exactly on the US-Canada border, where do you bury the survivors?
 
-Answer concisely with just the answer, no explanation.",You don't bury them.,don't bury survivors,0,0.0,2396.3225000188686,True
-91,code,1,1,"Answer the following question:
-What is the output? print(2 + 3)
+Answer concisely with just the answer, no explanation.",I don't bury them; they're not deceased.,don't bury survivors,0,0,2456.641700002365,TRUE
+91,code,3,1,"Answer the following question:
+What is the output? x = [1,2,3]; x.insert(1, 'a'); print(x[2])
 
-Answer concisely with just the answer, no explanation.",5,5,1,1.0,2348.2764999498613,True
-91,code,1,2,"Answer the following question:
-What is the output? print(2 + 3)
+Answer concisely with just the answer, no explanation.",'3',2,0,0,2338.0204999702983,TRUE
+91,code,3,2,"Answer the following question:
+What is the output? x = [1,2,3]; x.insert(1, 'a'); print(x[2])
 
-Answer concisely with just the answer, no explanation.",5,5,1,1.0,2368.2838000240736,True
-92,code,1,1,"Answer the following question:
-What is the output? print('Hello' + ' World')
+Answer concisely with just the answer, no explanation.","['3', '2']",2,1,0.9,2500.7727000047453,TRUE
+92,code,3,1,"Answer the following question:
+What is the output? print(bool('False'))
 
-Answer concisely with just the answer, no explanation.",'Hello World',Hello World,1,1.0,2435.101000010036,True
-92,code,1,2,"Answer the following question:
-What is the output? print('Hello' + ' World')
+Answer concisely with just the answer, no explanation.",TRUE,TRUE,1,1,2318.531199998688,TRUE
+92,code,3,2,"Answer the following question:
+What is the output? print(bool('False'))
 
-Answer concisely with just the answer, no explanation.",Hello World,Hello World,1,1.0,2375.4423999926075,True
-93,code,1,1,"Answer the following question:
-What is the output? x = 10; print(x * 2)
+Answer concisely with just the answer, no explanation.",FALSE,TRUE,0,0,2325.7599000353366,TRUE
+93,code,3,1,"Answer the following question:
+What is the output? x = '12345'; print(x[1::2])
 
-Answer concisely with just the answer, no explanation.",20,20,1,1.0,2355.398799991235,True
-93,code,1,2,"Answer the following question:
-What is the output? x = 10; print(x * 2)
+Answer concisely with just the answer, no explanation.",'2345',24,0,0,2554.195799981244,TRUE
+93,code,3,2,"Answer the following question:
+What is the output? x = '12345'; print(x[1::2])
 
-Answer concisely with just the answer, no explanation.",20,20,1,1.0,2355.7932000258006,True
-94,code,2,1,"Answer the following question:
-What is the output? for i in range(3): print(i)
+Answer concisely with just the answer, no explanation.",'2345',24,0,0,2355.4499999736436,TRUE
+94,code,3,1,"Answer the following question:
+What is the output? for i in range(3): print(i, end=' ')
 
-Answer concisely with just the answer, no explanation.","0
-1
-2",0 1 2,0,0.0,2565.136999997776,True
-94,code,2,2,"Answer the following question:
-What is the output? for i in range(3): print(i)
+Answer concisely with just the answer, no explanation.",0 1 2,0 1 2,1,1,2443.908100016415,TRUE
+94,code,3,2,"Answer the following question:
+What is the output? for i in range(3): print(i, end=' ')
 
-Answer concisely with just the answer, no explanation.","0
-1
-2",0 1 2,0,0.0,2452.3578000371344,True
-95,code,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",0 1 2,0 1 2,1,1,2376.7326,TRUE
+95,code,3,1,"Answer the following question:
 What is the output? x = [1,2,3]; print(len(x))
 
-Answer concisely with just the answer, no explanation.",3,3,1,1.0,2425.1681999885477,True
-95,code,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",4,3,0,0,2353.146100009326,TRUE
+95,code,3,2,"Answer the following question:
 What is the output? x = [1,2,3]; print(len(x))
 
-Answer concisely with just the answer, no explanation.",3,3,1,1.0,2356.8662999896333,True
-96,code,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",3,3,1,1,2259.7674999851733,TRUE
+96,code,3,1,"Answer the following question:
 What is the output? x = 5; y = 3; print(x > y)
 
-Answer concisely with just the answer, no explanation.",True,True,1,1.0,2308.6810000240803,True
-96,code,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",FALSE,TRUE,0,0,2338.612199993804,TRUE
+96,code,3,2,"Answer the following question:
 What is the output? x = 5; y = 3; print(x > y)
 
-Answer concisely with just the answer, no explanation.",False,True,0,0.0,2297.6634000078775,True
-97,code,2,1,"Answer the following question:
+Answer concisely with just the answer, no explanation.",FALSE,TRUE,0,0,2340.3745999676175,TRUE
+97,code,3,1,"Answer the following question:
 What is the output? s = 'hello'; print(s.upper())
 
-Answer concisely with just the answer, no explanation.",HELLO,HELLO,1,1.0,2489.3784999730997,True
-97,code,2,2,"Answer the following question:
+Answer concisely with just the answer, no explanation.",HELLO,HELLO,1,1,2498.8584999809973,TRUE
+97,code,3,2,"Answer the following question:
 What is the output? s = 'hello'; print(s.upper())
 
-Answer concisely with just the answer, no explanation.",'HELLO',HELLO,1,1.0,2400.283799972385,True
+Answer concisely with just the answer, no explanation.",HELLO,HELLO,1,1,2362.8909999970347,TRUE
 98,code,3,1,"Answer the following question:
 What is the output? print([x**2 for x in range(4)])
 
-Answer concisely with just the answer, no explanation.","[0, 1, 4, 9]","[0, 1, 4, 9]",1,1.0,2567.6335000316612,True
+Answer concisely with just the answer, no explanation.","[0, 1, 4, 9]","[0, 1, 4, 9]",1,1,2587.7086000400595,TRUE
 98,code,3,2,"Answer the following question:
 What is the output? print([x**2 for x in range(4)])
 
-Answer concisely with just the answer, no explanation.","[0, 1, 4, 9]","[0, 1, 4, 9]",1,1.0,2522.8438999620266,True
+Answer concisely with just the answer, no explanation.","[0, 1, 4, 9]","[0, 1, 4, 9]",1,1,2532.916700001806,TRUE
 99,code,3,1,"Answer the following question:
 What is the output? def f(n): return 1 if n<=1 else n*f(n-1); print(f(5))
 
-Answer concisely with just the answer, no explanation.",720,120,0,0.0,2280.5026000132784,True
+Answer concisely with just the answer, no explanation.",362880,120,0,0,2300.9859999874607,TRUE
 99,code,3,2,"Answer the following question:
 What is the output? def f(n): return 1 if n<=1 else n*f(n-1); print(f(5))
 
-Answer concisely with just the answer, no explanation.",3628800,120,0,0.0,2422.888500033878,True
+Answer concisely with just the answer, no explanation.",362880,120,0,0,2371.015000040643,TRUE
 100,code,3,1,"Answer the following question:
 What is the output? x = [1,2,3]; y = x; y.append(4); print(x)
 
-Answer concisely with just the answer, no explanation.","[1, 2, 3]","[1, 2, 3, 4]",0,0.0,2507.8577999956906,True
+Answer concisely with just the answer, no explanation.","[1, 2, 3]","[1, 2, 3, 4]",0,0,2528.458899992984,TRUE
 100,code,3,2,"Answer the following question:
 What is the output? x = [1,2,3]; y = x; y.append(4); print(x)
 
-Answer concisely with just the answer, no explanation.","[1, 2, 3]","[1, 2, 3, 4]",0,0.0,2477.9007000033744,True
+Answer concisely with just the answer, no explanation.","[1, 2, 3]","[1, 2, 3, 4]",0,0,2463.1178999552503,TRUE

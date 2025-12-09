@@ -142,8 +142,17 @@ def main() -> None:
 
     # Also copy raw results to expected location
     raw_results_path = results_dir / "baseline_results.csv"
-    results_df.to_csv(raw_results_path, index=False)
-    print(f"  Saved: {raw_results_path}")
+    try:
+        results_df.to_csv(raw_results_path, index=False)
+        print(f"  Saved: {raw_results_path}")
+    except PermissionError:
+        # File is open in another program, save with timestamp
+        from datetime import datetime
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        alt_path = results_dir / f"baseline_results_{timestamp}.csv"
+        results_df.to_csv(alt_path, index=False)
+        print(f"  WARNING: Could not save to {raw_results_path} (file is open)")
+        print(f"  Saved to: {alt_path}")
 
     # Print summary
     print("\n" + "=" * 60)
