@@ -18,7 +18,7 @@ This project implements a prompt engineering research pipeline that tests multip
 ┌─────────────────────────────────────────────────────────────────┐
 │                      Application Layer                           │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐  │
-│  │ config.py    │  │ gemini_      │  │ prompts/             │  │
+│  │ config.py    │  │ ollama_      │  │ prompts/             │  │
 │  │              │  │ client.py    │  │ ├── base.py          │  │
 │  │ Environment  │  │              │  │ ├── improved.py      │  │
 │  │ loading      │  │ API wrapper  │  │ ├── few_shot.py      │  │
@@ -53,7 +53,7 @@ This project implements a prompt engineering research pipeline that tests multip
 
 ```
 project6-prompt-engineering-research/
-├── .env                    # API credentials (git-ignored)
+├── .env                    # Ollama configuration (git-ignored)
 ├── .env.example            # Template for environment variables
 ├── .gitignore              # Git ignore rules
 ├── pyproject.toml          # Project configuration and dependencies
@@ -65,7 +65,7 @@ project6-prompt-engineering-research/
 ├── src/
 │   ├── __init__.py         # Package initialization
 │   ├── config.py           # Environment configuration
-│   ├── gemini_client.py    # Gemini API wrapper
+│   ├── ollama_client.py    # Ollama API wrapper
 │   ├── answer_evaluator.py # Answer matching logic
 │   ├── metrics.py          # Statistical calculations
 │   ├── experiment_runner.py# Experiment orchestration
@@ -82,7 +82,7 @@ project6-prompt-engineering-research/
 ├── tests/
 │   ├── __init__.py
 │   ├── test_config.py
-│   ├── test_gemini_client.py
+│   ├── test_ollama_client.py
 │   ├── test_answer_evaluator.py
 │   ├── test_metrics.py
 │   └── test_prompts.py
@@ -110,10 +110,11 @@ project6-prompt-engineering-research/
 - Provides configuration constants (model name, rate limits)
 - Validates required configuration
 
-#### `gemini_client.py`
-- Wraps Gemini API for consistent interface
-- Handles rate limiting and retries
+#### `ollama_client.py`
+- Wraps Ollama API for consistent interface
+- Handles connection errors and retries
 - Returns response text and latency metrics
+- Supports configurable host for WSL/remote setups
 
 #### `answer_evaluator.py`
 - Evaluates model responses against expected answers
@@ -170,7 +171,7 @@ project6-prompt-engineering-research/
 2. **Processing**:
    - For each test case and prompt technique:
      - Generate prompt using appropriate module
-     - Call Gemini API via client
+     - Call Ollama API via client
      - Evaluate answer correctness
      - Record results
 3. **Output**:
@@ -181,7 +182,8 @@ project6-prompt-engineering-research/
 ## Key Design Decisions
 
 1. **Modular Prompts**: Each technique is a separate module for easy extension
-2. **3 Runs per Case**: Measures consistency for mass production analysis
+2. **2 Runs per Case**: Measures consistency for mass production analysis
 3. **Incremental Saves**: Prevents data loss on failures
 4. **Semantic Evaluation**: Uses embeddings for non-exact answer comparison
 5. **Separation of Concerns**: Config, API, evaluation, metrics, visualization are independent
+6. **Local LLM**: Uses Ollama for cost-free, reproducible experiments

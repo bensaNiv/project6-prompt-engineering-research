@@ -108,6 +108,7 @@ The dataset covers 7 categories:
 
 ### 7. Constraints
 
-- **API**: Uses Gemini API (gemini-1.5-flash model)
-- **Budget**: ~1,500 API calls (100 cases x 5 techniques x 3 runs)
+- **LLM**: Uses Ollama with local models (default: `llama3.2:3b`)
+- **Local Execution**: All inference runs locally, no cloud API costs
+- **Runs**: ~1,000 API calls (100 cases x 5 techniques x 2 runs)
 - **Focus**: Optimize for consistency (low variance), not just accuracy

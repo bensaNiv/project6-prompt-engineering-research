@@ -113,13 +113,13 @@ id,category,difficulty,question,expected_answer,answer_type
 
 ```
 project/
-├── .env                        # API credentials
+├── .env                        # Ollama configuration (optional)
 ├── .gitignore                  # Ignore .env file
 ├── data/
 │   └── test_cases.csv          # The dataset
 ├── src/
 │   ├── config.py               # Load environment variables
-│   ├── gemini_client.py        # Gemini API wrapper
+│   ├── ollama_client.py        # Ollama API wrapper
 │   ├── run_experiment.py       # Execute prompts
 │   ├── metrics.py              # Calculate metrics
 │   └── utils.py                # Helper functions
@@ -132,9 +132,10 @@ project/
 
 ### Environment Setup
 
-**.env file:**
+**.env file (optional):**
 ```
-GEMINI_API_KEY=your_api_key_here
+OLLAMA_HOST=http://localhost:11434
+MODEL_NAME=llama3.2:3b
 ```
 
 **.gitignore:**
@@ -144,11 +145,16 @@ results/
 __pycache__/
 ```
 
-### Gemini API Integration
+### Ollama API Integration
+
+**Prerequisites:**
+1. Install Ollama from [ollama.com/download](https://ollama.com/download)
+2. Pull the model: `ollama pull llama3.2:3b`
+3. Ensure Ollama is running: `ollama serve`
 
 **Dependencies:**
 ```
-google-generativeai
+requests
 python-dotenv
 pandas
 numpy
@@ -158,18 +164,23 @@ matplotlib    # for histograms
 
 **Basic API Call Pattern:**
 ```python
-import google.generativeai as genai
-from dotenv import load_dotenv
+import requests
 import os
 
-load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
+MODEL_NAME = os.getenv("MODEL_NAME", "llama3.2:3b")
 
-model = genai.GenerativeModel("gemini-1.5-flash")
-
-def query_gemini(prompt: str) -> str:
-    response = model.generate_content(prompt)
-    return response.text
+def query_ollama(prompt: str) -> str:
+    response = requests.post(
+        f"{OLLAMA_HOST}/api/generate",
+        json={
+            "model": MODEL_NAME,
+            "prompt": prompt,
+            "stream": False,
+        },
+        timeout=120,
+    )
+    return response.json().get("response", "").strip()
 ```
 
 ### Baseline Prompt
@@ -202,7 +213,7 @@ Answer the following question:
 
 #### Consistency Metrics (for Mass Production)
 
-Run each prompt **3 times** to measure consistency:
+Run each prompt **2 times** to measure consistency:
 
 | Metric | Description | Goal |
 |--------|-------------|------|
@@ -276,11 +287,11 @@ Generate histograms for:
 ### Stage 2 Tasks
 - [ ] Set up Python environment with dependencies
 - [ ] Implement `config.py` for environment loading
-- [ ] Implement `gemini_client.py` API wrapper
+- [ ] Implement `ollama_client.py` API wrapper
 - [ ] Implement answer matching logic (exact, contains, numeric, semantic)
 - [ ] Implement `run_experiment.py` to execute baseline
 - [ ] Implement `metrics.py` for statistical calculations
-- [ ] Run baseline experiment (3 runs per case)
+- [ ] Run baseline experiment (2 runs per case)
 - [ ] Generate results CSV and stats JSON
 - [ ] Create visualization charts
 
@@ -290,4 +301,4 @@ Generate histograms for:
 
 - **Mass Production Context:** The goal is to find prompts that work consistently at scale. Variance matters as much as accuracy.
 - **Entropy Principle:** Lower entropy (more consistent outputs) is desirable.
-- **Budget Consideration:** 100 cases × 3 runs = 300 API calls for baseline alone. Plan accordingly for Gemini API costs.
+- **Local Execution:** Using Ollama with local models (e.g., llama3.2:3b) eliminates API costs. 100 cases × 2 runs = 200 API calls for baseline.
