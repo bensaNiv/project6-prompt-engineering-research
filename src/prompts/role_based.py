@@ -20,7 +20,7 @@ class RoleBasedPromptGenerator(BasePromptGenerator):
             "You are a mathematics professor who specializes in "
             "problem-solving and has taught arithmetic for 20 years."
         ),
-        "logical": (
+        "logic": (
             "You are a logic professor and expert in formal reasoning, "
             "syllogisms, and deductive logic."
         ),
@@ -28,7 +28,7 @@ class RoleBasedPromptGenerator(BasePromptGenerator):
             "You are a content categorization expert with expertise in "
             "text analysis and topic classification."
         ),
-        "comprehension": (
+        "reading": (
             "You are a reading comprehension expert and English teacher "
             "skilled at extracting key information from text."
         ),

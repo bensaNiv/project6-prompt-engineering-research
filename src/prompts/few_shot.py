@@ -25,7 +25,7 @@ class FewShotPromptGenerator(BasePromptGenerator):
             {"question": "What is 15 plus 27?", "answer": "42"},
             {"question": "If you have 20 cookies and eat 8, how many remain?", "answer": "12"},
         ],
-        "logical": [
+        "logic": [
             {"question": "All cats are animals. Whiskers is a cat. Is Whiskers an animal?", "answer": "true"},
             {"question": "If it rains, the ground is wet. It rained. Is the ground wet?", "answer": "true"},
             {"question": "All birds can fly. Penguins are birds. Can penguins fly?", "answer": "false"},
@@ -35,7 +35,7 @@ class FewShotPromptGenerator(BasePromptGenerator):
             {"question": "The team won the championship after a thrilling overtime.", "answer": "sports"},
             {"question": "Scientists discovered a new species in the Amazon.", "answer": "science"},
         ],
-        "comprehension": [
+        "reading": [
             {"question": "Text: John is 25 years old. Question: How old is John?", "answer": "25"},
             {"question": "Text: The capital of France is Paris. Question: What is France's capital?", "answer": "Paris"},
             {"question": "Text: Water boils at 100 degrees Celsius. Question: At what temperature does water boil?", "answer": "100 degrees Celsius"},

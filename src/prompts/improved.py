@@ -13,9 +13,9 @@ class ImprovedPromptGenerator(BasePromptGenerator):
     FORMAT_HINTS = {
         "sentiment": "Respond with exactly one word: positive, negative, or neutral.",
         "math": "Respond with only the numerical answer.",
-        "logical": "Respond with only: true or false.",
+        "logic": "Respond with only: true or false.",
         "classification": "Respond with only the category name.",
-        "comprehension": "Provide a brief, direct answer.",
+        "reading": "Provide a brief, direct answer.",
         "commonsense": "Provide a brief, direct answer.",
         "code": "Respond with only what the code prints.",
     }
