@@ -43,4 +43,6 @@ class ImprovedPromptGenerator(BasePromptGenerator):
 
         return f"""Question: {question}
 
-{hint}"""
+{hint}
+
+Answer concisely with just the answer, no explanation."""

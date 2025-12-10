@@ -40,3 +40,21 @@ id,run,technique,correct_override,reason,
 44,2,improved,1,True = yes semantically
 45,1,improved,1,true = yes semantically
 45,2,improved,1,true = yes semantically
+# Few-shot semantic matches
+76,1,few_shot,1,sophomore effort = second book
+76,2,few_shot,1,sophomore effort = second book
+77,2,few_shot,1,intermittence = intermittent
+79,1,few_shot,1,semantically identical answer
+83,1,few_shot,1,response contains horse named Friday
+86,1,few_shot,1,evacuate = leave
+86,2,few_shot,1,evacuate = leave
+87,1,few_shot,1,keep cool = keep fresh
+87,2,few_shot,1,keep cool = keep fresh
+# Chain-of-thought semantic matches
+76,1,cot,1,sophomore = second book
+76,2,cot,1,sophomore = second book
+78,1,cot,1,reducing/increasing = reduced/increased
+79,1,cot,1,banning hunting and restoring = hunting ban and restoration
+84,1,cot,1,response contains melt
+84,2,cot,1,response contains melt
+87,1,cot,1,prevents spoilage = keep fresh

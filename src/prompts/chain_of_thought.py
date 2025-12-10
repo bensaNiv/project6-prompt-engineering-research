@@ -37,4 +37,4 @@ Let's think step by step:
 
 Think through this step by step, then provide your answer in this format:
 Reasoning: [your step-by-step thinking]
-Final Answer: [your answer]"""
+Final Answer: [just the answer, no explanation]"""

@@ -65,4 +65,4 @@ class RoleBasedPromptGenerator(BasePromptGenerator):
 
 Question: {question}
 
-Provide your expert answer."""
+Answer concisely with just the answer, no explanation."""

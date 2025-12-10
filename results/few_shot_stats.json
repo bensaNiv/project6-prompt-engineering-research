@@ -1,0 +1,69 @@
+{
+  "overall": {
+    "accuracy": 0.52,
+    "mean": 0.52,
+    "variance": 0.24960000000000002,
+    "std_dev": 0.4995998398718719,
+    "count": 200
+  },
+  "by_category": {
+    "sentiment": {
+      "accuracy": 0.6333333333333333,
+      "mean": 0.6333333333333333,
+      "variance": 0.23222222222222222,
+      "std_dev": 0.4818944098266987,
+      "count": 30
+    },
+    "math": {
+      "accuracy": 0.15,
+      "mean": 0.15,
+      "variance": 0.1275,
+      "std_dev": 0.3570714214271425,
+      "count": 40
+    },
+    "logic": {
+      "accuracy": 0.6,
+      "mean": 0.6,
+      "variance": 0.24000000000000002,
+      "std_dev": 0.48989794855663565,
+      "count": 30
+    },
+    "classification": {
+      "accuracy": 0.4,
+      "mean": 0.4,
+      "variance": 0.24000000000000002,
+      "std_dev": 0.48989794855663565,
+      "count": 30
+    },
+    "reading": {
+      "accuracy": 0.8333333333333334,
+      "mean": 0.8333333333333334,
+      "variance": 0.1388888888888889,
+      "std_dev": 0.37267799624996495,
+      "count": 30
+    },
+    "commonsense": {
+      "accuracy": 0.65,
+      "mean": 0.65,
+      "variance": 0.22749999999999998,
+      "std_dev": 0.47696960070847283,
+      "count": 20
+    },
+    "code": {
+      "accuracy": 0.55,
+      "mean": 0.55,
+      "variance": 0.2475,
+      "std_dev": 0.49749371855331,
+      "count": 20
+    }
+  },
+  "by_difficulty": {
+    "3": {
+      "accuracy": 0.52,
+      "mean": 0.52,
+      "variance": 0.24960000000000002,
+      "std_dev": 0.4995998398718719,
+      "count": 200
+    }
+  }
+}

@@ -99,4 +99,6 @@ class FewShotPromptGenerator(BasePromptGenerator):
 
 Now answer this question:
 Question: {question}
+
+Answer concisely with just the answer, no explanation.
 Answer:"""
