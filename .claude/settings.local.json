@@ -8,7 +8,9 @@
       "Bash(python3:*)",
       "Bash(pip install:*)",
       "Bash(source .venv/bin/activate)",
-      "Bash(python -c:*)"
+      "Bash(python -c:*)",
+      "Bash(python -m pytest:*)",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []

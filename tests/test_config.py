@@ -31,24 +31,24 @@ class TestConfig:
         """Test Config default values."""
         config = Config(api_key="test_key")
 
-        assert config.model_name == "gemini-1.5-flash"
-        assert config.max_retries == 3
-        assert config.retry_delay == 1.0
-        assert config.runs_per_case == 3
+        assert config.model_name == "gemini-2.5-flash-lite"
+        assert config.max_retries == 5
+        assert config.retry_delay == 2.0
+        assert config.runs_per_case == 2
 
-    @patch.dict(os.environ, {"GEMINI_API_KEY": "env_test_key"})
+    @patch.dict(os.environ, {"GEMINI_API_KEY": "env_test_key"}, clear=True)
     def test_config_from_env(self) -> None:
         """Test loading Config from environment variables."""
         config = Config.from_env()
 
         assert config.api_key == "env_test_key"
-        assert config.model_name == "gemini-1.5-flash"
+        assert config.model_name == "gemini-2.5-flash-lite"
 
     @patch.dict(os.environ, {}, clear=True)
     def test_config_from_env_missing_key(self) -> None:
         """Test Config raises error when API key is missing."""
         with pytest.raises(ValueError, match="GEMINI_API_KEY"):
-            Config.from_env()
+            Config.from_env(env_path="/nonexistent/.env")
 
     @patch.dict(
         os.environ,

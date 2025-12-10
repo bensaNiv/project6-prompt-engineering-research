@@ -120,8 +120,8 @@ class TestRoleBasedPromptGenerator:
         prompt = self.generator.generate(test_case)
         assert "helpful assistant" in prompt.lower()
 
-    def test_role_based_asks_for_expert_answer(self) -> None:
-        """Test role-based prompt asks for expert answer."""
+    def test_role_based_asks_for_concise_answer(self) -> None:
+        """Test role-based prompt asks for concise answer."""
         test_case = {
             "question": "Test question",
             "category": "code",
@@ -130,4 +130,4 @@ class TestRoleBasedPromptGenerator:
             "answer_type": "exact",
         }
         prompt = self.generator.generate(test_case)
-        assert "expert answer" in prompt.lower()
+        assert "answer concisely" in prompt.lower()
