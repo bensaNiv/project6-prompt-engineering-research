@@ -1,23 +1,23 @@
 {
   "overall": {
-    "accuracy": 0.515,
-    "mean": 0.515,
-    "variance": 0.249775,
-    "std_dev": 0.4997749493522059,
+    "accuracy": 0.57,
+    "mean": 0.57,
+    "variance": 0.2451,
+    "std_dev": 0.49507575177946256,
     "count": 200
   },
   "by_category": {
     "sentiment": {
       "accuracy": 0.6333333333333333,
       "mean": 0.6333333333333333,
-      "variance": 0.23222222222222216,
-      "std_dev": 0.4818944098266986,
+      "variance": 0.23222222222222222,
+      "std_dev": 0.4818944098266987,
       "count": 30
     },
     "math": {
       "accuracy": 0.175,
       "mean": 0.175,
-      "variance": 0.144375,
+      "variance": 0.14437499999999998,
       "std_dev": 0.3799671038392666,
       "count": 40
     },
@@ -36,33 +36,33 @@
       "count": 30
     },
     "reading": {
-      "accuracy": 0.8666666666666667,
-      "mean": 0.8666666666666667,
-      "variance": 0.11555555555555559,
-      "std_dev": 0.33993463423951903,
+      "accuracy": 0.9333333333333333,
+      "mean": 0.9333333333333333,
+      "variance": 0.06222222222222222,
+      "std_dev": 0.24944382578492943,
       "count": 30
     },
     "commonsense": {
-      "accuracy": 0.3,
-      "mean": 0.3,
-      "variance": 0.20999999999999996,
-      "std_dev": 0.45825756949558394,
+      "accuracy": 0.75,
+      "mean": 0.75,
+      "variance": 0.1875,
+      "std_dev": 0.4330127018922193,
       "count": 20
     },
     "code": {
       "accuracy": 0.45,
       "mean": 0.45,
-      "variance": 0.24749999999999997,
-      "std_dev": 0.4974937185533099,
+      "variance": 0.2475,
+      "std_dev": 0.49749371855331,
       "count": 20
     }
   },
   "by_difficulty": {
     "3": {
-      "accuracy": 0.515,
-      "mean": 0.515,
-      "variance": 0.249775,
-      "std_dev": 0.4997749493522059,
+      "accuracy": 0.57,
+      "mean": 0.57,
+      "variance": 0.2451,
+      "std_dev": 0.49507575177946256,
       "count": 200
     }
   }
