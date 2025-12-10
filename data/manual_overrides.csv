@@ -58,3 +58,18 @@ id,run,technique,correct_override,reason,
 84,1,cot,1,response contains melt
 84,2,cot,1,response contains melt
 87,1,cot,1,prevents spoilage = keep fresh
+# Role-based semantic matches
+40,1,role_based,1,P must be false = P is false
+40,2,role_based,1,Not P = P is false
+76,1,role_based,1,sophomore = second
+76,2,role_based,1,sophomore = second
+78,2,role_based,1,reducing/increasing = reduced/increased
+83,1,role_based,1,horse called Friday = horse named Friday
+83,2,role_based,1,horse called Friday = horse named Friday
+84,1,role_based,1,will melt = melts
+84,2,role_based,1,will melt = melts
+85,2,role_based,1,protecting their eyes = protect eyes
+86,1,role_based,1,evacuate = leave
+86,2,role_based,1,evacuate = leave
+89,1,role_based,1,conflicts of interest = conflict of interest
+89,2,role_based,1,conflicts of interest = conflict of interest
