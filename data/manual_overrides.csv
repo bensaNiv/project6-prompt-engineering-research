@@ -14,3 +14,29 @@ id,run,technique,correct_override,reason,
 87,2,baseline,1,,
 90,2,baseline,1,,
 89,1,baseline,1,,
+77,2,improved,1,,
+83,1,improved,1,,
+83,2,improved,1,,
+84,1,improved,1,,
+84,2,improved,1,,
+86,1,improved,1,,
+86,2,improved,1,,
+87,2,improved,1,,
+90,2,improved,1,,
+89,1,improved,1,,
+# Logic true/false vs yes/no semantic matches for improved technique
+36,1,improved,1,False = no semantically
+37,1,improved,1,true = yes semantically
+37,2,improved,1,True = yes semantically
+38,1,improved,1,False = no semantically
+38,2,improved,1,False = no semantically
+39,1,improved,1,False = no semantically
+39,2,improved,1,False = no semantically
+42,1,improved,1,False = no semantically
+42,2,improved,1,False = no semantically
+43,1,improved,1,False = no semantically
+43,2,improved,1,False = no semantically
+44,1,improved,1,True = yes semantically
+44,2,improved,1,True = yes semantically
+45,1,improved,1,true = yes semantically
+45,2,improved,1,true = yes semantically

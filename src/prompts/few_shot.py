@@ -26,9 +26,9 @@ class FewShotPromptGenerator(BasePromptGenerator):
             {"question": "If you have 20 cookies and eat 8, how many remain?", "answer": "12"},
         ],
         "logic": [
-            {"question": "All cats are animals. Whiskers is a cat. Is Whiskers an animal?", "answer": "true"},
-            {"question": "If it rains, the ground is wet. It rained. Is the ground wet?", "answer": "true"},
-            {"question": "All birds can fly. Penguins are birds. Can penguins fly?", "answer": "false"},
+            {"question": "All cats are animals. Whiskers is a cat. Is Whiskers an animal?", "answer": "yes"},
+            {"question": "If it rains, the ground is wet. It rained. Is the ground wet?", "answer": "yes"},
+            {"question": "All birds can fly. Penguins are birds. Can penguins fly?", "answer": "no"},
         ],
         "classification": [
             {"question": "The stock market closed higher today with tech leading gains.", "answer": "finance"},

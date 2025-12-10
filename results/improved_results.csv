@@ -1,0 +1,641 @@
+id,category,difficulty,run,prompt,response,expected,correct,confidence,latency_ms,success
+1,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I suppose the service was adequate, if you don't mind waiting an eternity for lukewarm food.""
+
+Respond with exactly one word: positive, negative, or neutral.",negative,negative,1,1.0,6067.714500000875,True
+1,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I suppose the service was adequate, if you don't mind waiting an eternity for lukewarm food.""
+
+Respond with exactly one word: positive, negative, or neutral.",Neutral,negative,0,0.0,2357.175700002699,True
+2,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Well, that's certainly one way to run a business into the ground.""
+
+Respond with exactly one word: positive, negative, or neutral.",Negative.,negative,1,1.0,2621.6987000007066,True
+2,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Well, that's certainly one way to run a business into the ground.""
+
+Respond with exactly one word: positive, negative, or neutral.",Negative.,negative,1,1.0,2561.4366000008886,True
+3,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The renovation exceeded our expectations, though the contractor's timeline estimates were... optimistic.""
+
+Respond with exactly one word: positive, negative, or neutral.",positive,positive,1,1.0,2617.2861000013654,True
+3,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The renovation exceeded our expectations, though the contractor's timeline estimates were... optimistic.""
+
+Respond with exactly one word: positive, negative, or neutral.",positive.,positive,1,1.0,2481.738199996471,True
+4,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""My mother-in-law's cooking is exactly as good as you'd expect.""
+
+Respond with exactly one word: positive, negative, or neutral.",neutral.,negative,0,0.0,2542.115800002648,True
+4,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""My mother-in-law's cooking is exactly as good as you'd expect.""
+
+Respond with exactly one word: positive, negative, or neutral.",neutral,negative,0,0.0,2502.722700002778,True
+5,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The app works perfectly, assuming you enjoy watching loading screens.""
+
+Respond with exactly one word: positive, negative, or neutral.",negative,negative,1,1.0,2689.1611000028206,True
+5,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The app works perfectly, assuming you enjoy watching loading screens.""
+
+Respond with exactly one word: positive, negative, or neutral.",neutral,negative,0,0.0,2400.6995000017923,True
+6,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The movie wasn't bad, but I've seen better.""
+
+Respond with exactly one word: positive, negative, or neutral.",Neutral.,neutral,1,1.0,2597.285000003467,True
+6,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The movie wasn't bad, but I've seen better.""
+
+Respond with exactly one word: positive, negative, or neutral.",neutral.,neutral,1,1.0,2576.652900002955,True
+7,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I guess the product works fine, nothing special though.""
+
+Respond with exactly one word: positive, negative, or neutral.",neutral.,neutral,1,1.0,2608.8788000051863,True
+7,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I guess the product works fine, nothing special though.""
+
+Respond with exactly one word: positive, negative, or neutral.",neutral.,neutral,1,1.0,2589.010000003327,True
+8,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Well, that's one way to handle the situation...""
+
+Respond with exactly one word: positive, negative, or neutral.",neutral.,negative,0,0.0,2619.089600004372,True
+8,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Well, that's one way to handle the situation...""
+
+Respond with exactly one word: positive, negative, or neutral.",Neutral.,negative,0,0.0,2584.389600000577,True
+9,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The hotel was decent for the price we paid.""
+
+Respond with exactly one word: positive, negative, or neutral.",neutral.,neutral,1,1.0,2505.3146999998717,True
+9,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The hotel was decent for the price we paid.""
+
+Respond with exactly one word: positive, negative, or neutral.",neutral.,neutral,1,1.0,2503.943399999116,True
+10,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Not my favorite, but my kids seemed to enjoy it.""
+
+Respond with exactly one word: positive, negative, or neutral.",neutral.,neutral,1,1.0,2591.7341000022134,True
+10,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Not my favorite, but my kids seemed to enjoy it.""
+
+Respond with exactly one word: positive, negative, or neutral.",neutral.,neutral,1,1.0,2593.369599999278,True
+11,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Oh great, another meeting that could have been an email.""
+
+Respond with exactly one word: positive, negative, or neutral.",Negative.,negative,1,1.0,2566.839400002209,True
+11,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""Oh great, another meeting that could have been an email.""
+
+Respond with exactly one word: positive, negative, or neutral.",Negative.,negative,1,1.0,2603.29289999936,True
+12,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The restaurant was empty for a reason, as we soon discovered.""
+
+Respond with exactly one word: positive, negative, or neutral.",negative,negative,1,1.0,2648.8427000003867,True
+12,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The restaurant was empty for a reason, as we soon discovered.""
+
+Respond with exactly one word: positive, negative, or neutral.",negative.,negative,1,1.0,2573.366500000702,True
+13,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I'm sure the designer tried their best with what they had.""
+
+Respond with exactly one word: positive, negative, or neutral.",neutral,negative,0,0.0,2602.167199998803,True
+13,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""I'm sure the designer tried their best with what they had.""
+
+Respond with exactly one word: positive, negative, or neutral.",neutral.,negative,0,0.0,2626.962199996342,True
+14,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""What a surprise to find such quality at this establishment.""
+
+Respond with exactly one word: positive, negative, or neutral.",positive.,positive,1,1.0,2579.0329999945243,True
+14,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""What a surprise to find such quality at this establishment.""
+
+Respond with exactly one word: positive, negative, or neutral.",positive.,positive,1,1.0,2595.996100004413,True
+15,sentiment,3,1,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The presentation was certainly... memorable.""
+
+Respond with exactly one word: positive, negative, or neutral.",neutral.,negative,0,0.0,2637.592899998708,True
+15,sentiment,3,2,"Question: What is the sentiment of this text? Options: positive, negative, neutral. Text: ""The presentation was certainly... memorable.""
+
+Respond with exactly one word: positive, negative, or neutral.",positive,negative,0,0.0,2453.1946999995853,True
+16,math,3,1,"Question: A store offers 30% off, then an additional 20% off the sale price. What is the total percentage discount from the original price?
+
+Respond with only the numerical answer.",58%,44,0,0.0,2538.8049999965006,True
+16,math,3,2,"Question: A store offers 30% off, then an additional 20% off the sale price. What is the total percentage discount from the original price?
+
+Respond with only the numerical answer.",36%,44,0,0.0,2567.5668000039877,True
+17,math,3,1,"Question: If a clock loses 15 minutes every hour, what time will it show after 4 real hours if it started at 12:00?
+
+Respond with only the numerical answer.",9:45.,1:00,0,0.0,2678.0795000013313,True
+17,math,3,2,"Question: If a clock loses 15 minutes every hour, what time will it show after 4 real hours if it started at 12:00?
+
+Respond with only the numerical answer.",6:45,1:00,0,0.0,2523.993900002097,True
+18,math,3,1,"Question: A boat travels upstream at 8 km/h and downstream at 12 km/h. What is the speed of the current?
+
+Respond with only the numerical answer.",5,2,0,0.0,2580.5448000028264,True
+18,math,3,2,"Question: A boat travels upstream at 8 km/h and downstream at 12 km/h. What is the speed of the current?
+
+Respond with only the numerical answer.",5,2,0,0.0,2591.461599993636,True
+19,math,3,1,"Question: Two candles of equal length burn at different rates. One burns in 4 hours, the other in 6 hours. After how many hours will one be twice the length of the other?
+
+Respond with only the numerical answer.",8,3,0,0.0,2617.224499997974,True
+19,math,3,2,"Question: Two candles of equal length burn at different rates. One burns in 4 hours, the other in 6 hours. After how many hours will one be twice the length of the other?
+
+Respond with only the numerical answer.",8,3,0,0.0,2523.5188999940874,True
+20,math,3,1,"Question: A ladder leans against a wall. The foot is 6 meters from the wall and reaches 8 meters up. How long is the ladder?
+
+Respond with only the numerical answer.",10.39,10,0,0.0,2550.0223000053666,True
+20,math,3,2,"Question: A ladder leans against a wall. The foot is 6 meters from the wall and reaches 8 meters up. How long is the ladder?
+
+Respond with only the numerical answer.",9.2,10,0,0.0,2732.1467000001576,True
+21,math,3,1,"Question: If you write all integers from 1 to 100, how many times do you write the digit 9?
+
+Respond with only the numerical answer.",19,20,0,0.0,2590.889099999913,True
+21,math,3,2,"Question: If you write all integers from 1 to 100, how many times do you write the digit 9?
+
+Respond with only the numerical answer.",19,20,0,0.0,2498.885799999698,True
+22,math,3,1,"Question: A store sells notebooks for $3 each. If you buy 4 notebooks and pay with a $20 bill, how much change do you get?
+
+Respond with only the numerical answer.",$8,8,1,1.0,2554.690599994501,True
+22,math,3,2,"Question: A store sells notebooks for $3 each. If you buy 4 notebooks and pay with a $20 bill, how much change do you get?
+
+Respond with only the numerical answer.",$12,8,0,0.0,2504.966799999238,True
+23,math,3,1,"Question: If a train travels 60 miles per hour for 2.5 hours, how many miles does it travel?
+
+Respond with only the numerical answer.",150,150,1,1.0,2603.1275000059395,True
+23,math,3,2,"Question: If a train travels 60 miles per hour for 2.5 hours, how many miles does it travel?
+
+Respond with only the numerical answer.",150,150,1,1.0,2638.362899997446,True
+24,math,3,1,"Question: John has 24 cookies. He gives 1/3 to his sister and eats 4 himself. How many cookies are left?
+
+Respond with only the numerical answer.",19,12,0,0.0,2508.0139999990934,True
+24,math,3,2,"Question: John has 24 cookies. He gives 1/3 to his sister and eats 4 himself. How many cookies are left?
+
+Respond with only the numerical answer.",15,12,0,0.0,2482.5849999979255,True
+25,math,3,1,"Question: A shirt originally costs $40. It's on sale for 25% off. What is the sale price?
+
+Respond with only the numerical answer.",28.75,30,0,0.0,2635.9365999960573,True
+25,math,3,2,"Question: A shirt originally costs $40. It's on sale for 25% off. What is the sale price?
+
+Respond with only the numerical answer.",$30,30,1,1.0,2571.9686999946134,True
+26,math,3,1,"Question: If 5 workers can build a wall in 8 days, how many days would it take 10 workers?
+
+Respond with only the numerical answer.",4,4,1,1.0,2539.3184999993537,True
+26,math,3,2,"Question: If 5 workers can build a wall in 8 days, how many days would it take 10 workers?
+
+Respond with only the numerical answer.",4.,4,1,1.0,2646.8227000004845,True
+27,math,3,1,"Question: A rectangle has a length of 12 cm and width of 8 cm. What is its perimeter?
+
+Respond with only the numerical answer.",Perimeter = 2(length + width) = 2(12 + 8) = 40 cm,40,1,1.0,2982.9529999988154,True
+27,math,3,2,"Question: A rectangle has a length of 12 cm and width of 8 cm. What is its perimeter?
+
+Respond with only the numerical answer.",Perimeter = 2(length + width) = 2(12 + 8) = 40 cm,40,1,1.0,2929.0099999998347,True
+28,math,3,1,"Question: You score 85, 92, and 78 on three tests. What is your average score?
+
+Respond with only the numerical answer.",83.67,85,0,0.0,2511.776599996665,True
+28,math,3,2,"Question: You score 85, 92, and 78 on three tests. What is your average score?
+
+Respond with only the numerical answer.",83,85,0,0.0,2528.256400000828,True
+29,math,3,1,"Question: A tank is 1/3 full. After adding 40 liters, it becomes 2/3 full. What is the tank's total capacity?
+
+Respond with only the numerical answer.","Let x be the total capacity of the tank.
+
+Since the tank was initially 1/3 full, it contained (1/3)x liters of liquid.
+
+When 40 liters were added, it became 2/3 full, so it now contains (2/3)x liters of liquid.
+
+We can set up an equation based on this information:
+
+(1/3)x + 40 = (2/3)x
+
+To solve for x, we can multiply both sides by 3 to eliminate the fractions:
+
+x + 120 = 2x
+
+Subtracting x from both sides gives us:
+
+120 = x
+
+So, the total capacity of the tank is 120 liters.",120,1,1.0,4787.1091999986675,True
+29,math,3,2,"Question: A tank is 1/3 full. After adding 40 liters, it becomes 2/3 full. What is the tank's total capacity?
+
+Respond with only the numerical answer.",240 liters.,120,0,0.0,2496.0559000028297,True
+30,math,3,1,"Question: If the price of an item increases by 20% and then decreases by 20%, what is the net percentage change?
+
+Respond with only the numerical answer.",0%,-4,0,0.0,2565.3019999954267,True
+30,math,3,2,"Question: If the price of an item increases by 20% and then decreases by 20%, what is the net percentage change?
+
+Respond with only the numerical answer.",0%,-4,0,0.0,2596.0233000005246,True
+31,math,3,1,"Question: A car travels the first half of a journey at 40 mph and the second half at 60 mph. What is the average speed for the entire journey?
+
+Respond with only the numerical answer.",48 mph.,48,1,1.0,2653.339700002107,True
+31,math,3,2,"Question: A car travels the first half of a journey at 40 mph and the second half at 60 mph. What is the average speed for the entire journey?
+
+Respond with only the numerical answer.",48 mph.,48,1,1.0,2542.1301999958814,True
+32,math,3,1,"Question: Three pipes can fill a tank in 6, 8, and 12 hours respectively. How long to fill the tank if all three pipes are open?
+
+Respond with only the numerical answer.",4,2.67,0,0.0,2592.9213000054006,True
+32,math,3,2,"Question: Three pipes can fill a tank in 6, 8, and 12 hours respectively. How long to fill the tank if all three pipes are open?
+
+Respond with only the numerical answer.","The question is incomplete without knowing the total capacity of the tank or how much of it each pipe can fill per hour.
+
+However, we can calculate the rate at which each pipe fills the tank and then add those rates together to find the combined rate:
+
+Pipe 1: 1/6 of the tank per hour
+Pipe 2: 1/8 of the tank per hour
+Pipe 3: 1/12 of the tank per hour
+
+Combined rate: 1/6 + 1/8 + 1/12 = 4/24 + 3/24 + 2/24 = 9/24 = 3/8 of the tank per hour.
+
+So, if all three pipes are open, it would take 8 hours to",2.67,0,0.0,5266.1397999982,True
+33,math,3,1,"Question: A sum of money doubles in 5 years at simple interest. What is the rate of interest per annum?
+
+Respond with only the numerical answer.",10%,20,0,0.0,2480.6345000033616,True
+33,math,3,2,"Question: A sum of money doubles in 5 years at simple interest. What is the rate of interest per annum?
+
+Respond with only the numerical answer.",10%,20,0,0.0,2635.3474000061397,True
+34,math,3,1,"Question: If 8 men can complete a work in 12 days, how many men are needed to complete the same work in 6 days?
+
+Respond with only the numerical answer.",24,16,0,0.0,2489.881699999387,True
+34,math,3,2,"Question: If 8 men can complete a work in 12 days, how many men are needed to complete the same work in 6 days?
+
+Respond with only the numerical answer.",24,16,0,0.0,2516.8737999993027,True
+35,math,3,1,"Question: A merchant marks his goods 40% above cost price and gives a 20% discount. What is his profit percentage?
+
+Respond with only the numerical answer.",60%,12,0,0.0,2616.9620000000577,True
+35,math,3,2,"Question: A merchant marks his goods 40% above cost price and gives a 20% discount. What is his profit percentage?
+
+Respond with only the numerical answer.",50%,12,0,0.0,2588.711599993985,True
+36,logic,3,1,"Question: All roses are flowers. Some flowers fade quickly. Can we conclude that some roses fade quickly?
+
+Respond with only: true or false.",False,no,0,0.0,2541.510600000038,True
+36,logic,3,2,"Question: All roses are flowers. Some flowers fade quickly. Can we conclude that some roses fade quickly?
+
+Respond with only: true or false.",True.,no,0,0.0,2656.405400004587,True
+37,logic,3,1,"Question: If no heroes are cowards, and some soldiers are heroes, can we conclude that some soldiers are not cowards?
+
+Respond with only: true or false.",true,yes,0,0.0,2632.278500001121,True
+37,logic,3,2,"Question: If no heroes are cowards, and some soldiers are heroes, can we conclude that some soldiers are not cowards?
+
+Respond with only: true or false.",True.,yes,0,0.0,2540.6939999957103,True
+38,logic,3,1,"Question: All managers are employees. No employees are shareholders. Tom is a shareholder. Can Tom be a manager?
+
+Respond with only: true or false.",False.,no,0,0.0,2632.6794999986305,True
+38,logic,3,2,"Question: All managers are employees. No employees are shareholders. Tom is a shareholder. Can Tom be a manager?
+
+Respond with only: true or false.",False.,no,0,0.0,2615.195300000778,True
+39,logic,3,1,"Question: Some cats are black. All black things absorb heat. Can we conclude all cats absorb heat?
+
+Respond with only: true or false.",False.,no,0,0.0,2545.128500001738,True
+39,logic,3,2,"Question: Some cats are black. All black things absorb heat. Can we conclude all cats absorb heat?
+
+Respond with only: true or false.",False,no,0,0.0,2483.881599997403,True
+40,logic,3,1,"Question: If P implies Q, and R implies not-Q, and we know R is true, what can we say about P?
+
+Respond with only: true or false.",False.,P is false,0,0.0,2599.529799997981,True
+40,logic,3,2,"Question: If P implies Q, and R implies not-Q, and we know R is true, what can we say about P?
+
+Respond with only: true or false.",True.,P is false,0,0.0,2544.4080000015674,True
+41,logic,3,1,"Question: All A are B. All B are C. Is it true that all A are C?
+
+Respond with only: true or false.",False.,yes,0,0.0,2585.989899998822,True
+41,logic,3,2,"Question: All A are B. All B are C. Is it true that all A are C?
+
+Respond with only: true or false.",false,yes,0,0.0,2504.86870000168,True
+42,logic,3,1,"Question: No fish are mammals. All dolphins are mammals. Are any dolphins fish?
+
+Respond with only: true or false.",False.,no,0,0.0,2553.643100000045,True
+42,logic,3,2,"Question: No fish are mammals. All dolphins are mammals. Are any dolphins fish?
+
+Respond with only: true or false.",False.,no,0,0.0,2561.667900001339,True
+43,logic,3,1,"Question: If it rains, the picnic is cancelled. The picnic was not cancelled. Did it rain?
+
+Respond with only: true or false.",False.,no,0,0.0,2580.8614999987185,True
+43,logic,3,2,"Question: If it rains, the picnic is cancelled. The picnic was not cancelled. Did it rain?
+
+Respond with only: true or false.",False.,no,0,0.0,2595.759999996517,True
+44,logic,3,1,"Question: Some doctors are musicians. All musicians are artists. Are some doctors artists?
+
+Respond with only: true or false.",True.,yes,0,0.0,2640.572800002701,True
+44,logic,3,2,"Question: Some doctors are musicians. All musicians are artists. Are some doctors artists?
+
+Respond with only: true or false.",True.,yes,0,0.0,2540.733399997407,True
+45,logic,3,1,"Question: All squares are rectangles. Not all rectangles are squares. Can a shape be a rectangle but not a square?
+
+Respond with only: true or false.",true.,yes,0,0.0,2649.2673000029754,True
+45,logic,3,2,"Question: All squares are rectangles. Not all rectangles are squares. Can a shape be a rectangle but not a square?
+
+Respond with only: true or false.",true.,yes,0,0.0,2585.707700003695,True
+46,logic,3,1,"Question: If A implies B, and B implies C, and we know C is false, what can we conclude about A?
+
+Respond with only: true or false.",False,A is false,0,0.0,2510.363600005803,True
+46,logic,3,2,"Question: If A implies B, and B implies C, and we know C is false, what can we conclude about A?
+
+Respond with only: true or false.",False.,A is false,0,0.0,2640.327100001741,True
+47,logic,3,1,"Question: All politicians are liars. No liars are trustworthy. Some trustworthy people are teachers. Can any politicians be teachers?
+
+Respond with only: true or false.",False.,yes,0,0.0,2664.4900999963284,True
+47,logic,3,2,"Question: All politicians are liars. No liars are trustworthy. Some trustworthy people are teachers. Can any politicians be teachers?
+
+Respond with only: true or false.",False.,yes,0,0.0,2556.940399997984,True
+48,logic,3,1,"Question: If not A then B. If B then C. If not C then D. We know D is false. What is A?
+
+Respond with only: true or false.",False.,true,0,0.0,2629.1836999953375,True
+48,logic,3,2,"Question: If not A then B. If B then C. If not C then D. We know D is false. What is A?
+
+Respond with only: true or false.",true.,true,1,1.0,2585.6409999978496,True
+49,logic,3,1,"Question: Some X are Y. All Y are Z. No Z are W. Can any X be W?
+
+Respond with only: true or false.",True,some cannot,0,0.0,2595.2983000024687,True
+49,logic,3,2,"Question: Some X are Y. All Y are Z. No Z are W. Can any X be W?
+
+Respond with only: true or false.",True.,some cannot,0,0.0,2615.8657999985735,True
+50,logic,3,1,"Question: If either A or B is true (but not both), and if A is true then C is true, and C is false, what is B?
+
+Respond with only: true or false.",true.,true,1,1.0,2632.9423999995925,True
+50,logic,3,2,"Question: If either A or B is true (but not both), and if A is true then C is true, and C is false, what is B?
+
+Respond with only: true or false.",false,true,0,0.0,2418.7839000005624,True
+51,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The neural implant shows promise for treating depression, but FDA approval and insurance coverage remain uncertain.""
+
+Respond with only the category name.",science,health,0,0.0,2550.282899996091,True
+51,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The neural implant shows promise for treating depression, but FDA approval and insurance coverage remain uncertain.""
+
+Respond with only the category name.",health,health,1,1.0,2521.621799998684,True
+52,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The athlete's NFT collection sold out in minutes, raising questions about sports memorabilia in the digital age.""
+
+Respond with only the category name.",sports,sports,1,1.0,2494.55830000079,True
+52,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The athlete's NFT collection sold out in minutes, raising questions about sports memorabilia in the digital age.""
+
+Respond with only the category name.",sports,sports,1,1.0,2532.555500001763,True
+53,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The fermentation process yields both artisanal flavors and potentially profitable probiotic strains.""
+
+Respond with only the category name.",science,food,0,0.0,2525.7988999946974,True
+53,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The fermentation process yields both artisanal flavors and potentially profitable probiotic strains.""
+
+Respond with only the category name.",science,food,0,0.0,2496.983099998033,True
+54,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Quantum computing threatens current encryption standards, sending cybersecurity stocks into turmoil.""
+
+Respond with only the category name.",science,finance,0,0.0,2602.3223999945913,True
+54,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Quantum computing threatens current encryption standards, sending cybersecurity stocks into turmoil.""
+
+Respond with only the category name.",science,finance,0,0.0,2602.80700000294,True
+55,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The community garden initiative tackles food deserts while building neighborhood connections.""
+
+Respond with only the category name.",social,social,1,1.0,2486.193099997763,True
+55,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The community garden initiative tackles food deserts while building neighborhood connections.""
+
+Respond with only the category name.",social,social,1,1.0,2503.9544999963255,True
+56,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Tesla's stock rose 5% following the announcement of their new battery technology.""
+
+Respond with only the category name.",finance,finance,1,1.0,2567.704399996728,True
+56,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Tesla's stock rose 5% following the announcement of their new battery technology.""
+
+Respond with only the category name.",finance,finance,1,1.0,2631.6834000026574,True
+57,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The Olympic athlete credits her strict diet for her gold medal performance.""
+
+Respond with only the category name.",sports,sports,1,1.0,2530.649899999844,True
+57,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The Olympic athlete credits her strict diet for her gold medal performance.""
+
+Respond with only the category name.",sports,sports,1,1.0,2469.431199999235,True
+58,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The AI-powered fitness app helps users track calories and workout routines.""
+
+Respond with only the category name.",technology,technology,1,1.0,2596.3279999996303,True
+58,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The AI-powered fitness app helps users track calories and workout routines.""
+
+Respond with only the category name.",technology,technology,1,1.0,2605.4654000035953,True
+59,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Climate scientists warn that rising sea levels threaten coastal economies.""
+
+Respond with only the category name.",science,science,1,1.0,2471.5247999993153,True
+59,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Climate scientists warn that rising sea levels threaten coastal economies.""
+
+Respond with only the category name.",science,science,1,1.0,2518.7698000008822,True
+60,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The celebrity chef opened a new restaurant featuring fusion cuisine and live music.""
+
+Respond with only the category name.",food,food,1,1.0,2600.1622999974643,True
+60,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The celebrity chef opened a new restaurant featuring fusion cuisine and live music.""
+
+Respond with only the category name.",food,food,1,1.0,2487.9761999982293,True
+61,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The biotech startup's IPO exceeded expectations as investors bet on their cancer treatment research.""
+
+Respond with only the category name.",finance,finance,1,1.0,2541.6371999963303,True
+61,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The biotech startup's IPO exceeded expectations as investors bet on their cancer treatment research.""
+
+Respond with only the category name.",finance,finance,1,1.0,2468.469699997513,True
+62,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The e-sports tournament attracted millions of viewers and offered prize money rivaling traditional sports.""
+
+Respond with only the category name.",sports,sports,1,1.0,2636.6419999976642,True
+62,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The e-sports tournament attracted millions of viewers and offered prize money rivaling traditional sports.""
+
+Respond with only the category name.",sports,sports,1,1.0,2673.4473000033177,True
+63,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Smart home devices are revolutionizing how we manage our health and daily routines.""
+
+Respond with only the category name.",science,technology,0,0.0,2488.1277000022237,True
+63,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Smart home devices are revolutionizing how we manage our health and daily routines.""
+
+Respond with only the category name.",science,technology,0,0.0,2498.66139999358,True
+64,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The documentary explores how social media algorithms influence political opinions and mental health.""
+
+Respond with only the category name.",social,technology,0,0.0,2597.130800000741,True
+64,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""The documentary explores how social media algorithms influence political opinions and mental health.""
+
+Respond with only the category name.",social,technology,0,0.0,2605.586300000141,True
+65,classification,3,1,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Urban farms are addressing food security while providing job training for at-risk youth.""
+
+Respond with only the category name.",health,social,0,0.0,2507.703000002948,True
+65,classification,3,2,"Question: What category does this text belong to? Options: technology, sports, food, finance, health, science, social. Text: ""Urban farms are addressing food security while providing job training for at-risk youth.""
+
+Respond with only the category name.",food,social,0,0.0,2488.9884000003804,True
+66,reading,3,1,"Question: Text: 'The committee voted 5-4 to approve the measure, with the chairman abstaining. Had he voted against, the motion would have failed.' Question: How many committee members are there?
+
+Provide a brief, direct answer.","There are 9 committee members (5 for approval and 4 against, plus the chairman).",10,0,0.0,2917.3216999988654,True
+66,reading,3,2,"Question: Text: 'The committee voted 5-4 to approve the measure, with the chairman abstaining. Had he voted against, the motion would have failed.' Question: How many committee members are there?
+
+Provide a brief, direct answer.","There is no explicit information about the total number of committee members in the text, but we can infer that the 5-4 vote represents only those present and voting. The chairman's abstention implies that there might be additional members not participating in the vote.",10,1,1.0,3312.282899998536,True
+67,reading,3,1,"Question: Text: 'Unlike her predecessor who favored austerity, the new director immediately increased the department's outreach budget.' Question: What was the previous director's approach to spending?
+
+Provide a brief, direct answer.",The previous director favored austerity.,austerity,1,1.0,2638.503900001524,True
+67,reading,3,2,"Question: Text: 'Unlike her predecessor who favored austerity, the new director immediately increased the department's outreach budget.' Question: What was the previous director's approach to spending?
+
+Provide a brief, direct answer.",The previous director favored austerity.,austerity,1,1.0,2586.7393000007723,True
+68,reading,3,1,"Question: Text: 'The study was retracted not for fraudulent data, but because the control group had inadvertently been exposed to the treatment.' Question: Was the data fraudulent?
+
+Provide a brief, direct answer.","No, the data was not fraudulent.",no,1,0.95,2652.252799998678,True
+68,reading,3,2,"Question: Text: 'The study was retracted not for fraudulent data, but because the control group had inadvertently been exposed to the treatment.' Question: Was the data fraudulent?
+
+Provide a brief, direct answer.","No, the data was not fraudulent. The study was retracted due to contamination of the control group with the experimental treatment, not due to intentional falsification or manipulation of the data.",no,1,0.95,3065.7591999988654,True
+69,reading,3,1,"Question: Text: 'Though Thompson finished third, his time would have won gold in any previous Olympic final.' Question: Did Thompson win a medal?
+
+Provide a brief, direct answer.","Yes, Thompson finished third and therefore won a bronze medal.",yes,1,0.95,2723.739099994418,True
+69,reading,3,2,"Question: Text: 'Though Thompson finished third, his time would have won gold in any previous Olympic final.' Question: Did Thompson win a medal?
+
+Provide a brief, direct answer.","Yes, since he finished third, he won a bronze medal.",yes,1,0.95,2680.0571999992826,True
+70,reading,3,1,"Question: Text: 'The merger fell through after the smaller company's shareholders rejected the offer, despite board approval.' Question: Who blocked the merger?
+
+Provide a brief, direct answer.",The smaller company's shareholders blocked the merger.,shareholders,1,1.0,2679.8561999967205,True
+70,reading,3,2,"Question: Text: 'The merger fell through after the smaller company's shareholders rejected the offer, despite board approval.' Question: Who blocked the merger?
+
+Provide a brief, direct answer.",The shareholders of the smaller company blocked the merger.,shareholders,1,1.0,2653.7260000040988,True
+71,reading,3,1,"Question: Text: 'Although Tom arrived early, he couldn't find parking and ended up being late to the interview.' Question: Why was Tom late?
+
+Provide a brief, direct answer.",He couldn't find parking because he arrived early.,couldn't find parking,1,1.0,2760.8610000024782,True
+71,reading,3,2,"Question: Text: 'Although Tom arrived early, he couldn't find parking and ended up being late to the interview.' Question: Why was Tom late?
+
+Provide a brief, direct answer.",Tom was late because he couldn't find parking at his location of choice.,couldn't find parking,1,1.0,2745.3678000019863,True
+72,reading,3,1,"Question: Text: 'The company reported losses for three consecutive quarters before the new CEO implemented cost-cutting measures.' Question: How long did the company experience losses?
+
+Provide a brief, direct answer.",Three consecutive quarters.,three quarters,1,0.9,2578.750000000582,True
+72,reading,3,2,"Question: Text: 'The company reported losses for three consecutive quarters before the new CEO implemented cost-cutting measures.' Question: How long did the company experience losses?
+
+Provide a brief, direct answer.",Three consecutive quarters.,three quarters,1,0.9,2624.3555000037304,True
+73,reading,3,1,"Question: Text: 'Maria speaks Spanish at home, English at work, and is currently learning Mandarin.' Question: How many languages is Maria involved with?
+
+Provide a brief, direct answer.",Two.,3,0,0.0,2576.038499995775,True
+73,reading,3,2,"Question: Text: 'Maria speaks Spanish at home, English at work, and is currently learning Mandarin.' Question: How many languages is Maria involved with?
+
+Provide a brief, direct answer.","Maria is involved in three languages: Spanish, English, and Mandarin.",3,1,1.0,2784.378399999696,True
+74,reading,3,1,"Question: Text: 'The experiment failed not because of the hypothesis, but due to contaminated samples.' Question: What caused the experiment to fail?
+
+Provide a brief, direct answer.",Contaminated samples.,contaminated samples,1,1.0,2607.473399999435,True
+74,reading,3,2,"Question: Text: 'The experiment failed not because of the hypothesis, but due to contaminated samples.' Question: What caused the experiment to fail?
+
+Provide a brief, direct answer.",Contaminated samples.,contaminated samples,1,1.0,2657.1222999991733,True
+75,reading,3,1,"Question: Text: 'Despite the rain, the marathon continued, though with a delayed start time.' Question: Was the marathon cancelled?
+
+Provide a brief, direct answer.","No, it was not cancelled; just postponed due to rain.",no,1,0.95,2752.265399998578,True
+75,reading,3,2,"Question: Text: 'Despite the rain, the marathon continued, though with a delayed start time.' Question: Was the marathon cancelled?
+
+Provide a brief, direct answer.","No, the marathon was not cancelled; it simply started later due to the rain.",no,1,0.95,2765.4607000004034,True
+76,reading,3,1,"Question: Text: 'The author's debut novel received mixed reviews, but her sophomore effort was praised universally. Critics noted her growth in character development.' Question: Which book was better received?
+
+Provide a brief, direct answer.",The second book (her sophomore effort) was universally praised.,second,1,1.0,2742.7083999937167,True
+76,reading,3,2,"Question: Text: 'The author's debut novel received mixed reviews, but her sophomore effort was praised universally. Critics noted her growth in character development.' Question: Which book was better received?
+
+Provide a brief, direct answer.","Her sophomore effort (the second book) was universally praised, indicating it was better received.",second,1,1.0,2825.2951000031317,True
+77,reading,3,1,"Question: Text: 'While solar energy is renewable, its intermittent nature requires battery storage solutions, which currently remain expensive.' Question: What is the main challenge with solar energy mentioned?
+
+Provide a brief, direct answer.",The main challenge with solar energy mentioned is that it is intermittent and therefore requires battery storage solutions.,intermittent,1,1.0,2828.3543000070495,True
+77,reading,3,2,"Question: Text: 'While solar energy is renewable, its intermittent nature requires battery storage solutions, which currently remain expensive.' Question: What is the main challenge with solar energy mentioned?
+
+Provide a brief, direct answer.","The main challenge with solar energy mentioned is its intermittency, which necessitates the use of expensive battery storage solutions.",intermittent,0,0.0,2914.12069999933,True
+78,reading,3,1,"Question: Text: 'The policy reduced unemployment but increased inflation, leading economists to debate whether the tradeoff was worthwhile.' Question: What were the two effects of the policy?
+
+Provide a brief, direct answer.","Two effects mentioned in the text:
+
+1. Reduced unemployment
+2. Increased inflation",reduced unemployment and increased inflation,1,0.8,2720.3837999986717,True
+78,reading,3,2,"Question: Text: 'The policy reduced unemployment but increased inflation, leading economists to debate whether the tradeoff was worthwhile.' Question: What were the two effects of the policy?
+
+Provide a brief, direct answer.","The two effects of the policy mentioned in the text are:
+
+1. Reduced unemployment
+2. Increased inflation",reduced unemployment and increased inflation,1,0.8,2866.188999993028,True
+79,reading,3,1,"Question: Text: 'After years of decline, the species showed signs of recovery once hunting was banned and habitats were restored.' Question: What two factors contributed to the species' recovery?
+
+Provide a brief, direct answer.","The two contributing factors were:
+
+1. The banning of hunting
+2. Habitat restoration.",hunting ban and habitat restoration,0,0.0,2794.6687000003294,True
+79,reading,3,2,"Question: Text: 'After years of decline, the species showed signs of recovery once hunting was banned and habitats were restored.' Question: What two factors contributed to the species' recovery?
+
+Provide a brief, direct answer.","The two factors that contributed to the species' recovery are:
+
+1. The ban on hunting
+2. Habitat restoration",hunting ban and habitat restoration,1,0.8,2861.764699999185,True
+80,reading,3,1,"Question: Text: 'The study found correlation but not causation between screen time and anxiety, noting that anxious individuals may simply use screens more.' Question: Did the study prove screens cause anxiety?
+
+Provide a brief, direct answer.","No, the study did not prove that screens cause anxiety; it only found a correlation and noted possible alternative explanations for how increased screen time might be associated with anxiety in some cases.",no,1,0.95,3163.188500002434,True
+80,reading,3,2,"Question: Text: 'The study found correlation but not causation between screen time and anxiety, noting that anxious individuals may simply use screens more.' Question: Did the study prove screens cause anxiety?
+
+Provide a brief, direct answer.","No, the study did not prove that screens cause anxiety. It only found a correlation between screen time and anxiety, but noted that there may be an alternative explanation for the observed relationship (anxious individuals using screens more).",no,1,0.95,3186.5600000019185,True
+81,commonsense,3,1,"Question: A man walks into a bar and asks for a glass of water. The bartender pulls out a gun and points it at him. The man says 'thank you' and leaves. Why?
+
+Provide a brief, direct answer.","The man is playing a prank on the bartender; ""Thank you"" is an example of dry humor or gallows humor, implying that he knows the situation is absurd and humorous.",hiccups,0,0.0,3119.9353999982122,True
+81,commonsense,3,2,"Question: A man walks into a bar and asks for a glass of water. The bartender pulls out a gun and points it at him. The man says 'thank you' and leaves. Why?
+
+Provide a brief, direct answer.",The man is a method actor researching a role for a film or play and this is part of his character's dialogue.,hiccups,0,0.0,2842.8539000015007,True
+82,commonsense,3,1,"Question: What can travel around the world while staying in a corner?
+
+Provide a brief, direct answer.",A stamp.,stamp,1,1.0,2553.4184999996796,True
+82,commonsense,3,2,"Question: What can travel around the world while staying in a corner?
+
+Provide a brief, direct answer.",A stamp.,stamp,1,1.0,2594.9712000001455,True
+83,commonsense,3,1,"Question: A cowboy rides into town on Friday, stays three days, and leaves on Friday. How is this possible?
+
+Provide a brief, direct answer.","The cowboy is riding from one ""Friday"" to another, so the wordplay suggests that he's traveling between different Fridays, not necessarily the same day of the week.",horse named Friday,0,0.0,3149.3584999989253,True
+83,commonsense,3,2,"Question: A cowboy rides into town on Friday, stays three days, and leaves on Friday. How is this possible?
+
+Provide a brief, direct answer.","The cowboy rides in on a horse named ""Friday"".",horse named Friday,1,1.0,2747.5287999986904,True
+84,commonsense,3,1,"Question: If you put ice cream in the sun, what happens?
+
+Provide a brief, direct answer.",The ice cream will melt and turn into a puddle of melted ice cream due to the heat from the sun.,melts,0,0.0,2936.525900004199,True
+84,commonsense,3,2,"Question: If you put ice cream in the sun, what happens?
+
+Provide a brief, direct answer.",The ice cream will melt and turn into a puddle of warm liquid.,melts,0,0.0,2729.2089000038686,True
+85,commonsense,3,1,"Question: Why do people wear sunglasses on bright days?
+
+Provide a brief, direct answer.","People wear sunglasses on bright days to protect their eyes from the intense sunlight, which can cause eye strain, discomfort, and potentially even long-term damage to the eyes due to UV radiation.",protect eyes,1,0.9,3181.1892000041553,True
+85,commonsense,3,2,"Question: Why do people wear sunglasses on bright days?
+
+Provide a brief, direct answer.","People wear sunglasses on bright days to protect their eyes from the intense light and glare caused by the sun's rays, which can reduce visibility, cause discomfort, and potentially lead to eye strain or injury.",protect eyes,1,0.9,3150.0286999944365,True
+86,commonsense,3,1,"Question: What should you do if a smoke alarm goes off in your house?
+
+Provide a brief, direct answer.",Turn off the main electrical power to the alarm and exit the building immediately while checking the surrounding area for any signs of fire or smoke before returning.,leave,0,0.0,3050.339699999313,True
+86,commonsense,3,2,"Question: What should you do if a smoke alarm goes off in your house?
+
+Provide a brief, direct answer.","Turn off the smoke alarm and investigate the cause of the alarm; if it's a fire, call 911 immediately.",leave,0,0.0,2968.1472000011127,True
+87,commonsense,3,1,"Question: Why do we put food in the refrigerator?
+
+Provide a brief, direct answer.","We put food in the refrigerator to keep it cool and prevent bacterial growth, preserving its quality, safety, and nutritional value.",keep fresh,0,0.0,2953.564399998868,True
+87,commonsense,3,2,"Question: Why do we put food in the refrigerator?
+
+Provide a brief, direct answer.","We put food in the refrigerator to keep it cool and prevent bacterial growth, spoilage, and foodborne illness by maintaining a consistent temperature below 40°F (4°C).",keep fresh,0,0.0,3062.5362999999197,True
+88,commonsense,3,1,"Question: A man pushes his car to a hotel and loses all his money. What's happening?
+
+Provide a brief, direct answer.","The man is likely running from the law or someone he owes money to, as this scenario could be related to a getaway situation where he has lost his valuables.",monopoly,0,0.0,3125.032399999327,True
+88,commonsense,3,2,"Question: A man pushes his car to a hotel and loses all his money. What's happening?
+
+Provide a brief, direct answer.","He is checking into the hotel by paying for it with the money in his pocket, which he lost when he pushed the car.",monopoly,0,0.0,3100.1245000006747,True
+89,commonsense,3,1,"Question: Why might a doctor refuse to operate on their own child?
+
+Provide a brief, direct answer.","A doctor might refuse to operate on their own child due to conflicts of interest, bias, or the perception that they may not be able to provide objective care. This is often referred to as the ""father effect"" in medical research.",conflict of interest,0,0.0,3381.0212000025786,True
+89,commonsense,3,2,"Question: Why might a doctor refuse to operate on their own child?
+
+Provide a brief, direct answer.","A doctor might refuse to operate on their own child due to concerns about conflict of interest, loss of objectivity, and potential biases that could affect the quality of care provided to the patient. This is in line with medical ethics principles and many professional organizations' guidelines.",conflict of interest,1,1.0,3419.5522000009078,True
+90,commonsense,3,1,"Question: If a plane crashes exactly on the US-Canada border, where do you bury the survivors?
+
+Provide a brief, direct answer.",You don't bury them. You help them with medical attention and get them to safety on either side of the border.,don't bury survivors,0,0.0,2948.0221000048914,True
+90,commonsense,3,2,"Question: If a plane crashes exactly on the US-Canada border, where do you bury the survivors?
+
+Provide a brief, direct answer.","The question is meant to be a trick or an oxymoron. Since there are no survivors in this scenario (the plane crashed), it's not possible to determine where to bury them.",don't bury survivors,0,0.0,3064.912699999695,True
+91,code,3,1,"Question: What is the output? x = [1,2,3]; x.insert(1, 'a'); print(x[2])
+
+Respond with only what the code prints.",'a',2,0,0.0,2589.869399998861,True
+91,code,3,2,"Question: What is the output? x = [1,2,3]; x.insert(1, 'a'); print(x[2])
+
+Respond with only what the code prints.",a,2,0,0.0,2467.1417999998084,True
+92,code,3,1,"Question: What is the output? print(bool('False'))
+
+Respond with only what the code prints.",False,True,0,0.0,2540.186400001403,True
+92,code,3,2,"Question: What is the output? print(bool('False'))
+
+Respond with only what the code prints.",False,True,0,0.0,2601.8850000036764,True
+93,code,3,1,"Question: What is the output? x = '12345'; print(x[1::2])
+
+Respond with only what the code prints.",345,24,0,0.0,2568.7389000013354,True
+93,code,3,2,"Question: What is the output? x = '12345'; print(x[1::2])
+
+Respond with only what the code prints.",354,24,0,0.0,2540.0425999978324,True
+94,code,3,1,"Question: What is the output? for i in range(3): print(i, end=' ')
+
+Respond with only what the code prints.",0 1 2,0 1 2,1,1.0,2779.961700005515,True
+94,code,3,2,"Question: What is the output? for i in range(3): print(i, end=' ')
+
+Respond with only what the code prints.",0 1 2,0 1 2,1,1.0,2555.9500999952434,True
+95,code,3,1,"Question: What is the output? x = [1,2,3]; print(len(x))
+
+Respond with only what the code prints.",3,3,1,1.0,2549.6176999949967,True
+95,code,3,2,"Question: What is the output? x = [1,2,3]; print(len(x))
+
+Respond with only what the code prints.",3,3,1,1.0,2533.486400003312,True
+96,code,3,1,"Question: What is the output? x = 5; y = 3; print(x > y)
+
+Respond with only what the code prints.",True,True,1,1.0,2495.653999998467,True
+96,code,3,2,"Question: What is the output? x = 5; y = 3; print(x > y)
+
+Respond with only what the code prints.",False,True,0,0.0,2577.205399997183,True
+97,code,3,1,"Question: What is the output? s = 'hello'; print(s.upper())
+
+Respond with only what the code prints.",HELLO,HELLO,1,1.0,2599.8265000016545,True
+97,code,3,2,"Question: What is the output? s = 'hello'; print(s.upper())
+
+Respond with only what the code prints.",HELLO,HELLO,1,1.0,2615.069699997548,True
+98,code,3,1,"Question: What is the output? print([x**2 for x in range(4)])
+
+Respond with only what the code prints.","[0, 1, 4, 9]","[0, 1, 4, 9]",1,1.0,2747.203699997044,True
+98,code,3,2,"Question: What is the output? print([x**2 for x in range(4)])
+
+Respond with only what the code prints.","[0, 1, 4, 9]","[0, 1, 4, 9]",1,1.0,2696.659199995338,True
+99,code,3,1,"Question: What is the output? def f(n): return 1 if n<=1 else n*f(n-1); print(f(5))
+
+Respond with only what the code prints.",144,120,0,0.0,2488.9362000030815,True
+99,code,3,2,"Question: What is the output? def f(n): return 1 if n<=1 else n*f(n-1); print(f(5))
+
+Respond with only what the code prints.",192,120,0,0.0,2494.5283999986714,True
+100,code,3,1,"Question: What is the output? x = [1,2,3]; y = x; y.append(4); print(x)
+
+Respond with only what the code prints.","[1, 2, 3]","[1, 2, 3, 4]",0,0.0,2711.303500000213,True
+100,code,3,2,"Question: What is the output? x = [1,2,3]; y = x; y.append(4); print(x)
+
+Respond with only what the code prints.","[1, 2, 3]","[1, 2, 3, 4]",0,0.0,2692.156299999624,True
