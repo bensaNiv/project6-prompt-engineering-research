@@ -14,9 +14,6 @@ from .metrics import MetricsCalculator
 class LLMClient(Protocol):
     """Protocol for LLM clients (Gemini, Ollama, etc.)."""
 
-    def query(self, prompt: str) -> "APIResponse":
-        """Send prompt and get response."""
-        ...
 
 
 class ExperimentRunner:

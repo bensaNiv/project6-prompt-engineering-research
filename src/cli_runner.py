@@ -125,16 +125,16 @@ def _print_summary(display_name: str, overall, by_category: dict, by_difficulty:
     print(f"{display_name.upper()} EXPERIMENT RESULTS")
     print("=" * 60)
 
-    print(f"\nOverall Statistics:")
+    print("\nOverall Statistics:")
     print(f"  Accuracy: {overall.accuracy:.2%}")
     print(f"  Variance: {overall.variance:.4f}")
     print(f"  Std Dev:  {overall.std_dev:.4f}")
 
-    print(f"\nBy Category:")
+    print("\nBy Category:")
     for cat, m in sorted(by_category.items()):
         print(f"  {cat:20s}: {m.accuracy:.2%} (n={m.count})")
 
-    print(f"\nBy Difficulty:")
+    print("\nBy Difficulty:")
     diff_labels = {1: "Easy", 2: "Medium", 3: "Hard"}
     for diff, m in sorted(by_difficulty.items()):
         label = diff_labels.get(diff, str(diff))
