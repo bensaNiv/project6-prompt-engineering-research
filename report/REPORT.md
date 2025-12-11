@@ -371,3 +371,35 @@ All 8 figures available in `results/figures/`:
 6. `radar_comparison.png` - Multi-dimensional comparison
 7. `difficulty_trend.png` - Accuracy by difficulty level
 8. `score_histograms.png` - Per-technique score distributions
+
+---
+
+## References
+
+### Academic Papers
+
+1. **Brown, T., Mann, B., Ryder, N., et al.** (2020). "Language Models are Few-Shot Learners." *Advances in Neural Information Processing Systems (NeurIPS)*, 33, 1877-1901. https://arxiv.org/abs/2005.14165
+   - Foundational paper introducing few-shot learning with GPT-3
+   - Demonstrated that large language models can perform tasks with minimal examples
+
+2. **Wei, J., Wang, X., Schuurmans, D., et al.** (2022). "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models." *Advances in Neural Information Processing Systems (NeurIPS)*, 35. https://arxiv.org/abs/2201.11903
+   - Introduced Chain-of-Thought (CoT) prompting technique
+   - Showed dramatic improvements on arithmetic and reasoning tasks (GSM8K: 18% → 58%)
+
+3. **Kojima, T., Gu, S.S., Reid, M., et al.** (2022). "Large Language Models are Zero-Shot Reasoners." *Advances in Neural Information Processing Systems (NeurIPS)*, 35. https://arxiv.org/abs/2205.11916
+   - Demonstrated that "Let's think step by step" improves zero-shot reasoning
+   - Foundation for our CoT prompt design
+
+4. **Wang, X., Wei, J., Schuurmans, D., et al.** (2023). "Self-Consistency Improves Chain of Thought Reasoning in Language Models." *International Conference on Learning Representations (ICLR)*. https://arxiv.org/abs/2203.11171
+   - Introduced self-consistency decoding for CoT
+   - Relevant to our variance analysis and future work on CoT++
+
+5. **Zhou, D., Schärli, N., Hou, L., et al.** (2023). "Least-to-Most Prompting Enables Complex Reasoning in Large Language Models." *International Conference on Learning Representations (ICLR)*. https://arxiv.org/abs/2205.10625
+   - Extended CoT with problem decomposition
+   - Supports our finding that step-by-step reasoning improves math performance
+
+### Course Materials
+
+6. **Segal, Dr.** (2024). "Prompt Engineering Techniques for Production." *LLM Course Lecture Series*, Reichman University.
+   - Mass production considerations and entropy minimization
+   - Variance as a key metric for deployment decisions

@@ -112,3 +112,38 @@ The dataset covers 7 categories:
 - **Local Execution**: All inference runs locally, no cloud API costs
 - **Runs**: ~1,000 API calls (100 cases x 5 techniques x 2 runs)
 - **Focus**: Optimize for consistency (low variance), not just accuracy
+
+### 8. Timeline and Milestones
+
+| Stage | Milestone | Description | Status |
+|-------|-----------|-------------|--------|
+| **Stage 1** | Dataset Creation | Create 100 test cases across 7 categories with 3 difficulty levels | Completed |
+| **Stage 2** | Baseline Implementation | Implement Ollama client, experiment runner, and baseline prompts | Completed |
+| **Stage 3** | Prompt Techniques | Implement 4 additional techniques: Improved, Few-Shot, CoT, Role-Based | Completed |
+| **Stage 4** | Analysis & Visualization | Generate 8 visualizations and comprehensive REPORT.md | Completed |
+
+#### Stage Details
+
+**Stage 1: Dataset Creation**
+- Created `data/test_cases.csv` with 100 diverse test cases
+- Balanced distribution across 7 categories
+- Three difficulty levels: Easy (40%), Medium (40%), Hard (20%)
+- Four answer types supported: exact, contains, semantic, numeric
+
+**Stage 2: Baseline Implementation**
+- Implemented `OllamaClient` for local LLM communication
+- Created `ExperimentRunner` for orchestrating tests
+- Built `AnswerEvaluator` with multiple matching strategies
+- Established baseline performance metrics
+
+**Stage 3: Prompt Techniques**
+- `ImprovedPromptGenerator`: Structured prompts with category hints
+- `FewShotPromptGenerator`: 3-shot examples per category
+- `ChainOfThoughtPromptGenerator`: Step-by-step reasoning
+- `RoleBasedPromptGenerator`: Expert persona prompts
+
+**Stage 4: Analysis & Visualization**
+- Generated 8 publication-quality visualizations
+- Calculated accuracy, variance, and improvement metrics
+- Produced comprehensive analysis report with findings
+- Identified Chain-of-Thought as optimal technique

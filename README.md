@@ -56,6 +56,25 @@ The following results were obtained using `llama3.2:3b` on 100 test cases (2 run
 | Logic | 80.0% |
 | Commonsense | 40.0% |
 
+### Sample Visualizations
+
+The project generates 8 publication-quality visualizations. Here are key results:
+
+#### Accuracy Comparison by Technique
+![Accuracy by Technique](results/figures/accuracy_by_technique.png)
+
+*Bar chart comparing overall accuracy across all 5 prompt techniques. Chain-of-Thought clearly outperforms others.*
+
+#### Performance Heatmap (Technique × Category)
+![Accuracy Heatmap](results/figures/accuracy_heatmap.png)
+
+*Heatmap showing accuracy breakdown by technique and category. Darker colors indicate higher accuracy.*
+
+#### Consistency Analysis (Variance)
+![Variance Boxplot](results/figures/variance_boxplot.png)
+
+*Box plot showing score variance for each technique. Lower variance indicates more consistent, production-suitable results.*
+
 ## Architecture
 
 ### System Overview
