@@ -1,5 +1,9 @@
 # Project 6: Prompt Engineering Research
 
+[![CI](https://github.com/YOUR_USERNAME/LLMCourseProject/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/LLMCourseProject/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/YOUR_USERNAME/LLMCourseProject/branch/main/graph/badge.svg)](https://codecov.io/gh/YOUR_USERNAME/LLMCourseProject)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+
 A research project measuring how different prompt engineering techniques affect LLM performance at scale. Tests baseline, improved prompts, few-shot learning, chain-of-thought, and role-based prompting across 100 test cases with 7 categories and 3 difficulty levels.
 
 ## Overview
