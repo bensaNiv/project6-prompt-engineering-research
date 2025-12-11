@@ -1,238 +1,306 @@
 # Prompt Book
 
-This document catalogs all prompt engineering techniques used in this research project, including template structures, design rationale, and example outputs.
+This document catalogs the prompts (PRPs - Prompt Request Plans) used with **Claude Code** to build this project. Each PRP was executed sequentially to complete different stages of the research project.
 
-## Table of Contents
-1. [Baseline Prompts](#1-baseline-prompts)
-2. [Improved Prompts](#2-improved-prompts)
-3. [Few-Shot Prompts](#3-few-shot-prompts)
-4. [Chain-of-Thought Prompts](#4-chain-of-thought-prompts)
-5. [Role-Based Prompts](#5-role-based-prompts)
+## Overview
 
----
+The project was built using a staged approach where each PRP instructed Claude Code to implement a specific phase. The PRPs are located in the `PRPs/` folder and were executed in order.
 
-## 1. Baseline Prompts
-
-### Purpose
-Establish a performance baseline with minimal prompt engineering.
-
-### Template
-```
-Answer the following question:
-{question}
-
-Answer concisely with just the answer, no explanation.
-```
-
-### Design Rationale
-- No formatting hints or structure
-- Direct question presentation
-- Simple conciseness instruction to reduce verbose outputs
-
-### Example
-**Input:**
-```
-Answer the following question:
-What is the capital of France?
-
-Answer concisely with just the answer, no explanation.
-```
-
-**Expected Output:** `Paris`
+| Stage | PRP File | Purpose |
+|-------|----------|---------|
+| 0 | `00-project-overview.md` | Project structure and workflow overview |
+| 1 | `01-stage-1-dataset.md` | Create the test dataset |
+| 2 | `02-stage-2-baseline.md` | Implement baseline experiment |
+| 3 | `03-stage-3-techniques.md` | Implement 4 prompt techniques |
+| 4 | `04-stage-4-analysis.md` | Generate visualizations and report |
 
 ---
 
-## 2. Improved Prompts
+## PRP 00: Project Overview
 
-### Purpose
-Add category-specific format constraints to improve answer consistency.
+**File:** `PRPs/00-project-overview.md`
 
-### Template
+**Purpose:** Establish project structure and define the workflow for subsequent stages.
+
+**Prompt Given to Claude Code:**
 ```
-Question: {question}
+# Project Overview: Prompt Engineering Research
 
-{category_specific_hint}
+## Objective
+Measure how different prompt techniques affect LLM performance at scale (mass production context).
 
-Answer concisely with just the answer, no explanation.
-```
+## Stages
+| Stage | PRP File | Description |
+|-------|----------|-------------|
+| 1 | 01-stage-1-dataset.md | Create 100 test cases dataset |
+| 2 | 02-stage-2-baseline.md | Run baseline prompts, collect metrics |
+| 3 | 03-stage-3-techniques.md | Test 4 prompt improvement techniques |
+| 4 | 04-stage-4-analysis.md | Generate visualizations and final report |
 
-### Category-Specific Hints
-| Category | Hint |
-|----------|------|
-| sentiment | "Respond with exactly one word: positive, negative, or neutral." |
-| math | "Respond with only the numerical answer." |
-| logic | "Respond with only: yes or no." |
-| classification | "Respond with only the category name." |
-| reading | "Provide a brief, direct answer." |
-| commonsense | "Provide a brief, direct answer." |
-| code | "Respond with only what the code prints." |
-
-### Example
-**Input (math category):**
-```
-Question: What is 15 + 27?
-
-Respond with only the numerical answer.
-
-Answer concisely with just the answer, no explanation.
+## Execution Order
+Run stages sequentially: 1 → 2 → 3 → 4
 ```
 
-**Expected Output:** `42`
+**Outcome:** Claude Code understood the project scope and prepared for stage-by-stage execution.
 
 ---
 
-## 3. Few-Shot Prompts
+## PRP 01: Stage 1 - Create Dataset
 
-### Purpose
-Provide example Q&A pairs to demonstrate expected answer format.
+**File:** `PRPs/01-stage-1-dataset.md`
 
-### Template
+**Purpose:** Create a dataset of 100 test cases for the prompt engineering experiments.
+
+**Prompt Given to Claude Code:**
 ```
-Here are some examples of questions and answers:
+# Stage 1: Create Dataset
 
-{example_1}
-{example_2}
-{example_3}
+## Goal
+Create a dataset of 100 test cases across 7 categories and 3 difficulty levels.
 
-Now answer this question in the same format:
-Question: {question}
-Answer:
-```
+## Prerequisites
+- None (first stage)
 
-### Design Rationale
-- Shows the model expected answer format through examples
-- Uses category-matched examples when possible
-- Demonstrates concise answering style
+## Instructions
+Follow docs/stage-1-2-instructions.md — Stage 1: Dataset Creation section.
 
-### Example
-**Input:**
-```
-Here are some examples of questions and answers:
+## Deliverables
+- data/test_cases.csv — 100 test cases with columns: id, category, difficulty,
+  question, expected_answer, answer_type
 
-Q: What is 5 + 3?
-A: 8
+## Validation
+- [ ] CSV has exactly 100 rows
+- [ ] All 7 categories represented
+- [ ] Difficulty levels 1, 2, 3 distributed correctly
+- [ ] No empty fields
 
-Q: What is 10 - 4?
-A: 6
-
-Q: What is 7 * 2?
-A: 14
-
-Now answer this question in the same format:
-Question: What is 15 + 27?
-Answer:
+## Next Step
+Run PRPs/02-stage-2-baseline.md
 ```
 
-**Expected Output:** `42`
+**Outcome:**
+- Created `data/test_cases.csv` with 100 test cases
+- Categories: sentiment, math, logic, classification, reading, commonsense, code
+- Difficulty levels: Easy (1), Medium (2), Hard (3)
 
 ---
 
-## 4. Chain-of-Thought Prompts
+## PRP 02: Stage 2 - Baseline Experiment
 
-### Purpose
-Encourage step-by-step reasoning for complex problems.
+**File:** `PRPs/02-stage-2-baseline.md`
 
-### Template
+**Purpose:** Implement the baseline prompt experiment infrastructure and run initial tests.
+
+**Prompt Given to Claude Code:**
 ```
-Question: {question}
+# Stage 2: Run Baseline Experiment
 
-Let's think step by step:
-1. First, identify what the question is asking.
-2. Break down the problem into smaller parts.
-3. Work through each part carefully.
-4. Arrive at the final answer.
+## Goal
+Run baseline prompts on all test cases and collect performance metrics.
 
-Think through this step by step, then provide your answer in this format:
-Reasoning: [your step-by-step thinking]
-Final Answer: [just the answer, no explanation]
-```
+## Prerequisites
+- Stage 1 completed
+- data/test_cases.csv exists
+- .env file with API key configured
 
-### Design Rationale
-- Explicit reasoning instructions guide logical problem-solving
-- Structured output format separates reasoning from final answer
-- Particularly effective for math, logic, and multi-step problems
+## Instructions
+Follow docs/stage-1-2-instructions.md — Stage 2: Baseline Measurement section.
 
-### Example
-**Input:**
-```
-Question: If a train travels 60 mph for 2 hours, how far does it go?
+## Deliverables
+- src/ — Python modules (config, client, metrics, run_experiment)
+- results/baseline_results.csv — Raw results
+- results/baseline_stats.json — Aggregated statistics
 
-Let's think step by step:
-1. First, identify what the question is asking.
-2. Break down the problem into smaller parts.
-3. Work through each part carefully.
-4. Arrive at the final answer.
+## Validation
+- [ ] Responses collected (100 cases × runs)
+- [ ] Stats include: accuracy, mean, variance by category and difficulty
+- [ ] No API errors in results
 
-Think through this step by step, then provide your answer in this format:
-Reasoning: [your step-by-step thinking]
-Final Answer: [just the answer, no explanation]
+## Next Step
+Run PRPs/03-stage-3-techniques.md
 ```
 
-**Expected Output:**
+**Outcome:**
+- Created `src/` module structure with:
+  - `config.py` - Configuration management
+  - `ollama_client.py` - LLM API client
+  - `metrics.py` - Statistical calculations
+  - `experiment_runner.py` - Test orchestration
+  - `answer_evaluator.py` - Response evaluation
+- Created `run_baseline.py` script
+- Generated baseline results and statistics
+
+---
+
+## PRP 03: Stage 3 - Prompt Techniques
+
+**File:** `PRPs/03-stage-3-techniques.md`
+
+**Purpose:** Implement and test 4 different prompt improvement techniques.
+
+**Prompt Given to Claude Code:**
 ```
-Reasoning: The question asks for distance. Distance = speed × time. Speed is 60 mph, time is 2 hours. So distance = 60 × 2 = 120 miles.
-Final Answer: 120 miles
+# Stage 3: Test Prompt Improvement Techniques
+
+## Goal
+Run 4 prompt improvement techniques and compare against baseline.
+
+## Prerequisites
+- Stage 2 completed
+- results/baseline_results.csv exists
+
+## Instructions
+Follow docs/stage-3-instructions.md — all sections.
+
+## Techniques to Test
+1. Improved Regular Prompt
+2. Few-Shot Learning (3 examples)
+3. Chain of Thought
+4. Role-Based Prompting
+
+## Deliverables
+- src/prompts/ — Prompt generator modules
+- results/improved_results.csv
+- results/few_shot_results.csv
+- results/cot_results.csv
+- results/role_based_results.csv
+- results/comparison_stats.json
+
+## Validation
+- [ ] All technique results collected
+- [ ] Each technique has accuracy, mean, variance, improvement_pct
+- [ ] Results broken down by category and difficulty
+
+## Next Step
+Run PRPs/04-stage-4-analysis.md
+```
+
+**Outcome:**
+- Created `src/prompts/` module with:
+  - `base.py` - BaselinePromptGenerator
+  - `improved.py` - ImprovedPromptGenerator
+  - `few_shot.py` - FewShotPromptGenerator
+  - `chain_of_thought.py` - ChainOfThoughtPromptGenerator
+  - `role_based.py` - RoleBasedPromptGenerator
+- Created runner scripts: `run_improved.py`, `run_few_shot.py`, `run_cot.py`, `run_role_based.py`
+- Generated comparison statistics
+
+---
+
+## PRP 04: Stage 4 - Analysis and Report
+
+**File:** `PRPs/04-stage-4-analysis.md`
+
+**Purpose:** Generate visualizations and create the final research report.
+
+**Prompt Given to Claude Code:**
+```
+# Stage 4: Generate Visualizations and Report
+
+## Goal
+Create comprehensive visualizations and final analysis report.
+
+## Prerequisites
+- Stage 3 completed
+- All result CSV files exist in results/
+- results/comparison_stats.json exists
+
+## Instructions
+Follow docs/stage-4-instructions.md — all sections.
+
+## Deliverables
+
+### Visualizations
+- results/figures/accuracy_by_technique.png
+- results/figures/improvement_bars.png
+- results/figures/accuracy_heatmap.png
+- results/figures/difficulty_heatmap.png
+- results/figures/variance_boxplot.png
+- results/figures/radar_comparison.png
+- results/figures/difficulty_trend.png
+- results/figures/score_histograms.png
+
+### Report
+- report/REPORT.md — Full analysis with embedded figures
+
+## Validation
+- [ ] All 8 figures generated
+- [ ] Report includes: Introduction, Methodology, Results, Discussion, Conclusion
+- [ ] Hypothesis validation table completed
+- [ ] Mass production recommendations included
+
+## Project Complete
+All stages finished. Review report/REPORT.md for final submission.
+```
+
+**Outcome:**
+- Created `src/visualization.py` and `src/charts/` module
+- Created `generate_figures.py` script
+- Generated 8+ visualization figures
+- Created `report/REPORT.md` with full analysis
+
+---
+
+## How PRPs Were Used
+
+### Execution Process
+
+1. **Open Claude Code** in the project directory
+2. **Reference the PRP file**: `@PRPs/01-stage-1-dataset.md`
+3. **Claude Code reads** the PRP and referenced documentation
+4. **Claude Code executes** the instructions, creating files and running code
+5. **Validate deliverables** using the checklist in the PRP
+6. **Proceed to next stage** by referencing the next PRP file
+
+### Example Session
+
+```
+User: @PRPs/02-stage-2-baseline.md
+
+Claude Code: I'll implement Stage 2 - the baseline experiment. Let me:
+1. Read the stage-1-2-instructions.md for details
+2. Create the src/ module structure
+3. Implement the baseline experiment runner
+4. Run the experiment and collect results
+...
+```
+
+### Benefits of PRP Approach
+
+1. **Structured workflow** - Each stage has clear goals and deliverables
+2. **Validation checklists** - Easy to verify completion
+3. **Sequential dependencies** - Each PRP builds on previous work
+4. **Documentation reference** - PRPs point to detailed docs for implementation
+5. **Reproducibility** - Same prompts can recreate the project
+
+---
+
+## Additional Prompts Used
+
+Beyond the main PRPs, additional Claude Code prompts were used for:
+
+### Quality Checks
+```
+/quality-check @project6-prompt-engineering-research/
+```
+Used to verify code standards compliance after each stage.
+
+### Bug Fixes and Improvements
+```
+Fix the failing tests in test_config.py - the Config class no longer requires api_key
+```
+
+### Documentation Updates
+```
+Update the README to reflect that we're using Ollama instead of Gemini API
 ```
 
 ---
 
-## 5. Role-Based Prompts
+## Lessons Learned
 
-### Purpose
-Assign expert roles to leverage domain-specific knowledge patterns.
-
-### Template
-```
-You are a {role}.
-
-{question}
-
-Provide your expert answer. Be concise and give only the final answer.
-```
-
-### Role Assignments by Category
-| Category | Role |
-|----------|------|
-| sentiment | "sentiment analysis expert" |
-| math | "mathematics professor" |
-| logic | "logic and reasoning expert" |
-| classification | "classification specialist" |
-| reading | "reading comprehension expert" |
-| commonsense | "expert in everyday reasoning" |
-| code | "senior software engineer" |
-
-### Design Rationale
-- Role assignment primes the model with domain expertise
-- Expert framing may improve accuracy on specialized tasks
-- Consistent with how humans approach problems in their expertise area
-
-### Example
-**Input:**
-```
-You are a mathematics professor.
-
-What is the derivative of x^2?
-
-Provide your expert answer. Be concise and give only the final answer.
-```
-
-**Expected Output:** `2x`
-
----
-
-## Prompt Engineering Lessons Learned
-
-### What Worked Well
-1. **Explicit format constraints** reduced answer variability
-2. **Category-specific hints** improved accuracy for structured answers
-3. **Conciseness instructions** prevented verbose explanations
-
-### What Could Be Improved
-1. Chain-of-thought sometimes produces too much text
-2. Few-shot examples need careful selection to match problem types
-3. Role-based prompts less effective for simple factual questions
-
-### Recommendations for Future Work
-1. Test hybrid approaches (e.g., few-shot + chain-of-thought)
-2. Experiment with negative examples ("Don't do X")
-3. Try dynamic prompt selection based on question complexity
+1. **Break work into stages** - PRPs work best when each has a focused goal
+2. **Include validation criteria** - Checklists help verify completion
+3. **Reference documentation** - Keep detailed docs separate from PRPs
+4. **Sequential execution** - Dependencies between stages ensure proper order
+5. **Iterate as needed** - Run quality checks and fix issues between stages
