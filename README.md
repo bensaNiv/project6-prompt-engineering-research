@@ -298,6 +298,13 @@ If running in WSL and can't connect to Ollama on Windows:
 2. Use the Windows host IP instead of localhost
 3. Check that Ollama is configured to listen on all interfaces
 
-## License
+## 📄 License
 
-MIT License
+Academic Research Project
+**Institution**: Reichman University, IL
+
+## 👥 Authors
+
+**Niv Ben Salmon** & **Omer Ben Salmon**
+MSc Computer Science Students
+Reichman University, Israel
