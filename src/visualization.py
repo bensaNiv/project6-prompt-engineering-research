@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-from .charts import BarChartGenerator, HeatmapGenerator, LineChartGenerator
+from .charts import BarChartGenerator, HeatmapGenerator, LineChartGenerator, SpecializedChartGenerator
 
 
 class PromptResearchVisualizer:
@@ -23,6 +23,7 @@ class PromptResearchVisualizer:
         self.bar_charts = BarChartGenerator(figures_dir)
         self.heatmaps = HeatmapGenerator(figures_dir)
         self.line_charts = LineChartGenerator(figures_dir)
+        self.specialized = SpecializedChartGenerator(figures_dir)
 
     def plot_accuracy_comparison(
         self, stats: dict, filename: str = "accuracy_by_technique.png"
@@ -60,6 +61,31 @@ class PromptResearchVisualizer:
         """Create box plot showing score distribution by technique."""
         self.bar_charts.plot_variance_boxplot(results, filename)
 
+    def plot_difficulty_heatmap(
+        self,
+        results: dict[str, pd.DataFrame],
+        filename: str = "difficulty_heatmap.png",
+    ) -> None:
+        """Create heatmap of accuracy by technique and difficulty."""
+        self.heatmaps.plot_difficulty_heatmap(results, filename)
+
+    def plot_radar_comparison(
+        self,
+        stats: dict,
+        results: dict[str, pd.DataFrame],
+        filename: str = "radar_comparison.png",
+    ) -> None:
+        """Create radar chart comparing techniques across metrics."""
+        self.specialized.plot_radar_comparison(stats, results, filename)
+
+    def plot_score_histograms(
+        self,
+        results: dict[str, pd.DataFrame],
+        filename: str = "score_histograms.png",
+    ) -> None:
+        """Create histograms showing score distribution by technique."""
+        self.specialized.plot_score_histograms(results, filename)
+
     def generate_all_figures(
         self, stats: dict, results: dict[str, pd.DataFrame]
     ) -> None:
@@ -76,5 +102,8 @@ class PromptResearchVisualizer:
         self.plot_accuracy_comparison(stats)
         self.plot_improvement_bars(stats)
         self.plot_accuracy_heatmap(results)
-        self.plot_difficulty_trend(results)
+        self.plot_difficulty_heatmap(results)
         self.plot_variance_boxplot(results)
+        self.plot_radar_comparison(stats, results)
+        self.plot_difficulty_trend(results)
+        self.plot_score_histograms(results)

@@ -10,7 +10,8 @@
       "Bash(source .venv/bin/activate)",
       "Bash(python -c:*)",
       "Bash(python -m pytest:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []

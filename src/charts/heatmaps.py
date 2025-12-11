@@ -54,3 +54,50 @@ class HeatmapGenerator(ChartBase):
         )
         plt.title("Accuracy Heatmap: Technique x Category")
         self.save_figure(filename)
+
+    def plot_difficulty_heatmap(
+        self,
+        results: dict[str, pd.DataFrame],
+        filename: str = "difficulty_heatmap.png",
+    ) -> None:
+        """
+        Create heatmap of accuracy by technique and difficulty level.
+
+        Parameters
+        ----------
+        results : dict
+            Dictionary mapping technique names to result DataFrames.
+        filename : str
+            Output filename.
+        """
+        difficulties = [1, 2, 3]
+        difficulty_labels = ["Easy (1)", "Medium (2)", "Hard (3)"]
+        techniques = list(results.keys())
+
+        data = np.zeros((len(techniques), len(difficulties)))
+
+        for i, technique in enumerate(techniques):
+            df = results[technique]
+            for j, diff in enumerate(difficulties):
+                diff_df = df[df["difficulty"] == diff]
+                if len(diff_df) > 0:
+                    data[i, j] = diff_df["correct"].mean()
+                else:
+                    data[i, j] = np.nan
+
+        technique_labels = [self.get_label(t) for t in techniques]
+
+        plt.figure(figsize=(8, 6))
+        sns.heatmap(
+            data,
+            annot=True,
+            fmt=".2f",
+            cmap="RdYlGn",
+            xticklabels=difficulty_labels,
+            yticklabels=technique_labels,
+            vmin=0,
+            vmax=1,
+            center=0.5,
+        )
+        plt.title("Accuracy Heatmap: Technique x Difficulty")
+        self.save_figure(filename)

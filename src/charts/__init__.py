@@ -4,6 +4,7 @@ from .base import ChartBase, TECHNIQUE_COLORS, TECHNIQUE_LABELS
 from .bar_charts import BarChartGenerator
 from .heatmaps import HeatmapGenerator
 from .line_charts import LineChartGenerator
+from .specialized_charts import SpecializedChartGenerator
 
 __all__ = [
     "ChartBase",
@@ -12,4 +13,5 @@ __all__ = [
     "BarChartGenerator",
     "HeatmapGenerator",
     "LineChartGenerator",
+    "SpecializedChartGenerator",
 ]
