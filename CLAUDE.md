@@ -19,6 +19,7 @@ This file provides guidance to Claude Code when working in this repository.
 project6-prompt-engineering-research/
 ├── .env                  # OLLAMA_HOST, MODEL_NAME (git-ignored)
 ├── data/test_cases.csv   # 100 test cases
+├── scripts/              # CLI runner scripts
 ├── src/                  # Python modules
 ├── results/              # Raw results + figures
 ├── report/REPORT.md      # Final analysis
@@ -28,9 +29,9 @@ project6-prompt-engineering-research/
 ## Running the Experiment
 
 1. Ensure Ollama is running locally (or set `OLLAMA_HOST` in `.env`)
-2. Run: `python run_baseline.py`
+2. Run: `python scripts/run_baseline.py`
 3. Review results in `results/baseline_results.csv`
-4. Apply manual overrides if needed: `python apply_overrides.py baseline`
+4. Apply manual overrides if needed: `python scripts/apply_overrides.py baseline`
 
 ## Documentation
 

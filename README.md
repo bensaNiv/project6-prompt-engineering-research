@@ -81,7 +81,7 @@ The project generates 8 publication-quality visualizations. Here are key results
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        CLI Runner Scripts                        │
+│                     CLI Runner Scripts (scripts/)                │
 │  run_baseline.py | run_cot.py | run_few_shot.py | ...           │
 └─────────────────────────────────┬───────────────────────────────┘
                                   │
@@ -259,13 +259,13 @@ ollama serve                    # Start Ollama (if not already running)
 ollama pull llama3.2:3b         # Download the model
 
 # 2. Run a single experiment
-python run_baseline.py          # ~15-30 minutes for 200 API calls
+python scripts/run_baseline.py          # ~15-30 minutes for 200 API calls
 
 # 3. Or run all experiments
-python run_all_techniques.py    # ~2-3 hours for all 5 techniques
+python scripts/run_all_techniques.py    # ~2-3 hours for all 5 techniques
 
 # 4. Generate visualizations
-python generate_figures.py      # Creates 8 PNG charts in results/figures/
+python scripts/generate_figures.py      # Creates 8 PNG charts in results/figures/
 ```
 
 ### Running Individual Experiments
@@ -273,11 +273,11 @@ python generate_figures.py      # Creates 8 PNG charts in results/figures/
 Each experiment can be run independently:
 
 ```bash
-python run_baseline.py          # Minimal prompts (control group)
-python run_improved.py          # Structured prompts with hints
-python run_few_shot.py          # 3-shot learning examples
-python run_cot.py               # Chain-of-thought reasoning
-python run_role_based.py        # Expert persona prompts
+python scripts/run_baseline.py          # Minimal prompts (control group)
+python scripts/run_improved.py          # Structured prompts with hints
+python scripts/run_few_shot.py          # 3-shot learning examples
+python scripts/run_cot.py               # Chain-of-thought reasoning
+python scripts/run_role_based.py        # Expert persona prompts
 ```
 
 Each script will:
@@ -307,8 +307,8 @@ If you need to manually correct answer evaluations:
    ```
 2. Run the override script:
    ```bash
-   python apply_overrides.py baseline    # Apply to one technique
-   python apply_overrides.py             # Apply to all techniques
+   python scripts/apply_overrides.py baseline    # Apply to one technique
+   python scripts/apply_overrides.py             # Apply to all techniques
    ```
 
 ### Programmatic Usage
@@ -336,7 +336,7 @@ print(f"Accuracy: {results_df['correct'].mean():.2%}")
 
 ```bash
 # Generate all 8 figures
-python generate_figures.py
+python scripts/generate_figures.py
 ```
 
 This creates the following charts in `results/figures/`:
@@ -374,14 +374,15 @@ project6-prompt-engineering-research/
 ├── COSTS.md                  # Cost analysis (local = $0)
 ├── PROMPT_BOOK.md            # PRPs used with Claude Code
 │
-├── run_baseline.py           # Run baseline experiment
-├── run_improved.py           # Run improved prompt experiment
-├── run_few_shot.py           # Run few-shot experiment
-├── run_cot.py                # Run chain-of-thought experiment
-├── run_role_based.py         # Run role-based experiment
-├── run_all_techniques.py     # Run all experiments sequentially
-├── apply_overrides.py        # Apply manual answer corrections
-├── generate_figures.py       # Generate visualization charts
+├── scripts/                  # CLI runner scripts
+│   ├── run_baseline.py       # Run baseline experiment
+│   ├── run_improved.py       # Run improved prompt experiment
+│   ├── run_few_shot.py       # Run few-shot experiment
+│   ├── run_cot.py            # Run chain-of-thought experiment
+│   ├── run_role_based.py     # Run role-based experiment
+│   ├── run_all_techniques.py # Run all experiments sequentially
+│   ├── apply_overrides.py    # Apply manual answer corrections
+│   └── generate_figures.py   # Generate visualization charts
 │
 ├── data/
 │   ├── test_cases.csv        # 100 test cases (7 categories, 3 difficulties)

@@ -16,7 +16,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.cli_runner import run_experiment
 from src.comparison_utils import generate_comparison_stats, print_final_summary
@@ -83,8 +83,8 @@ def main() -> None:
     print("  - results/comparison_stats.json")
     print("\nNext steps:")
     print("  1. Review results and add overrides to data/manual_overrides.csv")
-    print("  2. Run: python apply_overrides.py <technique_name>")
-    print("  3. Proceed to Stage 4: python PRPs/04-stage-4-analysis.md")
+    print("  2. Run: python scripts/apply_overrides.py <technique_name>")
+    print("  3. Proceed to Stage 4: python scripts/generate_figures.py")
 
 
 if __name__ == "__main__":

@@ -59,6 +59,16 @@ project6-prompt-engineering-research/
 ├── pyproject.toml          # Project configuration and dependencies
 ├── README.md               # Project overview
 │
+├── scripts/                # CLI runner scripts
+│   ├── run_baseline.py     # Run baseline experiment
+│   ├── run_improved.py     # Run improved prompt experiment
+│   ├── run_few_shot.py     # Run few-shot experiment
+│   ├── run_cot.py          # Run chain-of-thought experiment
+│   ├── run_role_based.py   # Run role-based experiment
+│   ├── run_all_techniques.py # Run all experiments
+│   ├── apply_overrides.py  # Apply manual corrections
+│   └── generate_figures.py # Generate visualizations
+│
 ├── data/
 │   └── test_cases.csv      # 100 test cases dataset
 │

@@ -2,11 +2,17 @@
 """Generate all visualization figures for the prompt engineering research."""
 
 import json
-from pathlib import Path
-
+import os
+import sys
 import pandas as pd
-
+from pathlib import Path
 from src.visualization import PromptResearchVisualizer
+
+
+
+# Add project root to path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+os.chdir(Path(__file__).parent.parent)
 
 
 def load_results() -> dict[str, pd.DataFrame]:
@@ -59,7 +65,7 @@ def load_stats() -> dict:
     stats_dir.mkdir(exist_ok=True)
     with open(stats_dir / "comparison_stats.json", "w") as f:
         json.dump(stats, f, indent=2)
-    print(f"Saved comparison_stats.json")
+    print("Saved comparison_stats.json")
 
     return stats
 

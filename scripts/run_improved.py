@@ -9,7 +9,7 @@ Results are saved to results/improved_results.csv and results/improved_stats.jso
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.cli_runner import run_experiment
 from src.prompts.improved import ImprovedPromptGenerator

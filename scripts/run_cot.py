@@ -9,7 +9,7 @@ Results are saved to results/cot_results.csv and results/cot_stats.json.
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.cli_runner import run_experiment
 from src.prompts.chain_of_thought import ChainOfThoughtPromptGenerator

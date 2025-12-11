@@ -17,7 +17,7 @@ from pathlib import Path
 
 import pandas as pd
 
-sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.override_utils import load_overrides, apply_overrides, calculate_stats
 
@@ -50,7 +50,7 @@ def main() -> None:
     technique_overrides = overrides_df[overrides_df["technique"] == technique] if not overrides_df.empty else pd.DataFrame()
     print(f"  Found {len(technique_overrides)} overrides for '{technique}'")
 
-    print(f"\n[3/4] Applying overrides...")
+    print("\n[3/4] Applying overrides...")
     results_df, changes_made = apply_overrides(results_df, overrides_df, technique)
     print(f"  Applied {changes_made} changes")
 
@@ -58,7 +58,7 @@ def main() -> None:
         results_df.to_csv(results_path, index=False)
         print(f"  Saved updated results to {results_path}")
 
-    print(f"\n[4/4] Regenerating statistics...")
+    print("\n[4/4] Regenerating statistics...")
     stats = calculate_stats(results_df)
 
     with open(stats_path, "w") as f:
@@ -69,12 +69,12 @@ def main() -> None:
     print("UPDATED RESULTS SUMMARY")
     print("=" * 60)
 
-    print(f"\nOverall Statistics:")
+    print("\nOverall Statistics:")
     print(f"  Accuracy: {stats['overall']['accuracy']:.2%}")
     print(f"  Variance: {stats['overall']['variance']:.4f}")
     print(f"  Std Dev:  {stats['overall']['std_dev']:.4f}")
 
-    print(f"\nBy Category:")
+    print("\nBy Category:")
     for cat, m in sorted(stats["by_category"].items()):
         print(f"  {cat:20s}: {m['accuracy']:.2%} (n={m['count']})")
 

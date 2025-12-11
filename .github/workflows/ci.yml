@@ -28,12 +28,13 @@ jobs:
 
       - name: Lint with ruff
         run: |
-          ruff check src/ tests/ --ignore E501,F401
+          ruff check src/ tests/ scripts/ --ignore E501,F401
 
       - name: Check Python syntax
         run: |
           python -m py_compile src/metrics.py
           python -m py_compile src/prompts/__init__.py
+          python -m py_compile scripts/run_baseline.py
 
       - name: Run tests with coverage
         run: |

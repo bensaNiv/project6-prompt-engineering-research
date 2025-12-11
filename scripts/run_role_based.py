@@ -9,7 +9,7 @@ Results are saved to results/role_based_results.csv and results/role_based_stats
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.cli_runner import run_experiment
 from src.prompts.role_based import RoleBasedPromptGenerator

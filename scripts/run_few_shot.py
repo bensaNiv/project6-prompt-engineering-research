@@ -9,7 +9,7 @@ Results are saved to results/few_shot_results.csv and results/few_shot_stats.jso
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.cli_runner import run_experiment
 from src.prompts.few_shot import FewShotPromptGenerator

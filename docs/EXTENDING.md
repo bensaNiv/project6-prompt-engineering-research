@@ -82,11 +82,16 @@ __all__ = [
 
 ### Step 3: Create a Runner Script
 
-Create `run_my_technique.py` in the project root:
+Create `scripts/run_my_technique.py`:
 
 ```python
 #!/usr/bin/env python3
 """Run experiment with my custom technique."""
+
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.cli_runner import run_experiment
 from src.prompts import MyTechniquePromptGenerator
@@ -99,7 +104,7 @@ if __name__ == "__main__":
 ### Step 4: Run the Experiment
 
 ```bash
-python run_my_technique.py
+python scripts/run_my_technique.py
 ```
 
 Results will be saved to:
@@ -238,5 +243,5 @@ print(comparison)
 
 Or regenerate all figures including your new technique:
 ```bash
-python generate_figures.py
+python scripts/generate_figures.py
 ```
