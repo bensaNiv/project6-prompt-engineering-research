@@ -11,7 +11,8 @@
       "Bash(python -c:*)",
       "Bash(python -m pytest:*)",
       "Bash(ls:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(pytest:*)"
     ],
     "deny": [],
     "ask": []
