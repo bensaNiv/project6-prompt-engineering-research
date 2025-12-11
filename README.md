@@ -1,6 +1,5 @@
 # Project 6: Prompt Engineering Research
 
-[![CI](https://github.com/YOUR_USERNAME/LLMCourseProject/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/LLMCourseProject/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/YOUR_USERNAME/LLMCourseProject/branch/main/graph/badge.svg)](https://codecov.io/gh/YOUR_USERNAME/LLMCourseProject)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 
