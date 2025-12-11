@@ -12,10 +12,10 @@ class Config:
 
     Attributes
     ----------
-    api_key : str
-        Gemini API key loaded from environment.
     model_name : str
-        Name of the Gemini model to use.
+        Name of the Ollama model to use.
+    ollama_host : str
+        URL of the Ollama server.
     max_retries : int
         Maximum number of retry attempts for API calls.
     retry_delay : float
@@ -25,13 +25,13 @@ class Config:
     request_delay : float
         Delay between each API request to avoid rate limits.
     rate_limit_backoff : float
-        Initial wait time on 429 rate limit error.
+        Initial wait time on rate limit error.
     max_backoff : float
         Maximum wait time for rate limit backoff.
     """
 
-    api_key: str
-    model_name: str = "gemini-2.5-flash-lite"
+    model_name: str = "llama3.2:3b"
+    ollama_host: str = "http://localhost:11434"
     max_retries: int = 5
     retry_delay: float = 2.0
     runs_per_case: int = 2
@@ -53,21 +53,12 @@ class Config:
         -------
         Config
             Configuration instance with loaded values.
-
-        Raises
-        ------
-        ValueError
-            If required environment variables are missing.
         """
         load_dotenv(env_path)
 
-        api_key = os.getenv("GEMINI_API_KEY")
-        if not api_key:
-            raise ValueError("GEMINI_API_KEY environment variable is required")
-
         return cls(
-            api_key=api_key,
-            model_name=os.getenv("MODEL_NAME", "gemini-2.5-flash-lite"),
+            model_name=os.getenv("MODEL_NAME", "llama3.2:3b"),
+            ollama_host=os.getenv("OLLAMA_HOST", "http://localhost:11434"),
             max_retries=int(os.getenv("MAX_RETRIES", "5")),
             retry_delay=float(os.getenv("RETRY_DELAY", "2.0")),
             runs_per_case=int(os.getenv("RUNS_PER_CASE", "2")),

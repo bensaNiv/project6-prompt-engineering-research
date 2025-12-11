@@ -34,12 +34,12 @@ class ExperimentRunner:
         self.data_path = Path(data_path)
         self.results_dir = Path(results_dir)
 
-        # Use provided client or default to GeminiClient
+        # Use provided client or default to OllamaClient
         if client is not None:
             self.client = client
         else:
-            from .gemini_client import GeminiClient
-            self.client = GeminiClient(config)
+            from .ollama_client import OllamaClient
+            self.client = OllamaClient(config, host=config.ollama_host)
 
         self.evaluator = AnswerEvaluator()
         self.metrics_calc = MetricsCalculator()
